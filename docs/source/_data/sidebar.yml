@@ -1,0 +1,27 @@
+docs:
+  getting_started:
+    overview: index.html
+    styleguides: styleguides.html
+  components:
+    activityindicator: component-activityindicator.html
+    badge: component-badge.html
+    button: component-button.html
+    card: component-card.html
+    checkBox: component-checkbox.html
+    divider: component-divider.html
+    flatlist: component-flatlist.html
+    hyperlinkbutton: component-hyperlinkbutton.html
+    radiobutton: component-radiobutton.html
+    screen: component-screen.html
+    sectionlist: component-sectionlist.html
+    subtitle: component-subtitle.html
+    switch: component-switch.html
+    text: component-text.html
+    textinput: component-textinput.html
+    title: component-title.html
+    view: component-view.html
+  customization:
+    themes: themes.html
+  miscellaneous:
+    troubleshooting: troubleshooting.html
+    contributing: contributing.html

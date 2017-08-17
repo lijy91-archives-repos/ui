@@ -1,0 +1,39 @@
+title: blankapp-ui
+subtitle: ""
+description: ""
+author: Jianying.Li
+language: en
+timezone: UTC
+url: https://ui.blankapp.org
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+per_page: 0
+
+theme: navy
+deploy:
+  type: git
+  repo: git@github.com:blankapp/ui.git
+
+highlight:
+  enable: true
+  line_number: false
+
+disqus_shortname:
+google_analytics:
+fb_admins:
+algolia:
+  en:
+    api_key:
+    index_name:
+  zh-tw:
+    api_key:
+    index_name:
+  zh-cn:
+    api_key:
+    index_name:
+twitter: lijy91
+github: lijy91

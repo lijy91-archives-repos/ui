@@ -1,0 +1,10 @@
+export const fontSizeDisplay4 = 112;
+export const fontSizeDisplay3 = 56;
+export const fontSizeDisplay2 = 45;
+export const fontSizeDisplay1 = 34;
+export const fontSizeHeadline = 24;
+export const fontSizeTitle = 17;
+export const fontSizeSubheading = 14;
+export const fontSizeBody = 14;
+export const fontSizeCaption = 12;
+export const fontSizeButton = 14;

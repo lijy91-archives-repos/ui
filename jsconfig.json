@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "amd",
+        "target": "ES6"
+    },
+    "exclude": [
+        "docs",
+        "examples",
+        "node_modules"
+    ]
+}

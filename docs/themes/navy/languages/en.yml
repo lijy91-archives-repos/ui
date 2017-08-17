@@ -1,0 +1,43 @@
+menu:
+  docs: Docs
+  themes: Themes
+
+index:
+  get_started: Get started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+sidebar:
+  docs:
+    getting_started: Getting Started
+    overview: Overview
+    styleguides: Styleguides
+    components: Components
+    activityindicator: ActivityIndicator
+    badge: Badge
+    button: Button
+    card: Card
+    checkBox: CheckBox
+    divider: Divider
+    flatlist: FlatList
+    hyperlinkbutton: HyperlinkButton
+    radiobutton: RadioButton
+    screen: Screen
+    sectionlist: SectionList
+    subtitle: Subtitle
+    switch: Switch
+    text: Text
+    textinput: TextInput
+    title: Title
+    view: View
+    customization: Customization
+    themes: Themes
+    miscellaneous: Miscellaneous
+    troubleshooting: Troubleshooting
+    contributing: Contributing

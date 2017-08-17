@@ -1,0 +1,52 @@
+{
+  "name": "@blankapp/ui",
+  "version": "1.0.0",
+  "description": "A React Native UI Kit.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "lint": "node node_modules/eslint/bin/eslint.js src/**"
+  },
+  "keywords": [
+    "react-native",
+    "ui-components"
+  ],
+  "author": "JianyingLi",
+  "license": "MIT",
+  "dependencies": {
+    "hoist-non-react-statics": "^2.2.1",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^20.0.4",
+    "react": "16.0.0-alpha.6",
+    "react-native": "^0.47.1",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "notify": true,
+    "preset": "react-native",
+    "testRegex": "./src/.*\\-test\\.js$",
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/examples/"
+    ]
+  }
+}
