@@ -1,11 +1,20 @@
+---
 title: Card
 ---
+Various card layout styles
 
-Coming soon
+## 示例
+
+```jsx
+<Card>
+  ...
+</Card>
+```
 
 ## API
+
 ### 属性
-参数 | 描述 | 类型 | 可选值 | 默认值
+名称 | 描述 | 类型 | 可选值 | 默认值
 --- | --- | --- | --- | ---
 `rounded` | 是否为圆角卡片 | bool | - | `false`
 

@@ -1,4 +1,22 @@
+---
 title: Switch
 ---
+On off switches
 
-Coming soon
+## Examples
+
+```jsx
+<Switch checked={true} />
+```
+
+## API
+
+### Props
+Name | Description | Type | Optional value | Default
+--- | --- | --- | --- | ---
+`checked` | - | bool | - | `false`
+
+### Events
+Name | Description
+--- | ---
+`onCheckedChange` | -

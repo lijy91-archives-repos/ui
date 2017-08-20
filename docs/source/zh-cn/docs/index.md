@@ -1,17 +1,30 @@
+---
 title: 概述
 ---
 
-欢迎使用 `BlankApp UI Toolkit`，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看[问题解答](troubleshooting.html)中的解答，或者在 [GitHub](https://github.com/blankapp/ui/issues) 上提问。
+欢迎使用 `BlankApp UI`，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看[问题解答](troubleshooting.html)中的解答，或者在 [GitHub](https://github.com/blankapp/ui/issues) 上提问。
 
 ## 简介
 
-一套基于 React Native 的跨平台移动应用组件库，超过 10+ 个常用组件，帮助你快速构建你的应用。
-
+基于 React Native 的跨平台移动应用 UI 组件库，使您能够轻松构建专业的 React Native 应用程序。
 
 ## 快速开始
 
+### 必备条件
+开始之前确保你已安装：
+
+- 已安装 [Yarn](https://yarnpkg.com/) (与 [Node.js](https://nodejs.org/) 一起安装)
+- 已安装 [React Native](https://facebook.github.io/react-native/)
+
 ### 安装
-新建一个 [React Native](https://facebook.github.io/react-native/) 项目，在终端中切换到项目根目录后执行以下命令。
+创建一个新的 React Native 项目：
+
+```bash
+$ react-native init HelloWorld
+$ cd HelloWorld
+```
+
+在您的项目中安装并链接 `@blankapp/ui` ：
 
 ``` bash
 $ yarn add @blankapp/ui
@@ -27,31 +40,19 @@ import Theme, {
   Text,
 } from '@blankapp/ui';
 
-const defaultTheme = {
-  'View': { backgroundColor: 'red' },
-  'Text': { color: 'black' }
-};
-
-const lightTheme = {
-  'View': { backgroundColor: 'green' },
-  'Text': { color: 'gray' },
-};
-
 const drakTheme = {
   'View': { backgroundColor: 'black' },
   'Text': { color: 'white' },
 };
 
 Theme.registerTheme('dark', drakTheme);
-Theme.registerTheme('light', lightTheme);
-Theme.registerDefaultTheme(defaultTheme);
 
 class Examples extends Component {
   render() {
     return (
       <ThemeProvider theme={'light'}>
         <Screen>
-          <Text>Welcome @blankapp/ui</Text>
+          <Text>Hello World</Text>
         </Screen>
       </ThemeProvider>
     );
@@ -75,4 +76,3 @@ AppRegistry.registerComponent('Examples', () => Examples);
   ```
   $ react-native run-ios
   ```
-

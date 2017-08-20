@@ -1,4 +1,22 @@
+---
 title: Text
 ---
+Single and multi-line text display controls
 
-Coming soon
+## Examples
+
+```jsx
+<Text>Text</Text>
+```
+
+## API
+
+### Props
+Name | Description | Type | Optional value | Default
+--- | --- | --- | --- | ---
+`-` | - | - | - | -
+
+### Events
+Name | Description
+--- | ---
+`-` | -

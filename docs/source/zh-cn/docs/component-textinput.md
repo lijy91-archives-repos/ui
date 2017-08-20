@@ -1,11 +1,18 @@
+---
 title: TextInput
 ---
+Single and multi-line text edit controls
 
-Coming soon
+## 示例
+
+```jsx
+<TextInput />
+```
 
 ## API
+
 ### 属性
-参数 | 描述 | 类型 | 可选值 | 默认值
+名称 | 描述 | 类型 | 可选值 | 默认值
 --- | --- | --- | --- | ---
 `-` | - | - | - | -
 

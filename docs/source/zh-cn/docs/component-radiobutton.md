@@ -1,11 +1,21 @@
+---
 title: RadioButton
 ---
+Single selection controls
 
-Coming soon
+## 示例
+
+```jsx
+<RadioButton.Group>
+  <RadioButton text={'Option1'} checked={true} />
+  <RadioButton text={'Option2'} />
+</RadioButton.Group>
+```
 
 ## API
+
 ### 属性
-参数 | 描述 | 类型 | 可选值 | 默认值
+名称 | 描述 | 类型 | 可选值 | 默认值
 --- | --- | --- | --- | ---
 `CircleComponent` | - | element | - | -
 `text` | 显示的文本 | string | - | 空字符串 ('')

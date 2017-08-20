@@ -1,4 +1,22 @@
+---
 title: ActivityIndicator
 ---
+Come soon
 
-Coming soon
+## Examples
+
+```jsx
+<ActivityIndicator />
+```
+
+## API
+
+### Props
+Name | Description | Type | Optional value | Default
+--- | --- | --- | --- | ---
+`-` | - | - | - | -
+
+### Events
+Name | Description
+--- | ---
+`-` | -
