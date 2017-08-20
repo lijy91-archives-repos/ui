@@ -1,6 +1,6 @@
 menu:
   docs: Docs
-  themes: Themes
+  news: News
 
 index:
   get_started: Get started
@@ -25,11 +25,9 @@ sidebar:
     card: Card
     checkBox: CheckBox
     divider: Divider
-    flatlist: FlatList
     hyperlinkbutton: HyperlinkButton
     radiobutton: RadioButton
     screen: Screen
-    sectionlist: SectionList
     subtitle: Subtitle
     switch: Switch
     text: Text

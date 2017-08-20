@@ -1,15 +1,16 @@
+---
 title: View
 ---
+一个特殊的视图，可以包含其他视图
 
-Coming soon
+## 示例
+
+```jsx
+<View>
+  ...
+</View>
+```
 
 ## API
-### 属性
-参数 | 描述 | 类型 | 可选值 | 默认值
---- | --- | --- | --- | ---
-`-` | - | - | - | -
 
-### 事件
-名称 | 描述
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/view.html

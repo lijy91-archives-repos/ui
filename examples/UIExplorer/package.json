@@ -1,23 +1,25 @@
 {
-  "name": "UIExplorer",
+  "name": "uiexplorer",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest",
     "lint": "node node_modules/eslint/bin/eslint.js src/**"
   },
   "dependencies": {
-    "eslint": "^4.4.1",
+    "@blankapp/ui": "git+https://github.com/blankapp/ui.git",
     "lodash": "^4.17.4",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.47.1",
     "react-navigation": "^1.0.0-beta.11"
   },
   "devDependencies": {
-    "@blankapp/ui": "file:../../",
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.1.0",
+    "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",

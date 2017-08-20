@@ -3,13 +3,16 @@ import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
 import withStyles from '../../withStyles';
+import Background from './Background';
 import Knob from './Knob';
 
 const propTypes = {
+  disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
 };
 const defaultProps = {
+  disabled: false,
   checked: false,
   onCheckedChange: undefined,
 };
@@ -35,6 +38,7 @@ class Switch extends PureComponent {
           onCheckedChange(!checked);
         }}
       >
+        <Background />
         <Knob />
       </RNTouchableOpacity>
     );
@@ -43,5 +47,8 @@ class Switch extends PureComponent {
 
 Switch.propTypes = propTypes;
 Switch.defaultProps = defaultProps;
+
+Switch.Background = Background;
+Switch.Knob = Knob;
 
 export default withStyles('Switch', mapStyleToProps)(Switch);

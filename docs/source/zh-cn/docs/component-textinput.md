@@ -1,15 +1,14 @@
+---
 title: TextInput
 ---
+单行和多行文本编辑控件
 
-Coming soon
+## 示例
+
+```jsx
+<TextInput />
+```
 
 ## API
-### 属性
-参数 | 描述 | 类型 | 可选值 | 默认值
---- | --- | --- | --- | ---
-`-` | - | - | - | -
 
-### 事件
-名称 | 描述
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/textinput.html

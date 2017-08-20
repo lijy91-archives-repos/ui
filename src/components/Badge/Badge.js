@@ -8,7 +8,6 @@ import Text from '../Text';
 const propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.number,
     PropTypes.element,
   ]),
   type: PropTypes.oneOf(['dot', 'text']),

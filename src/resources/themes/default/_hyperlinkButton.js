@@ -1,5 +1,6 @@
 import {
-  black,
+  transparent,
+  textPrimary,
 } from './colors';
 import {
   fontSizeButton,
@@ -7,31 +8,62 @@ import {
 
 export default {
   HyperlinkButton: {
-    activeOpacity: 0.65,
-    borderWidth: 1,
-    borderColor: 'rgba(0, 0, 0, 0)',
-    backgroundColor: 'rgba(0, 0, 0, 0)',
-    paddingLeft: 16,
-    paddingRight: 16,
+    activeOpacity: 0.8,
+    backgroundColor: transparent,
+    paddingLeft: 8,
+    paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
-    margin: 2,
+    marginRight: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     ActivityIndicator: {
-      marginRight: 5,
+      marginLeft: 5,
+      color: textPrimary,
     },
     Text: {
       alignItems: 'stretch',
       fontSize: fontSizeButton,
-      color: black,
+      fontWeight: '500',
+      color: textPrimary,
+      margin: 4,
     },
   },
   'HyperlinkButton[disabled=true]': {
     opacity: 0.4,
   },
-  'HyperlinkButton[disabled=false]': {
-    opacity: 1,
+  'HyperlinkButton[loading=true]': {
+    opacity: 0.4,
+  },
+  'HyperlinkButton[size=mini]': {
+    height: 30,
+    Text: {
+      fontSize: fontSizeButton - 4,
+    },
+  },
+  'HyperlinkButton[size=small]': {
+    height: 36,
+    Text: {
+      fontSize: fontSizeButton - 2,
+    },
+  },
+  'HyperlinkButton[size=medium]': {
+    height: 42,
+    Text: {
+      fontSize: fontSizeButton,
+    },
+  },
+  'HyperlinkButton[size=large]': {
+    height: 48,
+    Text: {
+      fontSize: fontSizeButton + 2,
+    },
+  },
+  'HyperlinkButton[size=big]': {
+    height: 54,
+    Text: {
+      fontSize: fontSizeButton + 4,
+    },
   },
 };

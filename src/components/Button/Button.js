@@ -9,17 +9,21 @@ import Text from '../Text';
 const propTypes = {
   ...RNTouchableOpacity.propTypes,
   text: PropTypes.string,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
   rounded: PropTypes.bool,
+  circular: PropTypes.bool,
   fluid: PropTypes.bool,
-  loading: PropTypes.bool,
 };
 const defaultProps = {
   text: '',
+  disabled: false,
+  loading: false,
   size: 'medium',
   rounded: true,
+  circular: false,
   fluid: false,
-  loading: false,
 };
 const mapStyleToProps = [
   'activeOpacity',

@@ -5,7 +5,6 @@ import { View as RNView } from 'react-native';
 import withStyles from '../../withStyles';
 
 const propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
   onCheckedChange: PropTypes.func,
 };
 const defaultProps = {
@@ -38,16 +37,10 @@ class Group extends PureComponent {
   }
 
   render() {
-    const {
-      children,
-    } = this.props;
-
     return (
       <RNView
         {...this.props}
-      >
-        {children}
-      </RNView>
+      />
     );
   }
 }

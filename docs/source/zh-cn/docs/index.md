@@ -1,23 +1,48 @@
+---
 title: 概述
 ---
-
-欢迎使用 `BlankApp UI Toolkit`，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看[问题解答](troubleshooting.html)中的解答，或者在 [GitHub](https://github.com/blankapp/ui/issues) 上提问。
+欢迎使用 `BlankApp UI`，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看[问题解答](troubleshooting.html)中的解答，或者在 [GitHub](https://github.com/blankapp/ui/issues) 上提问。
 
 ## 简介
 
-一套基于 React Native 的跨平台移动应用组件库，超过 10+ 个常用组件，帮助你快速构建你的应用。
+高可定制和主题化的 React Native 组件库， 在[这里](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr)查看在线演示。
 
+### 特性
+
+- 轻依赖，非常少的依赖
+- 全局主题化，多种样式选择器的实现
+- 丰富的基础组件
+- 友好的 API 设计
+
+### Live Demo
+<iframe src="https://appetize.io/embed/q0wwt188mh3pxxxz1rzf1d4pgr?device=nexus5&scale=75&autoplay=true&orientation=portrait&deviceColor=black&language=en" width="300px" height="597px" frameborder="0" scrolling="no"></iframe>
 
 ## 快速开始
 
-### 安装
-新建一个 [React Native](https://facebook.github.io/react-native/) 项目，在终端中切换到项目根目录后执行以下命令。
+### 必备条件
 
-``` bash
+开始之前确保你已安装：
+
+- 已安装 [Yarn](https://yarnpkg.com/)
+- 已安装 [React Native](https://facebook.github.io/react-native/)
+
+### 安装
+
+创建一个新的 React Native 项目：
+
+```bash
+$ react-native init HelloWorld
+$ cd HelloWorld
+```
+
+安装 `@blankapp/ui` 并链接到您的项目中：
+
+```bash
 $ yarn add @blankapp/ui
 ```
 
-### 设置主题
+现在，只需将以下内容复制到 React Native 项目的index.ios.js文件：
+
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
@@ -27,31 +52,19 @@ import Theme, {
   Text,
 } from '@blankapp/ui';
 
-const defaultTheme = {
-  'View': { backgroundColor: 'red' },
-  'Text': { color: 'black' }
-};
-
-const lightTheme = {
-  'View': { backgroundColor: 'green' },
-  'Text': { color: 'gray' },
-};
-
 const drakTheme = {
-  'View': { backgroundColor: 'black' },
+  'Screen': { backgroundColor: 'black' },
   'Text': { color: 'white' },
 };
 
 Theme.registerTheme('dark', drakTheme);
-Theme.registerTheme('light', lightTheme);
-Theme.registerDefaultTheme(defaultTheme);
 
 class Examples extends Component {
   render() {
     return (
-      <ThemeProvider theme={'light'}>
+      <ThemeProvider theme={'dark'}>
         <Screen>
-          <Text>Welcome @blankapp/ui</Text>
+          <Text>Hello World</Text>
         </Screen>
       </ThemeProvider>
     );
@@ -61,18 +74,17 @@ class Examples extends Component {
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
 
-### 启动
+### 运行程序
 
-1. **Running on Android**:
+- 在 Android 上运行：
 
-  ```
+  ```bash
   $ react-native run-android
   $ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
   ```
 
-2. **Running on iOS:**
+- 在 iOS 上运行：
 
-  ```
+  ```bash
   $ react-native run-ios
   ```
-

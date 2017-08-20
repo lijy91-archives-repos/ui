@@ -1,20 +1,62 @@
 # @blankapp/ui
 
-## 简介
+[![Build Status][travis-image]][travis-url]
+[![npm version][npm-image]][npm-url]
+[![npm][npm-dm-image]](npm-dm-url)
+[![Join the chat at https://gitter.im/blankapp/ui][gitter-image]][gitter-url]
 
-一套基于 React Native 的跨平台移动应用组件库，超过 10+ 个常用组件，帮助你快速构建你的应用。
+[npm-image]: https://img.shields.io/npm/v/@blankapp/ui.svg
+[npm-url]: https://www.npmjs.com/package/@blankapp/ui
+[npm-dm-image]: https://img.shields.io/npm/dm/@blankapp/ui.svg
+[npm-dm-url]: https://www.npmjs.com/package/@blankapp/ui
+[travis-image]: https://travis-ci.org/blankapp/ui.svg?branch=master
+[travis-url]: https://travis-ci.org/blankapp/ui
+[gitter-image]: https://img.shields.io/gitter/room/blankapp/ui.svg
+[gitter-url]: https://gitter.im/blankapp/ui?utm_source=share-link&utm_medium=link&utm_campaign=share-link
 
+## Introduction
 
-## 快速开始
+*Highly customizable and theming components for React Native*
 
-### 安装
-新建一个 [React Native](https://facebook.github.io/react-native/) 项目，在终端中切换到项目根目录后执行以下命令。
+Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on [our live demo](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr).
 
-``` bash
+### Features
+
+- Lightly dependent, very little dependent
+- Global theming, a variety of style selector implementation
+- Rich base components
+- Friendly API design
+
+### Live Demo
+
+<iframe src="https://appetize.io/embed/q0wwt188mh3pxxxz1rzf1d4pgr?device=nexus5&scale=75&autoplay=true&orientation=portrait&deviceColor=black&language=en" width="300px" height="597px" frameborder="0" scrolling="no"></iframe>
+
+## Quick Start
+
+### Prerequisites
+
+Before starting make sure you have:
+
+- Installed [Yarn](https://yarnpkg.com/)
+- Installed [React Native](https://facebook.github.io/react-native/)
+
+### Installation
+
+Create a new React Native App:
+
+```bash
+$ react-native init HelloWorld
+$ cd HelloWorld
+```
+
+Install @blankapp/ui and link in your project:
+
+```bash
 $ yarn add @blankapp/ui
 ```
 
-### 设置主题
+Now, simply copy the following to your index.ios.js file of React Native project:
+
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
@@ -24,31 +66,19 @@ import Theme, {
   Text,
 } from '@blankapp/ui';
 
-const defaultTheme = {
-  'View': { backgroundColor: 'red' },
-  'Text': { color: 'black' }
-};
-
-const lightTheme = {
-  'View': { backgroundColor: 'green' },
-  'Text': { color: 'gray' },
-};
-
 const drakTheme = {
-  'View': { backgroundColor: 'black' },
+  'Screen': { backgroundColor: 'black' },
   'Text': { color: 'white' },
 };
 
 Theme.registerTheme('dark', drakTheme);
-Theme.registerTheme('light', lightTheme);
-Theme.registerDefaultTheme(defaultTheme);
 
 class Examples extends Component {
   render() {
     return (
-      <ThemeProvider theme={'light'}>
+      <ThemeProvider theme={'dark'}>
         <Screen>
-          <Text>Welcome @blankapp/ui</Text>
+          <Text>Hello World</Text>
         </Screen>
       </ThemeProvider>
     );
@@ -58,7 +88,7 @@ class Examples extends Component {
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
 
-### 启动
+### Run the new app
 
 1. **Running on Android**:
 
@@ -73,11 +103,17 @@ AppRegistry.registerComponent('Examples', () => Examples);
   $ react-native run-ios
   ```
 
+## Discussion
+
+If you have any suggestions or questions about this project, you can discuss it by [Gitter](https://gitter.im/blankapp/ui?utm_source=share-link&utm_medium=link&utm_campaign=share-link) or my private wechat.
+
+![](https://oeolgl6y5.qnssl.com/topic/ByRafuLR/r1no_q9R.jpg?imageView2/2/w/200)
+
 ## License
 ```
 MIT License
 
-Copyright (c) 2017 JianyingLi
+Copyright (c) 2017 JianyingLi <lijy91@foxmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

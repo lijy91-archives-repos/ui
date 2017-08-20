@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Screen, Text, RadioButton, View } from '@blankapp/ui';
+import { Screen, Title, Subtitle, RadioButton, View } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class RadioButtonExample extends Component {
   static navigationOptions = {
@@ -38,9 +39,35 @@ class RadioButtonExample extends Component {
           </RadioButton.Group>
 
         </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <SimplePageBody>
+          <Title>States</Title>
+          <View>
+            <Subtitle>Disabled</Subtitle>
+            <View
+              style={{
+                flexWrap: 'wrap',
+                flexDirection: 'row',
+              }}
+            >
+              <RadioButton.Group>
+                <RadioButton text={'RadioButton'} value={'1'} disabled />
+                <RadioButton text={'RadioButton'} value={'2'} disabled />
+              </RadioButton.Group>
+            </View>
+            <Subtitle>Checked</Subtitle>
+            <View
+              style={{
+                flexWrap: 'wrap',
+                flexDirection: 'row',
+              }}
+            >
+              <RadioButton.Group>
+                <RadioButton text={'RadioButton'} value={'1'} checked />
+                <RadioButton text={'RadioButton'} value={'2'} />
+              </RadioButton.Group>
+            </View>
+          </View>
+        </SimplePageBody>
       </Screen>
     );
   }

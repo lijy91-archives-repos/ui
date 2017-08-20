@@ -13,12 +13,14 @@ const propTypes = {
   children: PropTypes.element,
   text: PropTypes.string,
   value: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
   checked: PropTypes.bool,
 };
 const defaultProps = {
   CircleComponent: undefined,
   children: null,
   text: '',
+  disabled: false,
   checked: false,
 };
 const contextTypes = {

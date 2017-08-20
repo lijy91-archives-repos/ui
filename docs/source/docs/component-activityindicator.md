@@ -1,4 +1,14 @@
+---
 title: ActivityIndicator
 ---
+Indicate that something is ongoing
 
-Coming soon
+## Examples
+
+```jsx
+<ActivityIndicator />
+```
+
+## API
+
+Based on https://facebook.github.io/react-native/docs/activityindicator.html

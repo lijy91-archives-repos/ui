@@ -1,4 +1,16 @@
+---
 title: View
 ---
+A special view that can contain other views
 
-Coming soon
+## Examples
+
+```jsx
+<View>
+  ...
+</View>
+```
+
+## API
+
+Based on https://facebook.github.io/react-native/docs/view.html

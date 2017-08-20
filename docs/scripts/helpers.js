@@ -97,7 +97,7 @@ hexo.extend.helper.register('url_for_lang', function(path){
 });
 
 hexo.extend.helper.register('raw_link', function(path){
-  return 'https://github.com/blankapp/site/edit/master/source/' + path;
+  return 'https://github.com/blankapp/ui/edit/master/docs/source/' + path;
 });
 
 hexo.extend.helper.register('page_anchor', function(str){

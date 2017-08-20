@@ -1,7 +1,7 @@
 {
   "name": "@blankapp/ui",
   "version": "1.0.0",
-  "description": "A React Native UI Kit.",
+  "description": "You must sign up for private packages",
   "main": "index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -10,28 +10,32 @@
   },
   "keywords": [
     "react-native",
+    "ios",
+    "android",
+    "components",
+    "native-components",
     "ui-components"
   ],
   "author": "JianyingLi",
   "license": "MIT",
   "dependencies": {
-    "hoist-non-react-statics": "^2.2.1",
+    "hoist-non-react-statics": "^2.3.0",
     "lodash": "^4.17.4",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.1.0",
-    "eslint": "^4.3.0",
+    "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react": "^7.2.1",
     "jest": "^20.0.4",
-    "react": "16.0.0-alpha.6",
+    "react": "16.0.0-alpha.12",
     "react-native": "^0.47.1",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "react-test-renderer": "16.0.0-alpha.12"
   },
   "peerDependencies": {
     "react": "*",

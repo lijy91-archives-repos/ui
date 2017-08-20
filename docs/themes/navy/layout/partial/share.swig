@@ -3,7 +3,7 @@
 <!-- GitHub fork -->
 <a class="github-button" href="https://github.com/blankapp/ui/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork blankapp/ui on GitHub">Fork</a><!-- Tweet button -->
 <!-- Twitter follow button -->
-<a href="https://twitter.com/lijy91" class="twitter-follow-button" data-show-count="true">Follow @hexojs</a>
+<a href="https://twitter.com/lijy91" class="twitter-follow-button" data-show-count="true">Follow @lijy91</a>
 <!-- Github Button -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Twitter share button -->

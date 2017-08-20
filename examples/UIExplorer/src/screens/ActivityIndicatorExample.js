@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import {
   Screen,
   ActivityIndicator,
-  View,
   Text,
 } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class ActivityIndicatorExample extends Component {
   static navigationOptions = {
@@ -18,9 +18,9 @@ class ActivityIndicatorExample extends Component {
         <SimplePageHead>
           <ActivityIndicator />
         </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <SimplePageBody>
+          <Text>No demos</Text>
+        </SimplePageBody>
       </Screen>
     );
   }

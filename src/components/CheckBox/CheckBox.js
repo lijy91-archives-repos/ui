@@ -16,12 +16,14 @@ const propTypes = {
     PropTypes.element,
   ]),
   text: PropTypes.string,
+  disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
 };
 const defaultProps = {
   children: null,
   text: '',
+  disabled: false,
   checked: false,
   onCheckedChange: undefined,
 };
@@ -68,8 +70,9 @@ class CheckBox extends PureComponent {
   }
 }
 
-CheckBox.CheckMark = CheckMark;
 CheckBox.propTypes = propTypes;
 CheckBox.defaultProps = defaultProps;
+
+CheckBox.CheckMark = CheckMark;
 
 export default withStyles('CheckBox', mapStyleToProps)(CheckBox);

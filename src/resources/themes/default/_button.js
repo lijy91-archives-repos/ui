@@ -10,17 +10,19 @@ import {
 
 export default {
   Button: {
-    activeOpacity: 0.65,
+    activeOpacity: 0.8,
     backgroundColor: themePrimary,
     paddingLeft: 8,
     paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
-    margin: 2,
+    marginRight: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     ActivityIndicator: {
+      marginLeft: 5,
+      color: white,
     },
     Text: {
       alignItems: 'stretch',
@@ -32,14 +34,23 @@ export default {
   },
   'Button[styleName=flat-primary]': {
     backgroundColor: themePrimary,
+    ActivityIndicator: {
+      color: white,
+    },
   },
   'Button[styleName=flat-accent]': {
     backgroundColor: themeAccent,
+    ActivityIndicator: {
+      color: white,
+    },
   },
   'Button[styleName=outline-primary]': {
     borderWidth: 1,
     borderColor: themePrimary,
     backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themePrimary,
+    },
     Text: {
       color: themePrimary,
     },
@@ -48,35 +59,49 @@ export default {
     borderWidth: 1,
     borderColor: themeAccent,
     backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themeAccent,
+    },
     Text: {
       color: themeAccent,
     },
   },
+  'Button[disabled=true]': {
+    opacity: 0.4,
+  },
+  'Button[loading=true]': {
+    opacity: 0.4,
+  },
   'Button[size=mini]': {
+    minWidth: 30,
     height: 30,
     Text: {
       fontSize: fontSizeButton - 4,
     },
   },
   'Button[size=small]': {
+    minWidth: 36,
     height: 36,
     Text: {
       fontSize: fontSizeButton - 2,
     },
   },
   'Button[size=medium]': {
+    minWidth: 42,
     height: 42,
     Text: {
       fontSize: fontSizeButton,
     },
   },
   'Button[size=large]': {
+    minWidth: 48,
     height: 48,
     Text: {
       fontSize: fontSizeButton + 2,
     },
   },
   'Button[size=big]': {
+    minWidth: 54,
     height: 54,
     Text: {
       fontSize: fontSizeButton + 4,
@@ -88,17 +113,16 @@ export default {
   'Button[rounded=false]': {
     borderRadius: 0,
   },
+  'Button[circular=true]': {
+    borderRadius: 54,
+    paddingLeft: 4,
+    paddingRight: 4,
+    Text: {
+      margin: 0,
+    },
+  },
   'Button[fluid=true]': {
     flex: 1,
-    margin: 0,
-  },
-  'Button[disabled=true]': {
-    opacity: 0.4,
-  },
-  'Button[disabled=false]': {
-    opacity: 1,
-  },
-  'Button[loading=true]': {
-
+    marginRight: 0,
   },
 };

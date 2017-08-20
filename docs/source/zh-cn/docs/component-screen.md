@@ -1,15 +1,16 @@
+---
 title: Screen
 ---
-
 Coming soon
 
-## API
-### 属性
-参数 | 描述 | 类型 | 可选值 | 默认值
---- | --- | --- | --- | ---
-`-` | - | - | - | -
+## 示例
 
-### 事件
-名称 | 描述
---- | ---
-`-` | -
+```jsx
+<Screen>
+  ...
+</Screen>
+```
+
+## API
+
+Based on https://facebook.github.io/react-native/docs/view.html

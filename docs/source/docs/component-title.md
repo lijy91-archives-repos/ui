@@ -1,4 +1,14 @@
+---
 title: Title
 ---
+Title text display controls
 
-Coming soon
+## Examples
+
+```jsx
+<Title>Title</Title>
+```
+
+## API
+
+Based on https://facebook.github.io/react-native/docs/text.html

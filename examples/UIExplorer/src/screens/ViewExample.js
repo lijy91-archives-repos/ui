@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Screen, View, Text } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class ViewExample extends Component {
   static navigationOptions = {
@@ -11,11 +12,21 @@ class ViewExample extends Component {
     return (
       <Screen>
         <SimplePageHead>
-          <Text>Come soon</Text>
+          <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 300,
+              height: 100,
+              backgroundColor: '#ffffff',
+            }}
+          >
+            <Text>View</Text>
+          </View>
         </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <SimplePageBody>
+          <Text>No demos</Text>
+        </SimplePageBody>
       </Screen>
     );
   }

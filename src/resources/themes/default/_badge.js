@@ -12,11 +12,7 @@ export default {
     alignSelf: 'flex-start',
     justifyContent: 'center',
     alignItems: 'center',
-    Text: {
-      color: white,
-      marginLeft: 5,
-      marginRight: 5,
-    },
+    margin: 4,
   },
   'Badge[type=dot]': {
     minWidth: 10,
@@ -28,7 +24,14 @@ export default {
     height: 20,
     borderRadius: 10,
     Text: {
+      height: 20,
+      lineHeight: 20,
+      marginLeft: 5,
+      marginRight: 5,
+      color: white,
       fontSize: fontSizeBody,
+      fontWeight: '400',
+      textAlign: 'center',
     },
   },
 };

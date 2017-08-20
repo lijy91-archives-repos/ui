@@ -1,10 +1,10 @@
-title: blankapp-ui
-subtitle: ""
-description: ""
+title: BlankApp UI
+subtitle: "Highly customizable and theming components for React Native"
+description: "Highly customizable and theming components for React Native"
 author: Jianying.Li
 language: en
 timezone: UTC
-url: https://ui.blankapp.org
+url: http://blankapp.org
 root: /
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
@@ -22,18 +22,18 @@ highlight:
   enable: true
   line_number: false
 
-disqus_shortname:
-google_analytics:
+disqus_shortname: blankapp
+google_analytics: UA-61561013-1
 fb_admins:
-algolia:
-  en:
-    api_key:
-    index_name:
-  zh-tw:
-    api_key:
-    index_name:
-  zh-cn:
-    api_key:
-    index_name:
+# algolia:
+#   en:
+#     api_key:
+#     index_name:
+#   zh-tw:
+#     api_key:
+#     index_name:
+#   zh-cn:
+#     api_key:
+#     index_name:
 twitter: lijy91
-github: lijy91
+github: blankapp/ui

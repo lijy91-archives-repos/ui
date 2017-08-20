@@ -1,21 +1,26 @@
 import {
   white,
   black,
+  themePrimary,
 } from './colors';
 
 export default {
   Switch: {
-    width: 34,
-    height: 14,
-    borderRadius: 50,
-    margin: 6,
+    width: 50,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
     activeOpacity: 1,
+    Background: {
+      borderRadius: 50,
+      width: 34,
+      height: 14,
+    },
     Knob: {
       position: 'absolute',
       width: 20,
       height: 20,
       borderRadius: 50,
-      margin: -3,
       shadowOpacity: 0.18,
       shadowOffset: {
         width: 0, height: 1,
@@ -25,21 +30,25 @@ export default {
       elevation: 4,
     },
   },
+  'Switch[disabled=true]': {
+    opacity: 0.4,
+  },
   'Switch[checked=true]': {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    Background: {
+      backgroundColor: 'rgba(0, 0, 0, 0.54)',
+    },
     Knob: {
-      right: 3,
-      backgroundColor: 'rgb(33, 33, 33)',
+      right: 8,
+      backgroundColor: themePrimary,
     },
   },
   'Switch[checked=false]': {
-    backgroundColor: 'rgba(0, 0, 0, 0.38)',
+    Background: {
+      backgroundColor: 'rgba(0, 0, 0, 0.38)',
+    },
     Knob: {
-      left: 3,
+      left: 8,
       backgroundColor: white,
     },
-  },
-  'Switch[disabled=true]': {
-    opacity: 0.26,
   },
 };

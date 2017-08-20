@@ -1,11 +1,16 @@
 import {
+  transparent,
+  textSecondary,
+} from './colors';
+import {
   fontSizeSubheading,
 } from './dimens';
 
 export default {
   Subtitle: {
-    color: 'rgba(0, 0, 0, 0.54)',
-    backgroundColor: 'transparent',
+    color: textSecondary,
+    backgroundColor: transparent,
     fontSize: fontSizeSubheading,
+    marginBottom: 2,
   },
 };
