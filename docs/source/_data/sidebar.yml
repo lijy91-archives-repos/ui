@@ -9,11 +9,9 @@ docs:
     card: component-card.html
     checkBox: component-checkbox.html
     divider: component-divider.html
-    flatlist: component-flatlist.html
     hyperlinkbutton: component-hyperlinkbutton.html
     radiobutton: component-radiobutton.html
     screen: component-screen.html
-    sectionlist: component-sectionlist.html
     subtitle: component-subtitle.html
     switch: component-switch.html
     text: component-text.html

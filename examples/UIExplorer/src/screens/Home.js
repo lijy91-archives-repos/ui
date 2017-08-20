@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, SectionList } from 'react-native';
 import {
   Screen,
   View,
@@ -7,7 +7,6 @@ import {
   Title,
   Subtitle,
   Divider,
-  SectionList,
 } from '@blankapp/ui';
 
 class HomeScreen extends Component {
@@ -34,7 +33,7 @@ class HomeScreen extends Component {
           },
           {
             title: 'Badge',
-            description: 'Come soon',
+            description: 'Small count controls',
             routeName: 'BadgeExample',
           },
           {
@@ -58,28 +57,18 @@ class HomeScreen extends Component {
             routeName: 'DividerExample',
           },
           {
-            title: 'FlatList',
-            description: 'Come soon',
-            routeName: 'FlatListExample',
-          },
-          {
             title: 'HyperlinkButton',
-            description: 'Come soon',
+            description: 'Like hyperlink buttons',
             routeName: 'HyperlinkButtonExample',
           },
           {
             title: 'RadioButton',
-            description: 'Come soon',
+            description: 'Single selection controls',
             routeName: 'RadioButtonExample',
           },
           {
-            title: 'SectionList',
-            description: 'Come soon',
-            routeName: 'SectionListExample',
-          },
-          {
             title: 'Subtitle',
-            description: 'Single selection controls',
+            description: 'Come soon',
             routeName: 'SubtitleExample',
           },
           {
@@ -89,12 +78,12 @@ class HomeScreen extends Component {
           },
           {
             title: 'Text',
-            description: 'Come soon',
+            description: 'Single and multi-line text display controls',
             routeName: 'TextExample',
           },
           {
             title: 'TextInput',
-            description: 'Single and multiline text inputs',
+            description: 'Single and multi-line text edit controls',
             routeName: 'TextInputExample',
           },
           {
@@ -110,7 +99,7 @@ class HomeScreen extends Component {
         ],
       },
       {
-        title: 'Simple Pages',
+        title: 'Simple screens',
         data: [
           {
             title: 'Register',
@@ -139,10 +128,17 @@ class HomeScreen extends Component {
     return (
       <View
         style={{
-          paddingLeft: 5,
+          paddingTop: 5,
+          paddingRight: 10,
+          paddingBottom: 0,
+          paddingLeft: 10,
         }}
       >
-        <Text>{section.title}</Text>
+        <Text
+          style={{
+            fontWeight: 'bold',
+          }}
+        >{section.title}</Text>
       </View>
     );
   }

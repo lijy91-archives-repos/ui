@@ -15,10 +15,8 @@ import ButtonExampleScreen from '../screens/ButtonExample';
 import CardExampleScreen from '../screens/CardExample';
 import CheckBoxExampleScreen from '../screens/CheckBoxExample';
 import DividerExampleScreen from '../screens/DividerExample';
-import FlatListExampleScreen from '../screens/FlatListExample';
 import HyperlinkButtonExampleScreen from '../screens/HyperlinkButtonExample';
 import RadioButtonExampleScreen from '../screens/RadioButtonExample';
-import SectionListExampleScreen from '../screens/SectionListExample';
 import SubtitleExampleScreen from '../screens/SubtitleExample';
 import SwitchExampleScreen from '../screens/SwitchExample';
 import TextExampleScreen from '../screens/TextExample';
@@ -48,17 +46,11 @@ const routeConfigs = {
   DividerExample: {
     screen: DividerExampleScreen,
   },
-  FlatListExample: {
-    screen: FlatListExampleScreen,
-  },
   HyperlinkButtonExample: {
     screen: HyperlinkButtonExampleScreen,
   },
   RadioButtonExample: {
     screen: RadioButtonExampleScreen,
-  },
-  SectionListExample: {
-    screen: SectionListExampleScreen,
   },
   SubtitleExample: {
     screen: SubtitleExampleScreen,

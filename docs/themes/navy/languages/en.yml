@@ -25,11 +25,9 @@ sidebar:
     card: Card
     checkBox: CheckBox
     divider: Divider
-    flatlist: FlatList
     hyperlinkbutton: HyperlinkButton
     radiobutton: RadioButton
     screen: Screen
-    sectionlist: SectionList
     subtitle: Subtitle
     switch: Switch
     text: Text

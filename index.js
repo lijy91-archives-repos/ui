@@ -8,11 +8,9 @@ import Button from './src/components/Button';
 import Card from './src/components/Card';
 import CheckBox from './src/components/CheckBox';
 import Divider from './src/components/Divider';
-import FlatList from './src/components/FlatList';
 import HyperlinkButton from './src/components/HyperlinkButton';
 import RadioButton from './src/components/RadioButton';
 import Screen from './src/components/Screen';
-import SectionList from './src/components/SectionList';
 import Subtitle from './src/components/Subtitle';
 import Switch from './src/components/Switch';
 import Text from './src/components/Text';
@@ -31,11 +29,9 @@ export {
   Card,
   CheckBox,
   Divider,
-  FlatList,
   HyperlinkButton,
   RadioButton,
   Screen,
-  SectionList,
   Subtitle,
   Switch,
   Text,
