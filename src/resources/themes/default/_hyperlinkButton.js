@@ -8,11 +8,9 @@ import {
 export default {
   HyperlinkButton: {
     activeOpacity: 0.65,
-    borderWidth: 1,
-    borderColor: 'rgba(0, 0, 0, 0)',
     backgroundColor: 'rgba(0, 0, 0, 0)',
-    paddingLeft: 16,
-    paddingRight: 16,
+    paddingLeft: 8,
+    paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
     margin: 2,
@@ -25,7 +23,39 @@ export default {
     Text: {
       alignItems: 'stretch',
       fontSize: fontSizeButton,
+      fontWeight: '500',
       color: black,
+      margin: 5,
+    },
+  },
+  'HyperlinkButton[size=mini]': {
+    height: 30,
+    Text: {
+      fontSize: fontSizeButton - 4,
+    },
+  },
+  'HyperlinkButton[size=small]': {
+    height: 36,
+    Text: {
+      fontSize: fontSizeButton - 2,
+    },
+  },
+  'HyperlinkButton[size=medium]': {
+    height: 42,
+    Text: {
+      fontSize: fontSizeButton,
+    },
+  },
+  'HyperlinkButton[size=large]': {
+    height: 48,
+    Text: {
+      fontSize: fontSizeButton + 2,
+    },
+  },
+  'HyperlinkButton[size=big]': {
+    height: 54,
+    Text: {
+      fontSize: fontSizeButton + 4,
     },
   },
   'HyperlinkButton[disabled=true]': {
@@ -33,5 +63,8 @@ export default {
   },
   'HyperlinkButton[disabled=false]': {
     opacity: 1,
+  },
+  'HyperlinkButton[loading=true]': {
+
   },
 };
