@@ -50,7 +50,7 @@ Theme.registerTheme('dark', drakTheme);
 class Examples extends Component {
   render() {
     return (
-      <ThemeProvider theme={'light'}>
+      <ThemeProvider theme={'dark'}>
         <Screen>
           <Text>Hello World</Text>
         </Screen>
