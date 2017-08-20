@@ -68,8 +68,9 @@ class CheckBox extends PureComponent {
   }
 }
 
-CheckBox.CheckMark = CheckMark;
 CheckBox.propTypes = propTypes;
 CheckBox.defaultProps = defaultProps;
+
+CheckBox.CheckMark = CheckMark;
 
 export default withStyles('CheckBox', mapStyleToProps)(CheckBox);
