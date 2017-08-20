@@ -1,7 +1,7 @@
 ---
 title: ActivityIndicator
 ---
-Come soon
+Indicate that something is ongoing
 
 ## 示例
 

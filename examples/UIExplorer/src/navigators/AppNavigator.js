@@ -85,7 +85,12 @@ const stackNavigatorConfig = {
     },
     headerLeft: (
       <HyperlinkButton
-        style={{ paddingLeft: 0, paddingRight: 0 }}
+        style={{
+          paddingLeft: 0,
+          paddingRight: 0,
+          width: APPBAR_HEIGHT,
+          height: APPBAR_HEIGHT,
+        }}
         onPress={() => {
           setTimeout(() => {
             navigation.goBack();

@@ -28,7 +28,7 @@ class HomeScreen extends Component {
         data: [
           {
             title: 'ActivityIndicator',
-            description: 'Come soon',
+            description: 'Indicate that something is ongoing',
             routeName: 'ActivityIndicatorExample',
           },
           {
