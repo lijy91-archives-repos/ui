@@ -28,6 +28,7 @@ export default {
     height: 20,
     borderRadius: 10,
     Text: {
+      lineHeight: 20,
       fontSize: fontSizeBody,
     },
   },
