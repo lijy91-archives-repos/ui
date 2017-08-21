@@ -1,7 +1,13 @@
+import {
+  transparent,
+  textPrimary,
+  textSecondary,
+} from './colors';
+
 export default {
   CheckBox: {
     flexDirection: 'row',
-    activeOpacity: 1,
+    activeOpacity: 0.8,
     alignItems: 'center',
     CheckMark: {
       margin: 3,
@@ -9,22 +15,27 @@ export default {
       height: 18,
       borderRadius: 2,
       borderWidth: 2,
-      borderColor: 'rgb(33, 33, 33)',
+      borderColor: textPrimary,
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    Text: {
+      color: textPrimary,
     },
   },
   'CheckBox[checked=true]': {
     CheckMark: {
-      backgroundColor: 'rgb(33, 33, 33)',
+      borderWidth: 0,
+      backgroundColor: textPrimary,
     },
   },
   'CheckBox[checked=false]': {
     CheckMark: {
-      backgroundColor: 'rgba(0, 0, 0, 0)',
+      borderColor: textSecondary,
+      backgroundColor: transparent,
     },
   },
   'CheckBox[disabled=true]': {
-    opacity: 0.26,
+    opacity: 0.4,
   },
 };

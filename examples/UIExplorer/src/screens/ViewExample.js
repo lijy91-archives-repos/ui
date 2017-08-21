@@ -11,7 +11,17 @@ class ViewExample extends Component {
     return (
       <Screen>
         <SimplePageHead>
-          <Text>Come soon</Text>
+          <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 300,
+              height: 100,
+              backgroundColor: '#ffffff',
+            }}
+          >
+            <Text>300 X 100</Text>
+          </View>
         </SimplePageHead>
         <View>
           <Text>Come soon</Text>

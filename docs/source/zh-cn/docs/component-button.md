@@ -1,7 +1,7 @@
 ---
 title: Button
 ---
-Flat and outline buttons
+平面和线框按钮
 
 ## 示例
 

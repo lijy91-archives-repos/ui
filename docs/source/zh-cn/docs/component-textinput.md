@@ -1,7 +1,7 @@
 ---
 title: TextInput
 ---
-Single and multi-line text edit controls
+单行和多行文本编辑控件
 
 ## 示例
 

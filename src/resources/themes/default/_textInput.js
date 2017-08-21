@@ -1,6 +1,7 @@
 import {
   white,
-  gray,
+  textPrimary,
+  textHint,
 } from './colors';
 import {
   fontSizeBody,
@@ -11,10 +12,10 @@ export default {
     height: 36,
     paddingLeft: 10,
     paddingRight: 10,
-    color: 'rgb(33, 33, 33)',
+    color: textPrimary,
     fontSize: fontSizeBody,
-    selectionColor: 'rgb(33, 33, 33)',
-    placeholderTextColor: gray,
+    selectionColor: textPrimary,
+    placeholderTextColor: textHint,
     backgroundColor: white,
   },
 };

@@ -1,7 +1,7 @@
 ---
 title: CheckBox
 ---
-Multi-selection controls
+多选控件
 
 ## 示例
 

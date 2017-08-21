@@ -1,7 +1,7 @@
 ---
 title: HyperlinkButton
 ---
-Like hyperlink buttons
+超链接按钮
 
 ## 示例
 

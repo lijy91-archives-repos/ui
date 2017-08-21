@@ -10,7 +10,7 @@ import {
 
 export default {
   Button: {
-    activeOpacity: 0.65,
+    activeOpacity: 0.8,
     backgroundColor: themePrimary,
     paddingLeft: 8,
     paddingRight: 8,
@@ -99,6 +99,6 @@ export default {
     opacity: 1,
   },
   'Button[loading=true]': {
-
+    opacity: 0.4,
   },
 };

@@ -1,7 +1,7 @@
 ---
 title: ActivityIndicator
 ---
-Indicate that something is ongoing
+指示某些活动正在进行
 
 ## 示例
 

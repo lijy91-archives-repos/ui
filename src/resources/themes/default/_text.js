@@ -1,10 +1,15 @@
 import {
+  transparent,
+  textSecondary,
+} from './colors';
+import {
   fontSizeBody,
 } from './dimens';
 
 export default {
   Text: {
-    backgroundColor: 'transparent',
+    backgroundColor: transparent,
+    color: textSecondary,
     fontSize: fontSizeBody,
   },
 };

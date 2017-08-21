@@ -1,7 +1,7 @@
 ---
 title: Switch
 ---
-On off switches
+开关控件
 
 ## 示例
 

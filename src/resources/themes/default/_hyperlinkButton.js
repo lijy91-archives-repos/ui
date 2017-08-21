@@ -1,5 +1,6 @@
 import {
-  black,
+  transparent,
+  textPrimary,
 } from './colors';
 import {
   fontSizeButton,
@@ -7,8 +8,8 @@ import {
 
 export default {
   HyperlinkButton: {
-    activeOpacity: 0.65,
-    backgroundColor: 'rgba(0, 0, 0, 0)',
+    activeOpacity: 0.8,
+    backgroundColor: transparent,
     paddingLeft: 8,
     paddingRight: 8,
     paddingTop: 0,
@@ -24,7 +25,7 @@ export default {
       alignItems: 'stretch',
       fontSize: fontSizeButton,
       fontWeight: '500',
-      color: black,
+      color: textPrimary,
       margin: 5,
     },
   },
@@ -65,6 +66,6 @@ export default {
     opacity: 1,
   },
   'HyperlinkButton[loading=true]': {
-
+    opacity: 0.4,
   },
 };

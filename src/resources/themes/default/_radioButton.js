@@ -1,7 +1,13 @@
+import {
+  transparent,
+  textPrimary,
+  textSecondary,
+} from './colors';
+
 export default {
   RadioButton: {
     flexDirection: 'row',
-    activeOpacity: 1,
+    activeOpacity: 0.8,
     alignItems: 'center',
     OuterCircle: {
       margin: 2,
@@ -9,34 +15,37 @@ export default {
       height: 20,
       borderRadius: 50,
       borderWidth: 2,
-      borderColor: 'rgba(0, 0, 0, 0.87)',
+      borderColor: textPrimary,
       alignItems: 'center',
       justifyContent: 'center',
       InnerCircle: {
         width: 10,
         height: 10,
         borderRadius: 5,
-        backgroundColor: 'rgba(0, 0, 0, 0.87)',
+        backgroundColor: textPrimary,
       },
+    },
+    Text: {
+      color: textPrimary,
     },
   },
   'RadioButton[checked=true]': {
     OuterCircle: {
-      borderColor: 'rgba(0, 0, 0, 0.87)',
+      borderColor: textPrimary,
       InnerCircle: {
-        borderColor: 'rgba(0, 0, 0, 0.87)',
+        borderColor: textPrimary,
       },
     },
   },
   'RadioButton[checked=false]': {
     OuterCircle: {
-      borderColor: 'rgba(0, 0, 0, 0.54)',
+      borderColor: textSecondary,
       InnerCircle: {
-        backgroundColor: 'rgba(0, 0, 0, 0)',
+        backgroundColor: transparent,
       },
     },
   },
   'RadioButton[disabled=true]': {
-    opacity: 0.26,
+    opacity: 0.38,
   },
 };

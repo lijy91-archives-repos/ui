@@ -1,19 +1,20 @@
 import {
   white,
   black,
+  themePrimary,
 } from './colors';
 
 export default {
   Switch: {
-    width: 34,
-    height: 20,
-    margin: 3,
+    width: 50,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
     activeOpacity: 1,
     Background: {
       borderRadius: 50,
+      width: 34,
       height: 14,
-      marginTop: 3,
-      marginBottom: 3,
     },
     Knob: {
       position: 'absolute',
@@ -31,11 +32,11 @@ export default {
   },
   'Switch[checked=true]': {
     Background: {
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      backgroundColor: 'rgba(0, 0, 0, 0.54)',
     },
     Knob: {
-      right: 0,
-      backgroundColor: 'rgb(33, 33, 33)',
+      right: 8,
+      backgroundColor: themePrimary,
     },
   },
   'Switch[checked=false]': {
@@ -43,11 +44,11 @@ export default {
       backgroundColor: 'rgba(0, 0, 0, 0.38)',
     },
     Knob: {
-      left: 0,
+      left: 8,
       backgroundColor: white,
     },
   },
   'Switch[disabled=true]': {
-    opacity: 0.26,
+    opacity: 0.4,
   },
 };

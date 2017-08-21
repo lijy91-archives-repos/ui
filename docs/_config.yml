@@ -1,4 +1,4 @@
-title: blankapp-ui
+title: BlankApp UI
 subtitle: ""
 description: ""
 author: Jianying.Li
@@ -25,15 +25,15 @@ highlight:
 disqus_shortname:
 google_analytics:
 fb_admins:
-algolia:
-  en:
-    api_key:
-    index_name:
-  zh-tw:
-    api_key:
-    index_name:
-  zh-cn:
-    api_key:
-    index_name:
+# algolia:
+#   en:
+#     api_key:
+#     index_name:
+#   zh-tw:
+#     api_key:
+#     index_name:
+#   zh-cn:
+#     api_key:
+#     index_name:
 twitter: lijy91
-github: lijy91
+github: blankapp/ui

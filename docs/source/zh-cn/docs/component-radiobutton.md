@@ -1,7 +1,7 @@
 ---
 title: RadioButton
 ---
-Single selection controls
+单选控件
 
 ## 示例
 

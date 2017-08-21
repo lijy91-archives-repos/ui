@@ -1,7 +1,7 @@
 ---
 title: Card
 ---
-Various card layout styles
+各种卡片布局样式
 
 ## 示例
 
