@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import _ from 'lodash';
@@ -53,7 +54,10 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
       resolveStyle(props, context) {
         const { themeStyle, parentStyle } = context;
         let { style } = props;
-        if (!style) {
+
+        if (typeof style === 'number') {
+          style = StyleSheet.flatten(style);
+        } else if (!style) {
           style = {};
         }
 

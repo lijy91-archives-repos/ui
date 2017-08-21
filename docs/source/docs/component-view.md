@@ -6,7 +6,9 @@ Coming soon
 ## Examples
 
 ```jsx
-<View />
+<View>
+  ...
+</View>
 ```
 
 ## API
