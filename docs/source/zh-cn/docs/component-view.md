@@ -13,12 +13,4 @@ Coming soon
 
 ## API
 
-### 属性
-名称 | 描述 | 类型 | 可选值 | 默认值
---- | --- | --- | --- | ---
-`-` | - | - | - | -
-
-### 事件
-名称 | 描述
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/view.html

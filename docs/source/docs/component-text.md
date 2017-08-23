@@ -11,12 +11,4 @@ Single and multi-line text display controls
 
 ## API
 
-### Props
-Name | Description | Type | Optional value | Default
---- | --- | --- | --- | ---
-`-` | - | - | - | -
-
-### Events
-Name | Description
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/text.html

@@ -1,7 +1,7 @@
 ---
 title: Subtitle
 ---
-Coming soon
+副标题文本显示控件
 
 ## 示例
 
@@ -11,12 +11,4 @@ Coming soon
 
 ## API
 
-### 属性
-名称 | 描述 | 类型 | 可选值 | 默认值
---- | --- | --- | --- | ---
-`-` | - | - | - | -
-
-### 事件
-名称 | 描述
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/text.html

@@ -1,7 +1,7 @@
 ---
 title: Subtitle
 ---
-Coming soon
+Subtitle text display controls
 
 ## Examples
 
@@ -11,12 +11,4 @@ Coming soon
 
 ## API
 
-### Props
-Name | Description | Type | Optional value | Default
---- | --- | --- | --- | ---
-`-` | - | - | - | -
-
-### Events
-Name | Description
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/text.html

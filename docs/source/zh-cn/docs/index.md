@@ -1,7 +1,6 @@
 ---
 title: 概述
 ---
-
 欢迎使用 `BlankApp UI`，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看[问题解答](troubleshooting.html)中的解答，或者在 [GitHub](https://github.com/blankapp/ui/issues) 上提问。
 
 ## 简介
@@ -13,10 +12,11 @@ title: 概述
 ### 必备条件
 开始之前确保你已安装：
 
-- 已安装 [Yarn](https://yarnpkg.com/) (与 [Node.js](https://nodejs.org/) 一起安装)
+- 已安装 [Yarn](https://yarnpkg.com/)
 - 已安装 [React Native](https://facebook.github.io/react-native/)
 
 ### 安装
+
 创建一个新的 React Native 项目：
 
 ```bash
@@ -24,13 +24,14 @@ $ react-native init HelloWorld
 $ cd HelloWorld
 ```
 
-在您的项目中安装并链接 `@blankapp/ui` ：
+安装 `@blankapp/ui` 并链接到您的项目中：
 
-``` bash
+```bash
 $ yarn add @blankapp/ui
 ```
 
-### 设置主题
+现在，只需将以下内容复制到 React Native 项目的index.ios.js文件：
+
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
@@ -62,7 +63,7 @@ class Examples extends Component {
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
 
-### 启动
+### Run the new app
 
 1. **Running on Android**:
 

@@ -11,14 +11,22 @@ Various card layout styles
 </Card>
 ```
 
+## Variations
+
+### Rounded
+
+```jsx
+<Card
+  rounded
+>
+  ...
+</Card>
+```
+
 ## API
 
 ### Props
+
 Name | Description | Type | Optional value | Default
 --- | --- | --- | --- | ---
 `rounded` | - | bool | - | `false`
-
-### Events
-Name | Description
---- | ---
-`-` | -

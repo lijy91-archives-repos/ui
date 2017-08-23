@@ -13,12 +13,4 @@ Coming soon
 
 ## API
 
-### Props
-Name | Description | Type | Optional value | Default
---- | --- | --- | --- | ---
-`-` | - | - | - | -
-
-### Events
-Name | Description
---- | ---
-`-` | -
+Based on https://facebook.github.io/react-native/docs/view.html
