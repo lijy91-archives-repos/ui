@@ -1,32 +1,35 @@
 # @blankapp/ui
 
-## 简介
+## Introduction
 
-基于 React Native 的跨平台移动应用 UI 组件库，使您能够轻松构建专业的 React Native 应用程序。
+Come soon
 
-## 快速开始
+## Quick Start
 
-### 必备条件
-开始之前确保你已安装：
+### Prerequisites
 
-- 已安装 [Yarn](https://yarnpkg.com/) (与 [Node.js](https://nodejs.org/) 一起安装)
-- 已安装 [React Native](https://facebook.github.io/react-native/)
+Before starting make sure you have:
 
-### 安装
-创建一个新的 React Native 项目：
+- Installed [Yarn](https://yarnpkg.com/)
+- Installed [React Native](https://facebook.github.io/react-native/)
+
+### Installation
+
+Create a new React Native App:
 
 ```bash
 $ react-native init HelloWorld
 $ cd HelloWorld
 ```
 
-在您的项目中安装并链接 `@blankapp/ui` ：
+Install @blankapp/ui and link in your project:
 
-``` bash
+```bash
 $ yarn add @blankapp/ui
 ```
 
-### 设置主题
+Now, simply copy the following to your index.ios.js file of React Native project:
+
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
@@ -58,7 +61,7 @@ class Examples extends Component {
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
 
-### 启动
+### Run the new app
 
 1. **Running on Android**:
 
@@ -77,7 +80,7 @@ AppRegistry.registerComponent('Examples', () => Examples);
 ```
 MIT License
 
-Copyright (c) 2017 JianyingLi
+Copyright (c) 2017 JianyingLi <lijy91@foxmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
