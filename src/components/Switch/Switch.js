@@ -7,10 +7,12 @@ import Background from './Background';
 import Knob from './Knob';
 
 const propTypes = {
+  disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
 };
 const defaultProps = {
+  disabled: false,
   checked: false,
   onCheckedChange: undefined,
 };

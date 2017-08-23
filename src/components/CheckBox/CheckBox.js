@@ -16,12 +16,14 @@ const propTypes = {
     PropTypes.element,
   ]),
   text: PropTypes.string,
+  disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
 };
 const defaultProps = {
   children: null,
   text: '',
+  disabled: false,
   checked: false,
   onCheckedChange: undefined,
 };

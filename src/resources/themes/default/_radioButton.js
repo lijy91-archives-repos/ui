@@ -10,7 +10,7 @@ export default {
     activeOpacity: 0.8,
     alignItems: 'center',
     OuterCircle: {
-      margin: 2,
+      margin: 4,
       width: 20,
       height: 20,
       borderRadius: 50,
@@ -29,6 +29,9 @@ export default {
       color: textPrimary,
     },
   },
+  'RadioButton[disabled=true]': {
+    opacity: 0.4,
+  },
   'RadioButton[checked=true]': {
     OuterCircle: {
       borderColor: textPrimary,
@@ -44,8 +47,5 @@ export default {
         backgroundColor: transparent,
       },
     },
-  },
-  'RadioButton[disabled=true]': {
-    opacity: 0.38,
   },
 };

@@ -30,6 +30,9 @@ export default {
       elevation: 4,
     },
   },
+  'Switch[disabled=true]': {
+    opacity: 0.4,
+  },
   'Switch[checked=true]': {
     Background: {
       backgroundColor: 'rgba(0, 0, 0, 0.54)',
@@ -47,8 +50,5 @@ export default {
       left: 8,
       backgroundColor: white,
     },
-  },
-  'Switch[disabled=true]': {
-    opacity: 0.4,
   },
 };

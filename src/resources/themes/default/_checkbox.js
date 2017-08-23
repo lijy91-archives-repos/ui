@@ -10,7 +10,7 @@ export default {
     activeOpacity: 0.8,
     alignItems: 'center',
     CheckMark: {
-      margin: 3,
+      margin: 4,
       width: 18,
       height: 18,
       borderRadius: 2,
@@ -23,6 +23,9 @@ export default {
       color: textPrimary,
     },
   },
+  'CheckBox[disabled=true]': {
+    opacity: 0.4,
+  },
   'CheckBox[checked=true]': {
     CheckMark: {
       borderWidth: 0,
@@ -34,8 +37,5 @@ export default {
       borderColor: textSecondary,
       backgroundColor: transparent,
     },
-  },
-  'CheckBox[disabled=true]': {
-    opacity: 0.4,
   },
 };

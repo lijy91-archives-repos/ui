@@ -14,7 +14,7 @@ export default {
     paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
-    margin: 2,
+    margin: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -26,8 +26,14 @@ export default {
       fontSize: fontSizeButton,
       fontWeight: '500',
       color: textPrimary,
-      margin: 5,
+      margin: 4,
     },
+  },
+  'HyperlinkButton[disabled=true]': {
+    opacity: 0.4,
+  },
+  'HyperlinkButton[loading=true]': {
+    opacity: 0.4,
   },
   'HyperlinkButton[size=mini]': {
     height: 30,
@@ -58,14 +64,5 @@ export default {
     Text: {
       fontSize: fontSizeButton + 4,
     },
-  },
-  'HyperlinkButton[disabled=true]': {
-    opacity: 0.4,
-  },
-  'HyperlinkButton[disabled=false]': {
-    opacity: 1,
-  },
-  'HyperlinkButton[loading=true]': {
-    opacity: 0.4,
   },
 };

@@ -10,8 +10,10 @@ import {
 export default {
   TextInput: {
     height: 36,
-    paddingLeft: 10,
+    paddingTop: 0,
     paddingRight: 10,
+    paddingBottom: 0,
+    paddingLeft: 10,
     color: textPrimary,
     fontSize: fontSizeBody,
     selectionColor: textPrimary,

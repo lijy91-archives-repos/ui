@@ -16,7 +16,7 @@ export default {
     paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
-    margin: 2,
+    marginRight: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -51,6 +51,12 @@ export default {
     Text: {
       color: themeAccent,
     },
+  },
+  'Button[disabled=true]': {
+    opacity: 0.4,
+  },
+  'Button[loading=true]': {
+    opacity: 0.4,
   },
   'Button[size=mini]': {
     height: 30,
@@ -90,15 +96,6 @@ export default {
   },
   'Button[fluid=true]': {
     flex: 1,
-    margin: 0,
-  },
-  'Button[disabled=true]': {
-    opacity: 0.4,
-  },
-  'Button[disabled=false]': {
-    opacity: 1,
-  },
-  'Button[loading=true]': {
-    opacity: 0.4,
+    marginRight: 0,
   },
 };

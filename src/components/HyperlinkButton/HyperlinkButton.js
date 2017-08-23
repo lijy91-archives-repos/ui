@@ -8,12 +8,15 @@ import Text from '../Text';
 const propTypes = {
   ...RNTouchableOpacity.propTypes,
   text: PropTypes.string,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
 };
 const defaultProps = {
   text: '',
-  size: 'medium',
+  disabled: false,
   loading: false,
+  size: 'medium',
 };
 const mapStyleToProps = [
   'activeOpacity',

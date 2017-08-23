@@ -10,12 +10,9 @@ const mapStyleToProps = [
 
 class TextInput extends PureComponent {
   render() {
-    const props = {
-      ...this.props,
-    };
     return (
       <RNTextInput
-        {...props}
+        {...this.props}
         underlineColorAndroid={'rgba(0, 0, 0, 0)'}
       />
     );
