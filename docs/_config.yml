@@ -22,8 +22,8 @@ highlight:
   enable: true
   line_number: false
 
-disqus_shortname:
-google_analytics:
+disqus_shortname: blankapp
+google_analytics: UA-61561013-1
 fb_admins:
 # algolia:
 #   en:
