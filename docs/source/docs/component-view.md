@@ -1,7 +1,7 @@
 ---
 title: View
 ---
-Coming soon
+A special view that can contain other views
 
 ## Examples
 

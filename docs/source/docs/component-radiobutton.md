@@ -7,8 +7,8 @@ Single selection controls
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} />
-  <RadioButton text={'Option2'} />
+  <RadioButton text={'RadioButton'} value={'1'} checked />
+  <RadioButton text={'RadioButton'} value={'2'} />
 </RadioButton.Group>
 ```
 
@@ -18,8 +18,8 @@ Single selection controls
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} disabled />
-  <RadioButton text={'Option2'} disabled/>
+  <RadioButton text={'RadioButton'} value={'1'} disabled />
+  <RadioButton text={'RadioButton'} value={'2'} disabled />
 </RadioButton.Group>
 ```
 
@@ -27,8 +27,8 @@ Single selection controls
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} checked />
-  <RadioButton text={'Option2'} />
+  <RadioButton text={'RadioButton'} value={'1'} checked />
+  <RadioButton text={'RadioButton'} value={'2'} />
 </RadioButton.Group>
 ```
 

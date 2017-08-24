@@ -1,7 +1,7 @@
 ---
 title: Divider
 ---
-Coming soon
+用于分隔不同的内容部分
 
 ## 示例
 

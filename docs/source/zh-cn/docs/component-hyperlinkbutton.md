@@ -28,11 +28,11 @@ title: HyperlinkButton
 ### 尺寸
 
 ```jsx
-<HyperlinkButton text={'HyperlinkButton'} size={'mini'} />
-<HyperlinkButton text={'HyperlinkButton'} size={'small'} />
-<HyperlinkButton text={'HyperlinkButton'} size={'medium'} />
-<HyperlinkButton text={'HyperlinkButton'} size={'large'} />
-<HyperlinkButton text={'HyperlinkButton'} size={'big'} />
+<HyperlinkButton text={'MINI'} size={'mini'} />
+<HyperlinkButton text={'SMALL'} size={'small'} />
+<HyperlinkButton text={'MEDIUM'} size={'medium'} />
+<HyperlinkButton text={'LARGE'} size={'large'} />
+<HyperlinkButton text={'BIG'} size={'big'} />
 ```
 
 ## API

@@ -15,6 +15,7 @@ On off switches
 
 ```jsx
 <Switch disabled />
+<Switch disabled checked />
 ```
 
 ### Checked

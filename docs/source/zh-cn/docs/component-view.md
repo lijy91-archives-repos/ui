@@ -1,7 +1,7 @@
 ---
 title: View
 ---
-Coming soon
+一个特殊的视图，可以包含其他视图
 
 ## 示例
 

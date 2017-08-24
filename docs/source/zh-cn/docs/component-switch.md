@@ -15,6 +15,7 @@ title: Switch
 
 ```jsx
 <Switch disabled />
+<Switch disabled checked />
 ```
 
 ### 选中

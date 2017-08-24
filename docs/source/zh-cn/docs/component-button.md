@@ -44,17 +44,17 @@ title: Button
 ### 尺寸
 
 ```jsx
-<Button text={'Button'} size={'mini'} />
-<Button text={'Button'} size={'small'} />
-<Button text={'Button'} size={'medium'} />
-<Button text={'Button'} size={'large'} />
-<Button text={'Button'} size={'big'} />
+<Button size={'mini'} text={'MINI'} />
+<Button size={'small'} text={'SMALL'} />
+<Button size={'medium'} text={'MEDIUM'} />
+<Button size={'large'} text={'LARGE'} />
+<Button size={'big'} text={'BIG'} />
 ```
 
 ### 圆角
 
 ```jsx
-<Button text={'Button'} rounded />
+<Button text={'Button'} rounded={false} />
 ```
 
 ### 流式布局

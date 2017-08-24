@@ -1,7 +1,7 @@
 ---
 title: Divider
 ---
-Coming soon
+Used to separate distinct content sections
 
 ## Examples
 

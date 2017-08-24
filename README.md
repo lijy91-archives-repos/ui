@@ -40,7 +40,7 @@ import Theme, {
 } from '@blankapp/ui';
 
 const drakTheme = {
-  'View': { backgroundColor: 'black' },
+  'Screen': { backgroundColor: 'black' },
   'Text': { color: 'white' },
 };
 
