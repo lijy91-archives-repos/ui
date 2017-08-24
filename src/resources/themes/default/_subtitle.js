@@ -11,5 +11,6 @@ export default {
     color: textSecondary,
     backgroundColor: transparent,
     fontSize: fontSizeSubheading,
+    marginBottom: 2,
   },
 };

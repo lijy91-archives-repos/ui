@@ -21,6 +21,8 @@ export default {
     justifyContent: 'center',
     alignItems: 'center',
     ActivityIndicator: {
+      marginLeft: 5,
+      color: white,
     },
     Text: {
       alignItems: 'stretch',
@@ -32,14 +34,23 @@ export default {
   },
   'Button[styleName=flat-primary]': {
     backgroundColor: themePrimary,
+    ActivityIndicator: {
+      color: white,
+    },
   },
   'Button[styleName=flat-accent]': {
     backgroundColor: themeAccent,
+    ActivityIndicator: {
+      color: white,
+    },
   },
   'Button[styleName=outline-primary]': {
     borderWidth: 1,
     borderColor: themePrimary,
     backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themePrimary,
+    },
     Text: {
       color: themePrimary,
     },
@@ -48,6 +59,9 @@ export default {
     borderWidth: 1,
     borderColor: themeAccent,
     backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themeAccent,
+    },
     Text: {
       color: themeAccent,
     },

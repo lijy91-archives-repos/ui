@@ -14,12 +14,13 @@ export default {
     paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
-    margin: 4,
+    marginRight: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     ActivityIndicator: {
-      marginRight: 5,
+      marginLeft: 5,
+      color: textPrimary,
     },
     Text: {
       alignItems: 'stretch',

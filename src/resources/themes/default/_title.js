@@ -11,5 +11,6 @@ export default {
     color: textPrimary,
     fontSize: fontSizeTitle,
     fontWeight: '500',
+    marginBottom: 4,
   },
 };
