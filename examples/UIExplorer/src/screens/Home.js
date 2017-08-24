@@ -53,7 +53,7 @@ class HomeScreen extends Component {
           },
           {
             title: 'Divider',
-            description: 'Come soon',
+            description: 'Used to separate distinct content sections',
             routeName: 'DividerExample',
           },
           {
@@ -68,7 +68,7 @@ class HomeScreen extends Component {
           },
           {
             title: 'Subtitle',
-            description: 'Come soon',
+            description: 'Subtitle text display controls',
             routeName: 'SubtitleExample',
           },
           {
@@ -88,12 +88,12 @@ class HomeScreen extends Component {
           },
           {
             title: 'Title',
-            description: 'Come soon',
+            description: 'Title text display controls',
             routeName: 'TitleExample',
           },
           {
             title: 'View',
-            description: 'Come soon',
+            description: 'A special view that can contain other views',
             routeName: 'ViewExample',
           },
         ],
@@ -129,9 +129,9 @@ class HomeScreen extends Component {
       <View
         style={{
           paddingTop: 5,
-          paddingRight: 10,
+          paddingRight: 15,
           paddingBottom: 0,
-          paddingLeft: 10,
+          paddingLeft: 15,
         }}
       >
         <Text
@@ -146,6 +146,7 @@ class HomeScreen extends Component {
   renderItem({ item }) {
     return (
       <TouchableOpacity
+        activeOpacity={0.8}
         onPress={() => this.pressItem(item)}
       >
         <View

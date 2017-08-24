@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Screen, Text, View } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class TextExample extends Component {
   static navigationOptions = {
@@ -13,9 +14,9 @@ class TextExample extends Component {
         <SimplePageHead>
           <Text>Text</Text>
         </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <SimplePageBody>
+          <Text>No demos</Text>
+        </SimplePageBody>
       </Screen>
     );
   }

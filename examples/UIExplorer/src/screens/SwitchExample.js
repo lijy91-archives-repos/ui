@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Screen, Text, Switch, View } from '@blankapp/ui';
+import { Screen, Title, Subtitle, Switch, View } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class SwitchExample extends Component {
   static navigationOptions = {
@@ -11,8 +12,7 @@ class SwitchExample extends Component {
     super(props);
 
     this.state = {
-      switch1Checked: true,
-      switch2Checked: false,
+      switch1Checked: false,
     };
   }
 
@@ -29,9 +29,30 @@ class SwitchExample extends Component {
             }}
           />
         </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <SimplePageBody>
+          <Title>States</Title>
+          <View>
+            <Subtitle>Disabled</Subtitle>
+            <View
+              style={{
+                flexWrap: 'wrap',
+                flexDirection: 'row',
+              }}
+            >
+              <Switch disabled />
+              <Switch disabled checked />
+            </View>
+            <Subtitle>Checked</Subtitle>
+            <View
+              style={{
+                flexWrap: 'wrap',
+                flexDirection: 'row',
+              }}
+            >
+              <Switch checked />
+            </View>
+          </View>
+        </SimplePageBody>
       </Screen>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Screen, TextInput, View, Text } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class TextInputExample extends Component {
   static navigationOptions = {
@@ -18,9 +19,9 @@ class TextInputExample extends Component {
             placeholder="TextInput"
           />
         </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <SimplePageBody>
+          <Text>No demos</Text>
+        </SimplePageBody>
       </Screen>
     );
   }

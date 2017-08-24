@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { ScrollView } from 'react-native';
 import {
   Screen,
   Badge,
   View,
-  Text,
+  Title,
+  Subtitle,
 } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
+import SimplePageBody from '../components/SimplePageBody';
 
 class BadgeExample extends Component {
   static navigationOptions = {
@@ -15,18 +18,40 @@ class BadgeExample extends Component {
   render() {
     return (
       <Screen>
-        <SimplePageHead>
-          <Badge
-            style={{
-              alignSelf: 'center',
-            }}
-            type={'text'}
-            text={'99+'}
-          />
-        </SimplePageHead>
-        <View>
-          <Text>Come soon</Text>
-        </View>
+        <ScrollView>
+          <SimplePageHead>
+            <Badge
+              style={{
+                alignSelf: 'center',
+              }}
+              type={'text'}
+              text={'99+'}
+            />
+          </SimplePageHead>
+          <SimplePageBody>
+            <Title>Types</Title>
+            <View>
+              <Subtitle>Dot</Subtitle>
+              <View
+                style={{
+                  flexWrap: 'wrap',
+                  flexDirection: 'row',
+                }}
+              >
+                <Badge type={'dot'} />
+              </View>
+              <Subtitle>Text</Subtitle>
+              <View
+                style={{
+                  flexWrap: 'wrap',
+                  flexDirection: 'row',
+                }}
+              >
+                <Badge type={'text'} text={'99+'} />
+              </View>
+            </View>
+          </SimplePageBody>
+        </ScrollView>
       </Screen>
     );
   }
