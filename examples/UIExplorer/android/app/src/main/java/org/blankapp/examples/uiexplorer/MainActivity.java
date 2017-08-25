@@ -1,4 +1,4 @@
-package org.blankapp.uiexplorer;
+package org.blankapp.examples.uiexplorer;
 
 import com.facebook.react.ReactActivity;
 
