@@ -73,30 +73,35 @@ export default {
     opacity: 0.4,
   },
   'Button[size=mini]': {
+    minWidth: 30,
     height: 30,
     Text: {
       fontSize: fontSizeButton - 4,
     },
   },
   'Button[size=small]': {
+    minWidth: 36,
     height: 36,
     Text: {
       fontSize: fontSizeButton - 2,
     },
   },
   'Button[size=medium]': {
+    minWidth: 42,
     height: 42,
     Text: {
       fontSize: fontSizeButton,
     },
   },
   'Button[size=large]': {
+    minWidth: 48,
     height: 48,
     Text: {
       fontSize: fontSizeButton + 2,
     },
   },
   'Button[size=big]': {
+    minWidth: 54,
     height: 54,
     Text: {
       fontSize: fontSizeButton + 4,
@@ -107,6 +112,14 @@ export default {
   },
   'Button[rounded=false]': {
     borderRadius: 0,
+  },
+  'Button[circular=true]': {
+    borderRadius: 54,
+    paddingLeft: 4,
+    paddingRight: 4,
+    Text: {
+      margin: 0,
+    },
   },
   'Button[fluid=true]': {
     flex: 1,

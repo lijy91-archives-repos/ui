@@ -92,6 +92,15 @@ class ButtonExample extends Component {
               >
                 <Button text={'Button'} rounded={false} />
               </View>
+              <Subtitle>Circular</Subtitle>
+              <View
+                style={{
+                  flexWrap: 'wrap',
+                  flexDirection: 'row',
+                }}
+              >
+                <Button text={'OK'} circular />
+              </View>
               <Subtitle>Fluid</Subtitle>
               <View
                 style={{

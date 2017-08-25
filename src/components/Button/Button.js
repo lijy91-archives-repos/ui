@@ -13,6 +13,7 @@ const propTypes = {
   loading: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
   rounded: PropTypes.bool,
+  circular: PropTypes.bool,
   fluid: PropTypes.bool,
 };
 const defaultProps = {
@@ -21,6 +22,7 @@ const defaultProps = {
   loading: false,
   size: 'medium',
   rounded: true,
+  circular: false,
   fluid: false,
 };
 const mapStyleToProps = [
