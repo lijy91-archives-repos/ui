@@ -1,5 +1,7 @@
 # @blankapp/ui
 
+[![Join the chat at https://gitter.im/blankapp/ui](https://badges.gitter.im/blankapp/ui.svg)](https://gitter.im/blankapp/ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
 [![Gitter][gitter-image]][gitter-url]
