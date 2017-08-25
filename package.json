@@ -1,6 +1,6 @@
 {
   "name": "@blankapp/ui",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A React Native UI Kit.",
   "main": "index.js",
   "scripts": {
