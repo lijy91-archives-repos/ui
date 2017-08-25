@@ -2,18 +2,20 @@
 
 [![Build Status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
+[![Gitter][gitter-image]][gitter-url]
 
-[npm-image]: https://badge.fury.io/gh/blankapp%2Fui.svg
+[npm-image]: https://img.shields.io/npm/v/@blankapp/ui.svg
 [npm-url]: https://www.npmjs.com/package/@blankapp/ui
 [travis-image]: https://travis-ci.org/blankapp/ui.svg?branch=master
 [travis-url]: https://travis-ci.org/blankapp/ui
+[gitter-image]: https://img.shields.io/gitter/room/blankapp/ui.svg
+[gitter-url]: https://gitter.im/blankapp-ui/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link
 
 ## Introduction
 
-*Highly customizable and theming components for React Native.*
+*You must sign up for private packages*
 
 Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on [our live demo](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr).
-
 
 ## Quick Start
 
