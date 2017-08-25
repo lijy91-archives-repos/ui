@@ -81,6 +81,7 @@ Name | Description | Type | Optional value | Default
 `loading` | - | bool | - | `false`
 `size` | - | enum | `mini`, `small`, `medium`, `large`, `big` | `medium`
 `rounded` | - | bool | - | `false`
+`circular` | - | bool | - | `false`
 `fluid` | - | bool | - | `false`
 
 ### Events

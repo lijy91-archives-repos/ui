@@ -5,7 +5,7 @@ Come soon
 
 ## Introduction
 
-Come soon
+Highly customizable and theming components for React Native, A live demo is [here]().
 
 ## Quick Start
 
@@ -66,14 +66,14 @@ AppRegistry.registerComponent('Examples', () => Examples);
 
 ### Run the new app
 
-1. **Running on Android**:
+- Running on Android:
 
   ```
   $ react-native run-android
   $ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
   ```
 
-2. **Running on iOS:**
+- Running on iOS:
 
   ```
   $ react-native run-ios

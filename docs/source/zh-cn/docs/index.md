@@ -5,7 +5,7 @@ title: 概述
 
 ## 简介
 
-基于 React Native 的跨平台移动应用 UI 组件库，使您能够轻松构建专业的 React Native 应用程序。
+高可定制和主题化 React Native 组件库， 在[这里]()查看在线演示。
 
 ## 快速开始
 
@@ -63,17 +63,17 @@ class Examples extends Component {
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
 
-### Run the new app
+### 运行程序
 
-1. **Running on Android**:
+- 在 Android 上运行：
 
-  ```
+  ```bash
   $ react-native run-android
   $ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
   ```
 
-2. **Running on iOS:**
+- 在 iOS 上运行：
 
-  ```
+  ```bash
   $ react-native run-ios
   ```

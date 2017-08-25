@@ -81,6 +81,7 @@ title: Button
 `loading` | 是否处于加载中状态 | bool | - | `false`
 `size` | 按钮的大小 | enum | `mini`, </br>`small`, </br>`medium`, </br>`large`, </br>`big` | `medium`
 `rounded` | 是否为圆角按钮 | bool | - | `false`
+`circular` | 是否为圆形按钮 | bool | - | `false`
 `fluid` | - | bool | - | `false`
 
 ### 事件

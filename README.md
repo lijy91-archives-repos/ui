@@ -1,8 +1,16 @@
 # @blankapp/ui
 
+[![Build Status][travis-image]][travis-url]
+[![npm version][npm-image]][npm-url]
+
+[npm-image]: https://badge.fury.io/gh/blankapp%2Fui.svg
+[npm-url]: https://www.npmjs.com/package/@blankapp/ui
+[travis-image]: https://travis-ci.org/blankapp/ui.svg?branch=master
+[travis-url]: https://travis-ci.org/blankapp/ui
+
 ## Introduction
 
-Come soon
+Highly customizable and theming components for React Native
 
 ## Quick Start
 
