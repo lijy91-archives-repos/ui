@@ -5,7 +5,7 @@ title: 概述
 
 ## 简介
 
-高可定制和主题化 React Native 组件库， 在[这里]()查看在线演示。
+高可定制和主题化 React Native 组件库， 在[这里](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr)查看在线演示。
 
 ## 快速开始
 
