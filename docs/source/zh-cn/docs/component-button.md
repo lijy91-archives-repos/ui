@@ -57,6 +57,12 @@ title: Button
 <Button text={'Button'} rounded={false} />
 ```
 
+### 圆形
+
+```jsx
+<Button text={'OK'} circular />
+```
+
 ### 流式布局
 
 ```jsx

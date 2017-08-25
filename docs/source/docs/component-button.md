@@ -57,6 +57,12 @@ Flat and outline buttons
 <Button text={'Button'} rounded={false} />
 ```
 
+### Circular
+
+```jsx
+<Button text={'OK'} circular />
+```
+
 ### Fluid
 
 ```jsx
