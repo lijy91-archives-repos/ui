@@ -15,7 +15,8 @@ Highly customizable and theming components for React Native, A live demo is [her
 - Friendly API design
 
 ### Live Demo
-<iframe src="https://appetize.io/embed/q0wwt188mh3pxxxz1rzf1d4pgr?device=nexus5&scale=75&autoplay=true&orientation=portrait&deviceColor=black&language=en" width="300px" height="597px" frameborder="0" scrolling="no"></iframe>
+
+<iframe src="https://appetize.io/embed/q0wwt188mh3pxxxz1rzf1d4pgr?device=nexus5&scale=75&autoplay=false&orientation=portrait&deviceColor=black&language=en" width="300px" height="597px" frameborder="0" scrolling="no"></iframe>
 
 ## Quick Start
 

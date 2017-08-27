@@ -2,7 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
-[![npm][npm-dm-image]](npm-dm-url)
+[![npm][npm-dm-image]][npm-dm-url]
 [![Join the chat at https://gitter.im/blankapp/ui][gitter-image]][gitter-url]
 
 [npm-image]: https://img.shields.io/npm/v/@blankapp/ui.svg
@@ -26,10 +26,6 @@ Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on [our li
 - Global theming, a variety of style selector implementation
 - Rich base components
 - Friendly API design
-
-### Live Demo
-
-<iframe src="https://appetize.io/embed/q0wwt188mh3pxxxz1rzf1d4pgr?device=nexus5&scale=75&autoplay=true&orientation=portrait&deviceColor=black&language=en" width="300px" height="597px" frameborder="0" scrolling="no"></iframe>
 
 ## Quick Start
 
