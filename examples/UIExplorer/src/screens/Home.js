@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, SectionList } from 'react-native';
+import { TouchableOpacity, ListView } from 'react-native';
 import {
   Screen,
   View,
@@ -8,6 +8,7 @@ import {
   Subtitle,
   Divider,
 } from '@blankapp/ui';
+import _ from 'lodash';
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -18,6 +19,11 @@ class HomeScreen extends Component {
   constructor(props) {
     super(props);
     this.navigation = this.props.navigation;
+
+    const ds = new ListView.DataSource({
+      rowHasChanged: (r1, r2) => r1 !== r2,
+      sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
+    });
 
     this.renderSectionHeader = this.renderSectionHeader.bind(this);
     this.renderItem = this.renderItem.bind(this);
@@ -115,8 +121,14 @@ class HomeScreen extends Component {
       },
     ];
 
+    const dataBlob = {};
+    _.each(sectionsSource, (section) => {
+      const sectionID = section.title;
+      dataBlob[sectionID] = section.data;
+    });
+
     this.state = {
-      sectionsSource,
+      dataSource: ds.cloneWithRowsAndSections(dataBlob),
     };
   }
 
@@ -167,13 +179,16 @@ class HomeScreen extends Component {
   render() {
     return (
       <Screen>
-        <SectionList
-          ItemSeparatorComponent={() => <Divider />}
-          renderSectionHeader={this.renderSectionHeader}
-          renderItem={this.renderItem}
-          sections={this.state.sectionsSource}
-          keyExtractor={item => item.routeName}
-          initialNumToRender={20}
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={rowData => this.renderItem({ item: rowData })}
+          renderSectionHeader={(sectionData, sectionID) => {
+            const section = {
+              title: sectionID,
+            };
+            return this.renderSectionHeader({ section });
+          }}
+          renderSeparator={() => <Divider />}
         />
       </Screen>
     );

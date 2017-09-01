@@ -43,7 +43,7 @@ gulp.task('screenshot:clean', function() {
 });
 
 gulp.task('screenshot:rev', ['screenshot:clean'], function() {
-  return gulp.src('public/themes/screenshots/*.png')
+  return gulp.src('public/assets/images/*.png')
     .pipe(gulpRev())
     .pipe(gulp.dest(dirs.screenshots))
     .pipe(gulpRev.manifest())
@@ -57,7 +57,7 @@ gulp.task('screenshot:revreplace', ['screenshot:rev'], function() {
     .pipe(gulpRevCollector({
       replaceReved: true,
       dirReplacements: {
-        '/themes/screenshots': destDir
+        '/assets/images': destDir
       }
     }))
     .pipe(gulpCheerio(function($, file) {

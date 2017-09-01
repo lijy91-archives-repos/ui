@@ -16,7 +16,17 @@ title: 概述
 
 ### Live Demo
 
-<iframe src="https://appetize.io/embed/q0wwt188mh3pxxxz1rzf1d4pgr?device=nexus5&scale=75&autoplay=false&orientation=portrait&deviceColor=black&language=en" width="300px" height="597px" frameborder="0" scrolling="no"></iframe>
+<div style="width: 400px; height: 795px; transform: scale(0.75);">
+  <img style="width: 400px; height: 795px;" src="/assets/images/nexus5_black.png" />
+  <iframe
+    style="position: absolute; overflow: hidden; z-index: 1000; background-color: rgb(0, 0, 0); width: 360px; height: 640px; top: 67px; left: 20px;"
+    src="https://blankapp.github.io/examples/UIExplorer/index.html"
+    width="300px"
+    height="597px"
+    frameborder="0"
+    scrolling="no"
+  />
+</div>
 
 ## 快速开始
 
