@@ -16,10 +16,9 @@ var rename = require('rename');
 
 var dirs = {
   public: 'public',
-  screenshots: 'public/build/screenshots'
 };
 
-gulp.task('useref', ['screenshot'], function() {
+gulp.task('useref', [], function() {
   var assets = gulpUseRef.assets({
     searchPath: 'public'
   });
@@ -37,78 +36,6 @@ gulp.task('useref', ['screenshot'], function() {
     }))
     .pipe(gulp.dest('public'));
 });
-
-gulp.task('screenshot:clean', function() {
-  return del([dirs.screenshots + '/**/*']);
-});
-
-gulp.task('screenshot:rev', ['screenshot:clean'], function() {
-  return gulp.src('public/assets/images/*.png')
-    .pipe(gulpRev())
-    .pipe(gulp.dest(dirs.screenshots))
-    .pipe(gulpRev.manifest())
-    .pipe(gulp.dest(dirs.screenshots));
-});
-
-gulp.task('screenshot:revreplace', ['screenshot:rev'], function() {
-  var destDir = '/build/screenshots';
-
-  return gulp.src([dirs.screenshots + '/rev-manifest.json', 'public/themes/index.html'])
-    .pipe(gulpRevCollector({
-      replaceReved: true,
-      dirReplacements: {
-        '/assets/images': destDir
-      }
-    }))
-    .pipe(gulpCheerio(function($, file) {
-      $('img.plugin-screenshot-img.lazyload').each(function() {
-        var img = $(this);
-        var src = img.attr('data-src') || img.attr('data-org');
-        if (!src) return;
-
-        var jpgPath = replaceBackSlash(rename(src, {extname: '.jpg'}));
-        var jpg2xPath = replaceBackSlash(rename(jpgPath, {suffix: '@2x'}));
-        var srcset = [
-          jpgPath,
-          jpg2xPath + ' 2x'
-        ].join(', ');
-
-        img.attr('data-src', jpgPath)
-          .attr('data-srcset', srcset)
-          .attr('data-org', src);
-      });
-    }))
-    .pipe(gulp.dest('public/themes'));
-});
-
-gulp.task('screenshot:resize', ['screenshot:rev'], function() {
-  return gulp.src(dirs.screenshots + '/*.png')
-    .pipe(gulpResponsive({
-      '*.png': [
-        {
-          width: '50%',
-          rename: {
-            extname: '.jpg'
-          }
-        },
-        {
-          rename: {
-            suffix: '@2x',
-            extname: '.jpg'
-          }
-        }
-      ]
-    }, {
-      progressive: true,
-      format: 'jpeg',
-      quality: 70,
-      stats: false
-    }))
-    .pipe(gulp.dest(dirs.screenshots));
-});
-
-gulp.task('screenshot', ['screenshot:rev', 'screenshot:resize', 'screenshot:revreplace']);
-gulp.task('default', ['useref', 'screenshot']);
 
 function replaceBackSlash(str) {
   return str.replace(/\\/g, '/');
