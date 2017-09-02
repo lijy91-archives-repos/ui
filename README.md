@@ -18,7 +18,7 @@
 
 *Highly customizable and theming components for React Native*
 
-Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on [our live demo](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr).
+Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on [our live demo](https://blankapp.github.io/examples/UIExplorer/index.html).
 
 ### Features
 

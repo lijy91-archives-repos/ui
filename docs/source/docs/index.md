@@ -5,7 +5,7 @@ Come soon
 
 ## Introduction
 
-Highly customizable and theming components for React Native, A live demo is [here](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr).
+Highly customizable and theming components for React Native, A live demo is [here](https://blankapp.github.io/examples/UIExplorer/index.html).
 
 ### Features
 
@@ -16,7 +16,7 @@ Highly customizable and theming components for React Native, A live demo is [her
 
 ### Live Demo
 
-<div style="width: 400px; height: 795px; transform: scale(0.75);">
+<div style="width: 400px; height: 795px; transform: scale(0.75); transform-origin: 0 0;">
   <img style="width: 400px; height: 795px;" src="/assets/images/nexus5_black.png" />
   <iframe
     style="position: absolute; overflow: hidden; z-index: 1000; background-color: rgb(0, 0, 0); width: 360px; height: 640px; top: 67px; left: 20px;"

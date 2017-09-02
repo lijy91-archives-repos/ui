@@ -5,7 +5,7 @@ title: 概述
 
 ## 简介
 
-高可定制和主题化的 React Native 组件库， 在[这里](https://appetize.io/app/q0wwt188mh3pxxxz1rzf1d4pgr)查看在线演示。
+高可定制和主题化的 React Native 组件库， 在[这里](https://blankapp.github.io/examples/UIExplorer/index.html)查看在线演示。
 
 ### 特性
 
@@ -16,7 +16,7 @@ title: 概述
 
 ### Live Demo
 
-<div style="width: 400px; height: 795px; transform: scale(0.75);">
+<div style="width: 400px; height: 795px; transform: scale(0.75); transform-origin: 0 0;">
   <img style="width: 400px; height: 795px;" src="/assets/images/nexus5_black.png" />
   <iframe
     style="position: absolute; overflow: hidden; z-index: 1000; background-color: rgb(0, 0, 0); width: 360px; height: 640px; top: 67px; left: 20px;"
