@@ -14,6 +14,7 @@
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.1",
+    "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
     "babel-preset-react-app": "^3.0.2",
     "babel-runtime": "6.26.0",
@@ -89,6 +90,7 @@
     "env": {
       "production": {
         "plugins": [
+          "dev-expression",
           "transform-react-remove-prop-types"
         ]
       }

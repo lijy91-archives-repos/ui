@@ -5,9 +5,11 @@ title: RadioButton
 
 ## 示例
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/radiobutton-example" scrolling="no" /></div>
+
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} />
+  <RadioButton text={'Option1'} checked />
   <RadioButton text={'Option2'} />
 </RadioButton.Group>
 ```
@@ -16,19 +18,22 @@ title: RadioButton
 
 ### 禁用
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/radiobutton-state-disabled" scrolling="no" /></div>
+
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} disabled />
-  <RadioButton text={'Option2'} disabled/>
+  <RadioButton text={'Option1'} value={'1'} disabled />
+  <RadioButton text={'Option2'} value={'2'} disabled />
 </RadioButton.Group>
 ```
 
 ### 选中
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/radiobutton-state-checked" scrolling="no" /></div>
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} checked />
-  <RadioButton text={'Option2'} />
+  <RadioButton text={'Option1'} value={'1'} checked />
+  <RadioButton text={'Option2'} value={'2'} />
 </RadioButton.Group>
 ```
 

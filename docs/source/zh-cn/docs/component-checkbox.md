@@ -5,6 +5,8 @@ title: CheckBox
 
 ## 示例
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/checkbox-example" scrolling="no" /></div>
+
 ```jsx
 <CheckBox text={'CheckBox'} />
 ```
@@ -13,11 +15,15 @@ title: CheckBox
 
 ### 禁用
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/checkbox-state-disabled" scrolling="no" /></div>
+
 ```jsx
 <CheckBox text={'CheckBox'} disabled />
 ```
 
 ### 选中
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/checkbox-state-checked" scrolling="no" /></div>
 
 ```jsx
 <CheckBox text={'CheckBox'} checked />

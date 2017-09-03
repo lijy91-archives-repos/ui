@@ -5,6 +5,8 @@ Flat and outline buttons
 
 ## Examples
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-example" scrolling="no" /></div>
+
 ```jsx
 <Button text={'Button'} />
 ```
@@ -13,12 +15,16 @@ Flat and outline buttons
 
 ### Flat
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-types-flat" scrolling="no" /></div>
+
 ```jsx
 <Button styleName={'flat-primary'} text={'Button'} />
 <Button styleName={'flat-accent'} text={'Button'} />
 ```
 
 ### Outline
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-types-outline" scrolling="no" /></div>
 
 ```jsx
 <Button styleName={'outline-primary'} text={'Button'} />
@@ -29,11 +35,15 @@ Flat and outline buttons
 
 ### Disabled
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-state-disabled" scrolling="no" /></div>
+
 ```jsx
 <Button text={'Button'} disabled />
 ```
 
 ### Loading
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-state-loading" scrolling="no" /></div>
 
 ```jsx
 <Button text={'Button'} loading />
@@ -42,6 +52,8 @@ Flat and outline buttons
 ## Variations
 
 ### Size
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-size" scrolling="no" /></div>
 
 ```jsx
 <Button size={'mini'} text={'MINI'} />
@@ -53,17 +65,23 @@ Flat and outline buttons
 
 ### Rounded
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-rounded" scrolling="no" /></div>
+
 ```jsx
 <Button text={'Button'} rounded={false} />
 ```
 
 ### Circular
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-circular" scrolling="no" /></div>
+
 ```jsx
 <Button text={'OK'} circular />
 ```
 
 ### Fluid
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-fluid" scrolling="no" /></div>
 
 ```jsx
 <Button text={'Button'} fluid />

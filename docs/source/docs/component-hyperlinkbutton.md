@@ -5,6 +5,8 @@ Like hyperlink buttons
 
 ## Examples
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-example" scrolling="no" /></div>
+
 ```jsx
 <HyperlinkButton text={'HyperlinkButton'} />
 ```
@@ -13,11 +15,15 @@ Like hyperlink buttons
 
 ### Disabled
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-state-disabled" scrolling="no" /></div>
+
 ```jsx
 <HyperlinkButton text={'HyperlinkButton'} disabled />
 ```
 
 ### Loading
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-state-loading" scrolling="no" /></div>
 
 ```jsx
 <HyperlinkButton text={'HyperlinkButton'} loading />
@@ -26,6 +32,8 @@ Like hyperlink buttons
 ## Variations
 
 ### Size
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-variations-size" scrolling="no" /></div>
 
 ```jsx
 <HyperlinkButton text={'MINI'} size={'mini'} />

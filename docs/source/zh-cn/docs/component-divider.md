@@ -5,6 +5,8 @@ title: Divider
 
 ## 示例
 
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/divider-example" scrolling="no" /></div>
+
 ```jsx
 <Divider />
 ```
@@ -12,6 +14,8 @@ title: Divider
 ## 变化形式
 
 ### 方向
+
+<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/divider-variations-orientation" scrolling="no" /></div>
 
 ```jsx
 <Divider orientation={'vertical'} />
