@@ -10,7 +10,13 @@ class BadgeTypesText extends Component {
   render() {
     return (
       <DemoScreen>
-        <Badge type={'text'} text={'99+'} />
+        <Badge
+          style={{
+            alignSelf: 'center',
+          }}
+          type={'text'}
+          text={'99+'}
+        />
       </DemoScreen>
     );
   }

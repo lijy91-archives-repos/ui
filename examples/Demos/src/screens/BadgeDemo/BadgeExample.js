@@ -10,7 +10,12 @@ class BadgeExample extends Component {
   render() {
     return (
       <DemoScreen>
-        <Badge text={'99+'} />
+        <Badge
+          style={{
+            alignSelf: 'center',
+          }}
+          text={'99+'}
+        />
       </DemoScreen>
     );
   }

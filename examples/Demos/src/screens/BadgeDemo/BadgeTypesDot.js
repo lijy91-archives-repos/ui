@@ -10,7 +10,12 @@ class BadgeTypesDot extends Component {
   render() {
     return (
       <DemoScreen>
-        <Badge type={'dot'} />
+        <Badge
+          style={{
+            alignSelf: 'center',
+          }}
+          type={'dot'}
+        />
       </DemoScreen>
     );
   }
