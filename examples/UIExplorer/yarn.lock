@@ -4,7 +4,7 @@
 
 "@blankapp/ui@git+https://github.com/blankapp/ui.git":
   version "1.0.1"
-  resolved "git+https://github.com/blankapp/ui.git#10e1622d8b6422dd46ca9d8e77f2502de525d40a"
+  resolved "git+https://github.com/blankapp/ui.git#d843629d56ab787759124632225b591d5b798b6c"
   dependencies:
     hoist-non-react-statics "^2.3.0"
     lodash "^4.17.4"
