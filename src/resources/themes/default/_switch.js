@@ -28,6 +28,7 @@ export default {
       shadowColor: black,
       shadowRadius: 4,
       elevation: 4,
+      top: 5,
     },
   },
   'Switch[disabled=true]': {
