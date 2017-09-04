@@ -53,7 +53,7 @@ class CheckBox extends PureComponent {
       onCheckedChange = () => {};
     }
 
-    const checkMarkImage = <RNImage source={imageIcCheckmarkChecked} />;
+    const checkMarkImage = <RNImage style={{ width: '100%', height: '100%' }} source={imageIcCheckmarkChecked} />;
     return (
       <RNTouchableOpacity
         {...this.props}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Screen, TextInput, View, Text } from '@blankapp/ui';
+import { Screen, TextInput, Text } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
 import SimplePageBody from '../components/SimplePageBody';
 
