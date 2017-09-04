@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Screen, View, Text, Subtitle } from '@blankapp/ui';
+import { Screen, Text, Subtitle } from '@blankapp/ui';
 import SimplePageHead from '../components/SimplePageHead';
 import SimplePageBody from '../components/SimplePageBody';
 

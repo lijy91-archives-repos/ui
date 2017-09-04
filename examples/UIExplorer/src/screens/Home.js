@@ -188,7 +188,7 @@ class HomeScreen extends Component {
             };
             return this.renderSectionHeader({ section });
           }}
-          renderSeparator={() => <Divider />}
+          renderSeparator={(sectionID, rowID) => <Divider key={`${sectionID}-${rowID}`} />}
         />
       </Screen>
     );

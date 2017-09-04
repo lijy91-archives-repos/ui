@@ -4,7 +4,6 @@ import {
   Screen,
   View,
   Button,
-  Text,
   Title,
   Subtitle,
 } from '@blankapp/ui';
