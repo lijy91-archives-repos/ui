@@ -1,13 +1,9 @@
 {
   "name": "@blankapp/ui",
   "version": "1.0.2",
-  "description": "You must sign up for private packages",
+  "description": "Highly customizable and theming components for React Native",
   "main": "index.js",
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "lint": "node node_modules/eslint/bin/eslint.js src/**"
-  },
+  "repository": "git@github.com:blankapp/ui.git",
   "keywords": [
     "react-native",
     "ios",
@@ -16,8 +12,13 @@
     "native-components",
     "ui-components"
   ],
-  "author": "JianyingLi",
+  "author": "JianyingLi <lijy91@foxmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "lint": "node node_modules/eslint/bin/eslint.js src/**"
+  },
   "dependencies": {
     "hoist-non-react-statics": "^2.3.0",
     "lodash": "^4.17.4",

@@ -1,11 +1,11 @@
 ---
 title: Overview
 ---
-Come soon
+Welcome to use `@blankapp/ui`, This documentation will help you get started.  If you encounter any problems when using, have a look at the [troubleshooting guide](troubleshooting.html), or raise an issue on [GitHub](https://github.com/blankapp/ui/issues).
 
 ## Introduction
 
-Highly customizable and theming components for React Native, A live demo is [here](https://blankapp.github.io/examples/UIExplorer/index.html).
+Highly customizable and theming components for React Native, A live demo is [here](/examples/UIExplorer/index.html).
 
 ### Features
 
@@ -57,23 +57,16 @@ Now, simply copy the following to your index.ios.js file of React Native project
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import Theme, {
+import {
   ThemeProvider,
   Screen,
   Text,
 } from '@blankapp/ui';
 
-const drakTheme = {
-  'Screen': { backgroundColor: 'black' },
-  'Text': { color: 'white' },
-};
-
-Theme.registerTheme('dark', drakTheme);
-
 class Examples extends Component {
   render() {
     return (
-      <ThemeProvider theme={'dark'}>
+      <ThemeProvider>
         <Screen>
           <Text>Hello World</Text>
         </Screen>
@@ -89,13 +82,13 @@ AppRegistry.registerComponent('Examples', () => Examples);
 
 - Running on Android:
 
-  ```
-  $ react-native run-android
-  $ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
-  ```
+```bash
+$ react-native run-android
+$ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
+```
 
 - Running on iOS:
 
-  ```
-  $ react-native run-ios
-  ```
+```bash
+$ react-native run-ios
+```

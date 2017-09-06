@@ -1,5 +1,6 @@
 menu:
   docs: Docs
+  practices: Practices
   news: News
 
 index:
@@ -39,3 +40,7 @@ sidebar:
     miscellaneous: Miscellaneous
     troubleshooting: Troubleshooting
     contributing: Contributing
+  practices:
+    development: Development
+    template: Template
+    continuous-integration: Continuous Integration

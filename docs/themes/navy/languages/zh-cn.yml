@@ -1,5 +1,6 @@
 menu:
   docs: 文档
+  practices: 实践
   news: 新闻
 
 index:
@@ -41,3 +42,7 @@ sidebar:
     miscellaneous: 其他
     troubleshooting: 问题解答
     contributing: 贡献
+  practices:
+    development: 开发
+    template: 模板
+    continuous-integration: 持续集成

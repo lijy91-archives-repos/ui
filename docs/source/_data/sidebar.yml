@@ -23,3 +23,7 @@ docs:
   miscellaneous:
     troubleshooting: troubleshooting.html
     contributing: contributing.html
+practices:
+  development:
+    template: template.html
+    continuous-integration: continuous-integration.html

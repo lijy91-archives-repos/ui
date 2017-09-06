@@ -1,3 +1,7 @@
+<p>
+  <img width="200" height="200" src="http://blankapp.org/logo.png" alt="@blankapp/ui">
+</p>
+
 # @blankapp/ui
 
 [![Build Status][travis-image]][travis-url]
@@ -56,23 +60,16 @@ Now, simply copy the following to your index.ios.js file of React Native project
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import Theme, {
+import {
   ThemeProvider,
   Screen,
   Text,
 } from '@blankapp/ui';
 
-const drakTheme = {
-  'Screen': { backgroundColor: 'black' },
-  'Text': { color: 'white' },
-};
-
-Theme.registerTheme('dark', drakTheme);
-
 class Examples extends Component {
   render() {
     return (
-      <ThemeProvider theme={'dark'}>
+      <ThemeProvider>
         <Screen>
           <Text>Hello World</Text>
         </Screen>
@@ -101,7 +98,7 @@ AppRegistry.registerComponent('Examples', () => Examples);
 
 ## Discussion
 
-If you have any suggestions or questions about this project, you can discuss it by [Gitter](https://gitter.im/blankapp/ui?utm_source=share-link&utm_medium=link&utm_campaign=share-link) or my private wechat.
+If you have any suggestions or questions about this project, you can discuss it by [Gitter](https://gitter.im/blankapp/ui) or my private wechat.
 
 ![](https://oeolgl6y5.qnssl.com/topic/ByRafuLR/r1no_q9R.jpg?imageView2/2/w/200)
 
