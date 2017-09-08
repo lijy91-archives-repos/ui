@@ -22,11 +22,11 @@
 
 *Highly customizable and theming components for React Native*
 
-Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on [our live demo](https://blankapp.github.io/examples/UIExplorer/index.html).
+Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on our [live demo](https://blankapp.github.io/examples/UIExplorer/index.html).
 
 ### Features
 
-- Lightly dependent, very little dependent
+- Lightly dependency, very little dependency
 - Global theming, a variety of style selector implementation
 - Rich base components
 - Friendly API design
@@ -83,26 +83,27 @@ AppRegistry.registerComponent('Examples', () => Examples);
 
 ### Run the new app
 
-1. **Running on Android**:
+- Running on Android:
 
-  ```
-  $ react-native run-android
-  $ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
-  ```
+```bash
+$ react-native run-android
+$ adb reverse tcp:8081 tcp:8081   # required to ensure the Android app can
+```
 
-2. **Running on iOS:**
+- Running on iOS:
 
-  ```
-  $ react-native run-ios
-  ```
+```bash
+$ react-native run-ios
+```
 
 ## Discussion
 
 If you have any suggestions or questions about this project, you can discuss it by [Gitter](https://gitter.im/blankapp/ui) or my private wechat.
 
-![](https://oeolgl6y5.qnssl.com/topic/ByRafuLR/r1no_q9R.jpg?imageView2/2/w/200)
+![](http://blankapp.org/assets/images/wechat_qrcode.png)
 
 ## License
+
 ```
 MIT License
 

@@ -9,7 +9,7 @@ Highly customizable and theming components for React Native, A live demo is [her
 
 ### Features
 
-- Lightly dependent, very little dependent
+- Lightly dependency, very little dependency
 - Global theming, a variety of style selector implementation
 - Rich base components
 - Friendly API design
