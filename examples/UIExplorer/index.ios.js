@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import UIExplorer from './src/App';
+import App from './src/App';
 
-AppRegistry.registerComponent('UIExplorer', () => UIExplorer);
+AppRegistry.registerComponent('UIExplorer', () => App);

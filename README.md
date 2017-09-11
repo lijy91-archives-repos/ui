@@ -1,8 +1,6 @@
-<p>
-  <img width="200" height="200" src="http://blankapp.org/logo.png" alt="@blankapp/ui">
-</p>
-
 # @blankapp/ui
+
+<img width="200" height="200" src="http://blankapp.org/logo.png" alt="@blankapp/ui" align="right">
 
 [![Build Status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
@@ -49,7 +47,7 @@ $ react-native init HelloWorld
 $ cd HelloWorld
 ```
 
-Install @blankapp/ui and link in your project:
+Install `@blankapp/ui` and link in your project:
 
 ```bash
 $ yarn add @blankapp/ui
