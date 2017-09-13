@@ -16,6 +16,20 @@
 [gitter-image]: https://img.shields.io/gitter/room/blankapp/ui.svg
 [gitter-url]: https://gitter.im/blankapp/ui?utm_source=share-link&utm_medium=link&utm_campaign=share-link
 
+Table of Contents
+=================
+
+  * [Introduction](#introduction)
+      * [Features](#features)
+  * [Quick Start](#quick-start)
+      * [Prerequisites](#prerequisites)
+      * [Installation](#installation)
+      * [Run the new app](#run-the-new-app)
+  * [Discussion](#discussion)
+  * [License](#license)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ## Introduction
 
 *Highly customizable and theming components for React Native*
