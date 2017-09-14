@@ -26,15 +26,6 @@ class HyperlinkButtonExample extends Component {
             >
               <HyperlinkButton text={'HyperlinkButton'} disabled />
             </View>
-            <Subtitle>Loading</Subtitle>
-            <View
-              style={{
-                flexWrap: 'wrap',
-                flexDirection: 'row',
-              }}
-            >
-              <HyperlinkButton text={'HyperlinkButton'} loading />
-            </View>
           </View>
           <Title>Variations</Title>
           <View>
@@ -43,13 +34,14 @@ class HyperlinkButtonExample extends Component {
               style={{
                 flexWrap: 'wrap',
                 flexDirection: 'row',
+                alignItems: 'center',
               }}
             >
-              <HyperlinkButton text={'MINI'} size={'mini'} />
-              <HyperlinkButton text={'SMALL'} size={'small'} />
-              <HyperlinkButton text={'MEDIUM'} size={'medium'} />
-              <HyperlinkButton text={'LARGE'} size={'large'} />
-              <HyperlinkButton text={'BIG'} size={'big'} />
+              <HyperlinkButton style={{ marginRight: 8 }} text={'MINI'} size={'mini'} />
+              <HyperlinkButton style={{ marginRight: 8 }} text={'SMALL'} size={'small'} />
+              <HyperlinkButton style={{ marginRight: 8 }} text={'MEDIUM'} size={'medium'} />
+              <HyperlinkButton style={{ marginRight: 8 }} text={'LARGE'} size={'large'} />
+              <HyperlinkButton style={{ marginRight: 8 }} text={'BIG'} size={'big'} />
             </View>
           </View>
         </SimplePageBody>

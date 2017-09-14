@@ -10,30 +10,22 @@ export default {
   HyperlinkButton: {
     activeOpacity: 0.8,
     backgroundColor: transparent,
-    paddingLeft: 8,
-    paddingRight: 8,
     paddingTop: 0,
     paddingBottom: 0,
-    marginRight: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    ActivityIndicator: {
-      marginLeft: 5,
-      color: textPrimary,
-    },
     Text: {
       alignItems: 'stretch',
       fontSize: fontSizeButton,
       fontWeight: '500',
       color: textPrimary,
-      margin: 4,
+      marginTop: 4,
+      marginBottom: 4,
+      textDecorationLine: 'underline',
     },
   },
   'HyperlinkButton[disabled=true]': {
-    opacity: 0.4,
-  },
-  'HyperlinkButton[loading=true]': {
     opacity: 0.4,
   },
   'HyperlinkButton[size=mini]': {

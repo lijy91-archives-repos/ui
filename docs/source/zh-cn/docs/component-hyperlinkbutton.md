@@ -21,14 +21,6 @@ title: HyperlinkButton
 <HyperlinkButton text={'HyperlinkButton'} disabled />
 ```
 
-### 加载中
-
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-state-loading" scrolling="no" /></div>
-
-```jsx
-<HyperlinkButton text={'HyperlinkButton'} loading />
-```
-
 ## 变化形式
 
 ### 尺寸
