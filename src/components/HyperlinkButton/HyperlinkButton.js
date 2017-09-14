@@ -3,20 +3,17 @@ import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
 import withStyles from '../../withStyles';
-import ActivityIndicator from '../ActivityIndicator';
 import Text from '../Text';
 
 const propTypes = {
   ...RNTouchableOpacity.propTypes,
   text: PropTypes.string,
   disabled: PropTypes.bool,
-  loading: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
 };
 const defaultProps = {
   text: '',
   disabled: false,
-  loading: false,
   size: 'medium',
 };
 const mapStyleToProps = [
@@ -29,7 +26,6 @@ class HyperlinkButton extends PureComponent {
       text,
       children,
     } = this.props;
-    const loading = this.props.loading;
 
     if (typeof children === 'string') {
       text = children;
@@ -40,21 +36,10 @@ class HyperlinkButton extends PureComponent {
       children = (<Text>{text}</Text>);
     }
 
-    let activityIndicator;
-    if (loading) {
-      activityIndicator = (
-        <ActivityIndicator
-          animating
-          color={'#ffffff'}
-        />
-      );
-    }
-
     return (
       <RNTouchableOpacity
         {...this.props}
       >
-        {activityIndicator}
         {children}
       </RNTouchableOpacity>
     );

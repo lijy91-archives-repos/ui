@@ -21,14 +21,6 @@ Like hyperlink buttons
 <HyperlinkButton text={'HyperlinkButton'} disabled />
 ```
 
-### Loading
-
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-state-loading" scrolling="no" /></div>
-
-```jsx
-<HyperlinkButton text={'HyperlinkButton'} loading />
-```
-
 ## Variations
 
 ### Size

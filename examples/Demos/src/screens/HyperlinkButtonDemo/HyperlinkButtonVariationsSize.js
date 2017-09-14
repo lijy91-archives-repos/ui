@@ -10,11 +10,11 @@ class HyperlinkButtonVariationsSize extends Component {
   render() {
     return (
       <DemoScreen>
-        <HyperlinkButton size={'mini'} text={'MINI'} />
-        <HyperlinkButton size={'small'} text={'SMALL'} />
-        <HyperlinkButton size={'medium'} text={'MEDIUM'} />
-        <HyperlinkButton size={'large'} text={'LARGE'} />
-        <HyperlinkButton size={'big'} text={'BIG'} />
+        <HyperlinkButton style={{ marginRight: 8 }} size={'mini'} text={'MINI'} />
+        <HyperlinkButton style={{ marginRight: 8 }} size={'small'} text={'SMALL'} />
+        <HyperlinkButton style={{ marginRight: 8 }} size={'medium'} text={'MEDIUM'} />
+        <HyperlinkButton style={{ marginRight: 8 }} size={'large'} text={'LARGE'} />
+        <HyperlinkButton style={{ marginRight: 8 }} size={'big'} text={'BIG'} />
       </DemoScreen>
     );
   }
