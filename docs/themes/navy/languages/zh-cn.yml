@@ -44,5 +44,6 @@ sidebar:
     contributing: 贡献
   practices:
     development: 开发
-    template: 模板
+    development-environment: 开发环境
+    project-template: 项目模板
     continuous-integration: 持续集成

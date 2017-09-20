@@ -135,7 +135,7 @@ hexo.extend.helper.register('lunr_index', function(data){
 hexo.extend.helper.register('canonical_path_for_nav', function(){
   var path = this.page.canonical_path;
 
-  if (startsWith(path, 'docs/') || startsWith(path, 'api/')){
+  if (startsWith(path, 'docs/') || startsWith(path, 'practices/')){
     return path;
   } else {
     return '';
