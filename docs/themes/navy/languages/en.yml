@@ -42,5 +42,6 @@ sidebar:
     contributing: Contributing
   practices:
     development: Development
-    template: Template
+    development-environment: Development Environment
+    project-template: Project Template
     continuous-integration: Continuous Integration

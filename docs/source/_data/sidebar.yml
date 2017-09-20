@@ -25,5 +25,6 @@ docs:
     contributing: contributing.html
 practices:
   development:
-    template: template.html
+    development-environment: development-environment.html
+    project-template: project-template.html
     continuous-integration: continuous-integration.html
