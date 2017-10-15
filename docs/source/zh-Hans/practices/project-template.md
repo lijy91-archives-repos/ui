@@ -38,7 +38,7 @@ title: 项目模板
 ```bash
 $ react-native init MyApp --template ui-based
 $ cd MyApp
-$ node scripts/cli --init # 请务必执行以完成项目初始化
+$ scripts/init # 请务必执行以完成项目初始化
 ```
 
 ### 运行程序
@@ -60,11 +60,10 @@ $ react-native run-ios
 
 | 名称 | 描述 |
 |---|---|
+| `App.js` | 主应用组件 |
 | `app.json` | - |
-| `index.android.js` | 应用入口文件（Android） |
-| `index.ios.js` | 应用入口文件（iOS） |
+| `index.js` | 应用入口文件 |
 | `package.json` | 构建脚本配置和依赖 |
-| `src/App.js` | 主应用组件 |
 | `src/components` | 公共 UI 组件 |
 | `src/models` | - |
 | `src/modules` | JS 模块或原生模块 |
@@ -81,15 +80,13 @@ $ react-native run-ios
 ```
 .
 ├── __tests__
-│   ├── index.android.js
-│   └── index.ios.js
+│   └── index.js
+├── App.js                              # 主应用组件
 ├── app.json
-├── index.android.js
-├── index.ios.js
+├── index.js
 ├── jest-setup.js
 ├── package.json
 ├── src
-│   ├── App.js                          # 主应用组件
 │   ├── components                      # 公共 UI 组件
 │   │   └── ...
 │   ├── models
