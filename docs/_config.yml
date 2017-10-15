@@ -32,10 +32,10 @@ fb_admins:
 #   en:
 #     api_key:
 #     index_name:
-#   zh-tw:
+#   zh-Hans:
 #     api_key:
 #     index_name:
-#   zh-cn:
+#   zh-Hant:
 #     api_key:
 #     index_name:
 twitter: lijy91
