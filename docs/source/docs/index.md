@@ -78,6 +78,8 @@ class Examples extends Component {
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
 
+***P.S. If you want to start a project quickly, you can use the project template that we prepared for you [react-native-template-ui-based](/zh-Hans/practices/project-template.html).***
+
 ### Run the new app
 
 - Running on Android:

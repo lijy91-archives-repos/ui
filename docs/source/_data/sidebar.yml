@@ -24,6 +24,8 @@ docs:
     troubleshooting: troubleshooting.html
     contributing: contributing.html
 practices:
+  design:
+    marking-and-slicing: marking-and-slicing.html
   development:
     development-environment: development-environment.html
     project-template: project-template.html

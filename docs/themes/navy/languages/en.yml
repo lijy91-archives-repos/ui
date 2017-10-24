@@ -41,6 +41,8 @@ sidebar:
     troubleshooting: Troubleshooting
     contributing: Contributing
   practices:
+    design: Design
+    marking-and-slicing: Marking and slicing
     development: Development
     development-environment: Development Environment
     project-template: Project Template

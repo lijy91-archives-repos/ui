@@ -43,6 +43,8 @@ sidebar:
     troubleshooting: 问题解答
     contributing: 贡献
   practices:
+    design: 设计
+    marking-and-slicing: 标注及切片
     development: 开发
     development-environment: 开发环境
     project-template: 项目模板

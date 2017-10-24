@@ -4,12 +4,13 @@ title: 项目模板
 
 ## 介绍
 
-*一个与 [@blankapp/ui](https://github.com/blankapp/ui) 一起使用的 React Native 模板。*
+*[react-native-template-ui-based](https://github.com/blankapp/react-native-template-ui-based) 是一个与 [@blankapp/ui](https://github.com/blankapp/ui) 一起使用的 React Native 模板。*
 
 ### 特性
 
 - 轻依赖，少量且无原生组件依赖。
 - 项目结构清晰。
+- 多语言支持。
 - 更多...
 
 ### 依赖

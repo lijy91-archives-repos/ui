@@ -9,10 +9,10 @@ title: 概述
 
 ### 特性
 
-- 轻依赖，非常少的依赖
-- 全局主题化，多种样式选择器的实现
-- 丰富的基础组件
-- 友好的 API 设计
+- 轻依赖，非常少的依赖。
+- 全局主题化，多种样式选择器的实现。
+- 丰富的基础组件。
+- 友好的 API 设计。
 
 ### Live Demo
 
@@ -77,6 +77,8 @@ class Examples extends Component {
 
 AppRegistry.registerComponent('Examples', () => Examples);
 ```
+
+***P.S. 如是你想快速开始一个项目，可使用我们为你准备的项目模板 [react-native-template-ui-based](/zh-Hans/practices/project-template.html)。***
 
 ### 运行程序
 
