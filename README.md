@@ -43,6 +43,13 @@ Browse the docs on [blankapp.org](http://blankapp.org/) or try it out on our [li
 - Rich base components
 - Friendly API design
 
+### Live Demo
+
+[![Live Demo][live-demo-image]][live-demo-url]
+
+[live-demo-image]: http://blankapp.org/assets/images/live_demo_screenshot.png
+[live-demo-url]: http://blankapp.org/docs/#Live-Demo
+
 ## Quick Start
 
 ### Prerequisites
