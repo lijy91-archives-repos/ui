@@ -12,7 +12,7 @@ class HyperlinkButtonExample extends Component {
     return (
       <Screen>
         <SimplePageHead>
-          <HyperlinkButton text={'HyperlinkButton'} />
+          <HyperlinkButton text="HyperlinkButton" />
         </SimplePageHead>
         <SimplePageBody>
           <Title>States</Title>
@@ -24,7 +24,7 @@ class HyperlinkButtonExample extends Component {
                 flexDirection: 'row',
               }}
             >
-              <HyperlinkButton text={'HyperlinkButton'} disabled />
+              <HyperlinkButton text="HyperlinkButton" disabled />
             </View>
           </View>
           <Title>Variations</Title>
@@ -37,11 +37,11 @@ class HyperlinkButtonExample extends Component {
                 alignItems: 'center',
               }}
             >
-              <HyperlinkButton style={{ marginRight: 8 }} text={'MINI'} size={'mini'} />
-              <HyperlinkButton style={{ marginRight: 8 }} text={'SMALL'} size={'small'} />
-              <HyperlinkButton style={{ marginRight: 8 }} text={'MEDIUM'} size={'medium'} />
-              <HyperlinkButton style={{ marginRight: 8 }} text={'LARGE'} size={'large'} />
-              <HyperlinkButton style={{ marginRight: 8 }} text={'BIG'} size={'big'} />
+              <HyperlinkButton style={{ marginRight: 8 }} text="MINI" size="mini" />
+              <HyperlinkButton style={{ marginRight: 8 }} text="SMALL" size="small" />
+              <HyperlinkButton style={{ marginRight: 8 }} text="MEDIUM" size="medium" />
+              <HyperlinkButton style={{ marginRight: 8 }} text="LARGE" size="large" />
+              <HyperlinkButton style={{ marginRight: 8 }} text="BIG" size="big" />
             </View>
           </View>
         </SimplePageBody>

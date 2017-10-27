@@ -20,7 +20,7 @@ class ButtonExample extends Component {
       <Screen>
         <ScrollView>
           <SimplePageHead>
-            <Button text={'Button'} />
+            <Button text="Button" />
           </SimplePageHead>
           <SimplePageBody>
             <Title>Types</Title>
@@ -32,8 +32,8 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button styleName={'flat-primary'} text={'Button'} />
-                <Button styleName={'flat-accent'} text={'Button'} />
+                <Button styleName="flat-primary" text="Button" />
+                <Button styleName="flat-accent" text="Button" />
               </View>
               <Subtitle>Outline</Subtitle>
               <View
@@ -42,8 +42,8 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button styleName={'outline-primary'} text={'Button'} />
-                <Button styleName={'outline-accent'} text={'Button'} />
+                <Button styleName="outline-primary" text="Button" />
+                <Button styleName="outline-accent" text="Button" />
               </View>
             </View>
             <Title>States</Title>
@@ -55,7 +55,7 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button text={'Button'} disabled />
+                <Button text="Button" disabled />
               </View>
               <Subtitle>Loading</Subtitle>
               <View
@@ -64,7 +64,7 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button text={'Button'} loading />
+                <Button text="Button" loading />
               </View>
             </View>
             <Title>Variations</Title>
@@ -76,11 +76,11 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button size={'mini'} text={'MINI'} />
-                <Button size={'small'} text={'SMALL'} />
-                <Button size={'medium'} text={'MEDIUM'} />
-                <Button size={'large'} text={'LARGE'} />
-                <Button size={'big'} text={'BIG'} />
+                <Button size="mini" text="MINI" />
+                <Button size="small" text="SMALL" />
+                <Button size="medium" text="MEDIUM" />
+                <Button size="large" text="LARGE" />
+                <Button size="big" text="BIG" />
               </View>
               <Subtitle>Rounded</Subtitle>
               <View
@@ -89,7 +89,7 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button text={'Button'} rounded={false} />
+                <Button text="Button" rounded={false} />
               </View>
               <Subtitle>Circular</Subtitle>
               <View
@@ -98,7 +98,7 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button text={'OK'} circular />
+                <Button text="OK" circular />
               </View>
               <Subtitle>Fluid</Subtitle>
               <View
@@ -107,7 +107,7 @@ class ButtonExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Button text={'Button'} fluid />
+                <Button text="Button" fluid />
               </View>
             </View>
           </SimplePageBody>

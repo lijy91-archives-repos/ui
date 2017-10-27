@@ -150,7 +150,8 @@ class HomeScreen extends Component {
           style={{
             fontWeight: 'bold',
           }}
-        >{section.title}</Text>
+        >{section.title}
+        </Text>
       </View>
     );
   }

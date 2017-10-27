@@ -42,7 +42,7 @@ class DividerExample extends Component {
                   justifyContent: 'center',
                 }}
               >
-                <Divider orientation={'horizontal'} style={{ alignItems: 'center', justifyContent: 'flex-start' }} />
+                <Divider orientation="horizontal" style={{ alignItems: 'center', justifyContent: 'flex-start' }} />
               </View>
               <View
                 style={{
@@ -51,7 +51,7 @@ class DividerExample extends Component {
                   justifyContent: 'center',
                 }}
               >
-                <Divider orientation={'vertical'} />
+                <Divider orientation="vertical" />
               </View>
             </View>
           </View>

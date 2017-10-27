@@ -24,8 +24,8 @@ class BadgeExample extends Component {
               style={{
                 alignSelf: 'center',
               }}
-              type={'text'}
-              text={'99+'}
+              type="text"
+              text="99+"
             />
           </SimplePageHead>
           <SimplePageBody>
@@ -38,7 +38,7 @@ class BadgeExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Badge type={'dot'} />
+                <Badge type="dot" />
               </View>
               <Subtitle>Text</Subtitle>
               <View
@@ -47,7 +47,7 @@ class BadgeExample extends Component {
                   flexDirection: 'row',
                 }}
               >
-                <Badge type={'text'} text={'99+'} />
+                <Badge type="text" text="99+" />
               </View>
             </View>
           </SimplePageBody>

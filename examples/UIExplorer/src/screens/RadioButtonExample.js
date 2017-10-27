@@ -27,13 +27,13 @@ class RadioButtonExample extends Component {
             }}
           >
             <RadioButton
-              text={'RadioButton'}
-              value={'1'}
+              text="RadioButton"
+              value="1"
               checked={this.state.checkedValue === '1'}
             />
             <RadioButton
-              text={'RadioButton'}
-              value={'2'}
+              text="RadioButton"
+              value="2"
               checked={this.state.checkedValue === '2'}
             />
           </RadioButton.Group>
@@ -50,8 +50,8 @@ class RadioButtonExample extends Component {
               }}
             >
               <RadioButton.Group>
-                <RadioButton text={'RadioButton'} value={'1'} disabled />
-                <RadioButton text={'RadioButton'} value={'2'} disabled />
+                <RadioButton text="RadioButton" value="1" disabled />
+                <RadioButton text="RadioButton" value="2" disabled />
               </RadioButton.Group>
             </View>
             <Subtitle>Checked</Subtitle>
@@ -62,8 +62,8 @@ class RadioButtonExample extends Component {
               }}
             >
               <RadioButton.Group>
-                <RadioButton text={'RadioButton'} value={'1'} checked />
-                <RadioButton text={'RadioButton'} value={'2'} />
+                <RadioButton text="RadioButton" value="1" checked />
+                <RadioButton text="RadioButton" value="2" />
               </RadioButton.Group>
             </View>
           </View>

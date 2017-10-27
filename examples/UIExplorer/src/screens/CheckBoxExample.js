@@ -21,7 +21,7 @@ class CheckBoxExample extends Component {
       <Screen>
         <SimplePageHead>
           <CheckBox
-            text={'CheckBox'}
+            text="CheckBox"
             checked={this.state.checkBox1}
             onCheckedChange={checked => this.setState({ checkBox1: checked })}
           />
@@ -36,7 +36,7 @@ class CheckBoxExample extends Component {
                 flexDirection: 'row',
               }}
             >
-              <CheckBox text={'CheckBox'} disabled />
+              <CheckBox text="CheckBox" disabled />
             </View>
             <Subtitle>Checked</Subtitle>
             <View
@@ -45,7 +45,7 @@ class CheckBoxExample extends Component {
                 flexDirection: 'row',
               }}
             >
-              <CheckBox text={'CheckBox'} checked />
+              <CheckBox text="CheckBox" checked />
             </View>
           </View>
         </SimplePageBody>
