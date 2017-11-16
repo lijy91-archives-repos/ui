@@ -12,9 +12,7 @@ class RNTouchableOpacity extends PureComponent {
   componentWillReceiveProps(nextProps) {
     const { opacity } = nextProps.style;
     if (opacity) {
-      setTimeout(() => {
-        this.touchableOpacityRef.setNativeProps({ style: { opacity } });
-      }, 0);
+      this.touchableOpacityRef.setNativeProps({ style: { opacity } });
     }
   }
 
