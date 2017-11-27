@@ -1,6 +1,6 @@
 {
   "name": "@blankapp/ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Highly customizable and theming components for React Native",
   "main": "index.js",
   "repository": "git@github.com:blankapp/ui.git",
