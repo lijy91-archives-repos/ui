@@ -12,7 +12,7 @@ class CheckBoxExample extends Component {
     super(props);
 
     this.state = {
-      checkBox1: true,
+      demoChecked: true,
     };
   }
 
@@ -22,8 +22,8 @@ class CheckBoxExample extends Component {
         <SimplePageHead>
           <CheckBox
             text="CheckBox"
-            checked={this.state.checkBox1}
-            onCheckedChange={checked => this.setState({ checkBox1: checked })}
+            checked={this.state.demoChecked}
+            onCheckedChange={checked => this.setState({ demoChecked: checked })}
           />
         </SimplePageHead>
         <SimplePageBody>

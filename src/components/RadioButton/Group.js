@@ -5,34 +5,24 @@ import { View as RNView } from 'react-native';
 import withStyles from '../../withStyles';
 
 const propTypes = {
-  onCheckedChange: PropTypes.func,
+  checkedValue: PropTypes.string,
+  onChange: PropTypes.func,
 };
 const defaultProps = {
-  onCheckedChange: () => {},
+  checkedValue: undefined,
+  onChange: () => {},
 };
 const childContextTypes = {
   checkedValue: PropTypes.string,
-  onCheckedChange: PropTypes.func,
+  onChange: PropTypes.func,
 };
 
 class Group extends PureComponent {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      checkedValue: undefined,
-    };
-  }
-
   getChildContext() {
+    const { checkedValue, onChange } = this.props;
     return {
-      checkedValue: this.state.checkedValue,
-      onCheckedChange: (checkedValue) => {
-        this.setState({
-          checkedValue,
-        });
-        this.props.onCheckedChange(checkedValue);
-      },
+      checkedValue,
+      onChange,
     };
   }
 

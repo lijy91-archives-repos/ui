@@ -11,7 +11,7 @@ class RadioButtonExample extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkedValue: '1',
+      demoCheckedValue: '1',
     };
   }
 
@@ -20,21 +20,21 @@ class RadioButtonExample extends Component {
       <Screen>
         <SimplePageHead>
           <RadioButton.Group
-            onCheckedChange={(checkedValue) => {
+            onChange={(checkedValue) => {
               this.setState({
-                checkedValue,
+                demoCheckedValue: checkedValue,
               });
             }}
           >
             <RadioButton
               text="RadioButton"
               value="1"
-              checked={this.state.checkedValue === '1'}
+              checked={this.state.demoCheckedValue === '1'}
             />
             <RadioButton
               text="RadioButton"
               value="2"
-              checked={this.state.checkedValue === '2'}
+              checked={this.state.demoCheckedValue === '2'}
             />
           </RadioButton.Group>
 
