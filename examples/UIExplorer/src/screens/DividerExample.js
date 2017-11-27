@@ -12,7 +12,6 @@ class DividerExample extends Component {
     return (
       <Screen>
         <SimplePageHead>
-
           <View
             style={{
               width: 300,

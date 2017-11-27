@@ -15,6 +15,7 @@ const propTypes = {
   value: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   checked: PropTypes.bool,
+  onCheckedChange: PropTypes.func,
 };
 const defaultProps = {
   CircleComponent: undefined,
@@ -22,10 +23,11 @@ const defaultProps = {
   text: '',
   disabled: false,
   checked: false,
+  onCheckedChange: undefined,
 };
 const contextTypes = {
   checkedValue: PropTypes.string,
-  onCheckedChange: PropTypes.func,
+  onChange: PropTypes.func,
 };
 const mapStyleToProps = [
   'activeOpacity',
@@ -33,17 +35,21 @@ const mapStyleToProps = [
 
 class RadioButton extends PureComponent {
   render() {
+    const props = this.props;
     let {
       CircleComponent,
       children,
       text,
-    } = this.props;
+      checked,
+    } = props;
     const {
       value,
-    } = this.props;
+      onCheckedChange,
+    } = props;
 
     const {
-      onCheckedChange,
+      checkedValue,
+      onChange,
     } = this.context;
 
     if (!CircleComponent) {
@@ -63,11 +69,20 @@ class RadioButton extends PureComponent {
       children = (<Text>{text}</Text>);
     }
 
+    if (checkedValue === value) {
+      checked = true;
+    }
+
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...props}
         onPress={() => {
-          onCheckedChange(value);
+          if (onCheckedChange) {
+            onCheckedChange(!checked);
+          }
+          if (onChange) {
+            onChange(value);
+          }
         }}
       >
         {CircleComponent}
