@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
+import { StyleSheet, Image as RNImage, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
-import { Image as RNImage } from 'react-native';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
 import withStyles from '../../withStyles';
@@ -16,6 +16,7 @@ const propTypes = {
     PropTypes.element,
   ]),
   text: PropTypes.string,
+  textStyle: RNText.propTypes.style,
   disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
@@ -23,6 +24,7 @@ const propTypes = {
 const defaultProps = {
   children: null,
   text: '',
+  textStyle: undefined,
   disabled: false,
   checked: false,
   onCheckedChange: undefined,
@@ -36,6 +38,7 @@ class CheckBox extends PureComponent {
     let {
       children,
       text,
+      textStyle,
       onCheckedChange,
     } = this.props;
     const { checked } = this.props;
@@ -46,6 +49,9 @@ class CheckBox extends PureComponent {
     }
 
     if (!children) {
+      if (textStyle && typeof textStyle === 'number') {
+        textStyle = StyleSheet.flatten(textStyle);
+      }
       children = (<Text>{text}</Text>);
     }
 

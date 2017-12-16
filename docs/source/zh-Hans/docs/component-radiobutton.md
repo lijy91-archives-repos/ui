@@ -45,6 +45,7 @@ title: RadioButton
 --- | --- | --- | --- | ---
 `CircleComponent` | - | element | - | -
 `text` | 显示的文本 | string | - | 空字符串 ('')
+`textStyle` | 文本的样式 | style | - | -
 `value` | - | string | - | -
 `disabled` | 是否处于禁用状态 | bool | - | `false`
 `checked` | 是否处于选中状态 | bool | - | `false`

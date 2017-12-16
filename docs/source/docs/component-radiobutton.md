@@ -46,6 +46,7 @@ Name | Description | Type | Optional value | Default
 --- | --- | --- | --- | ---
 `CircleComponent` | - | element | - | -
 `text` | - | string | - | Empty string ('')
+`textStyle` | - | style | - | -
 `value` | - | string | - | -
 `disabled` | - | bool | - | `false`
 `checked` | - | bool | - | `false`

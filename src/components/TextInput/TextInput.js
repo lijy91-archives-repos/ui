@@ -13,7 +13,7 @@ class TextInput extends PureComponent {
     return (
       <RNTextInput
         {...this.props}
-        underlineColorAndroid={'rgba(0, 0, 0, 0)'}
+        underlineColorAndroid="rgba(0, 0, 0, 0)"
       />
     );
   }

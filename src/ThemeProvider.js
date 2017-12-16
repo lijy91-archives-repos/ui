@@ -16,19 +16,10 @@ const childContextTypes = {
 };
 
 class ThemeProvider extends PureComponent {
-  constructor(props) {
-    super(props);
-
-    const themeName = this.props.theme;
-
-    this.state = {
-      themeName,
-      themeStyle: Theme.getTheme(themeName),
-    };
-  }
-
   getChildContext() {
-    return this.state;
+    const themeName = this.props.theme;
+    const themeStyle = Theme.getTheme(themeName);
+    return { themeName, themeStyle };
   }
 
   render() {

@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { StyleSheet, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
@@ -12,6 +13,7 @@ const propTypes = {
   CircleComponent: PropTypes.element,
   children: PropTypes.element,
   text: PropTypes.string,
+  textStyle: RNText.propTypes.style,
   value: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   checked: PropTypes.bool,
@@ -21,6 +23,7 @@ const defaultProps = {
   CircleComponent: undefined,
   children: null,
   text: '',
+  textStyle: undefined,
   disabled: false,
   checked: false,
   onCheckedChange: undefined,
@@ -35,11 +38,12 @@ const mapStyleToProps = [
 
 class RadioButton extends PureComponent {
   render() {
-    const props = this.props;
+    const { props } = this;
     let {
       CircleComponent,
       children,
       text,
+      textStyle,
       checked,
     } = props;
     const {
@@ -66,7 +70,10 @@ class RadioButton extends PureComponent {
     }
 
     if (!children) {
-      children = (<Text>{text}</Text>);
+      if (textStyle && typeof textStyle === 'number') {
+        textStyle = StyleSheet.flatten(textStyle);
+      }
+      children = (<Text style={textStyle} >{text}</Text>);
     }
 
     if (checkedValue === value) {

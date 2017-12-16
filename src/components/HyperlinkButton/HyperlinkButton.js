@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { StyleSheet, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
@@ -8,11 +9,13 @@ import Text from '../Text';
 const propTypes = {
   ...RNTouchableOpacity.propTypes,
   text: PropTypes.string,
+  textStyle: RNText.propTypes.style,
   disabled: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
 };
 const defaultProps = {
   text: '',
+  textStyle: undefined,
   disabled: false,
   size: 'medium',
 };
@@ -24,6 +27,7 @@ class HyperlinkButton extends PureComponent {
   render() {
     let {
       text,
+      textStyle,
       children,
     } = this.props;
 
@@ -33,7 +37,10 @@ class HyperlinkButton extends PureComponent {
     }
 
     if (!children) {
-      children = (<Text>{text}</Text>);
+      if (textStyle && typeof textStyle === 'number') {
+        textStyle = StyleSheet.flatten(textStyle);
+      }
+      children = (<Text style={textStyle} >{text}</Text>);
     }
 
     return (
