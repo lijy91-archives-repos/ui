@@ -43,6 +43,7 @@ Name | Description | Type | Optional value | Default
 --- | --- | --- | --- | ---
 `children` | - | string, element | - | -
 `text` | -| string | - | Empty string ('')
+`textStyle` | - | style | - | -
 `disabled` | - | bool | - | `false`
 `loading` | - | bool | - | `false`
 `size` | - | enum | `mini`, </br>`small`, </br>`medium`, </br>`large`, </br>`big` | `medium`

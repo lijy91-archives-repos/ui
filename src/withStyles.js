@@ -69,14 +69,16 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
         ];
 
         const styledProps = _.pickBy(props, value => _.includes(styledTypes, typeof value));
-        const selectors = _.union([componentName],
+        const selectors = _.union(
+          [componentName],
           _.map(styledProps, (value, key) => `${componentName}[${key}=${value}]`),
         );
 
         const pickedThemeStyle = _.pickBy(themeStyle, (value, key) => _.includes(selectors, key));
         const pickedParentStyle = _.pickBy(parentStyle, (value, key) => _.includes(selectors, key));
 
-        const mergedStyle = _.merge({},
+        const mergedStyle = _.merge(
+          {},
           ..._.values(pickedThemeStyle),
           ..._.values(pickedParentStyle),
           style,
