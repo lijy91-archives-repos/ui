@@ -1,77 +1,75 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Platform, Image } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { HyperlinkButton } from '@blankapp/ui';
-import {
-  STATUSBAR_HEIGHT,
-  APPBAR_HEIGHT,
-} from '../utilities/Constants';
+import BrowserAppContainer from './BrowserAppContainer';
+import { STATUSBAR_HEIGHT, APPBAR_HEIGHT } from '../utilities/Constants';
 import imageIcMenuBack from '../resources/images/ic_menu_back.png';
 
-import HomeScreen from '../screens/Home';
-import ActivityIndicatorExampleScreen from '../screens/ActivityIndicatorExample';
-import BadgeExampleScreen from '../screens/BadgeExample';
-import ButtonExampleScreen from '../screens/ButtonExample';
-import CardExampleScreen from '../screens/CardExample';
-import CheckBoxExampleScreen from '../screens/CheckBoxExample';
-import DividerExampleScreen from '../screens/DividerExample';
-import HyperlinkButtonExampleScreen from '../screens/HyperlinkButtonExample';
-import RadioButtonExampleScreen from '../screens/RadioButtonExample';
-import SubtitleExampleScreen from '../screens/SubtitleExample';
-import SwitchExampleScreen from '../screens/SwitchExample';
-import TextExampleScreen from '../screens/TextExample';
-import TextInputExampleScreen from '../screens/TextInputExample';
-import TitleExampleScreen from '../screens/TitleExample';
-import ViewExampleScreen from '../screens/ViewExample';
+import Home from '../screens/Home';
+import ActivityIndicatorExample from '../screens/ActivityIndicatorExample';
+import BadgeExample from '../screens/BadgeExample';
+import ButtonExample from '../screens/ButtonExample';
+import CardExample from '../screens/CardExample';
+import CheckBoxExample from '../screens/CheckBoxExample';
+import DividerExample from '../screens/DividerExample';
+import HyperlinkButtonExample from '../screens/HyperlinkButtonExample';
+import RadioButtonExample from '../screens/RadioButtonExample';
+import SubtitleExample from '../screens/SubtitleExample';
+import SwitchExample from '../screens/SwitchExample';
+import TextExample from '../screens/TextExample';
+import TextInputExample from '../screens/TextInputExample';
+import TitleExample from '../screens/TitleExample';
+import ViewExample from '../screens/ViewExample';
 
-const routeConfigs = {
+const routeConfigMap = {
   Home: {
-    screen: HomeScreen,
+    screen: Home,
   },
   ActivityIndicatorExample: {
-    screen: ActivityIndicatorExampleScreen,
+    screen: ActivityIndicatorExample,
   },
   BadgeExample: {
-    screen: BadgeExampleScreen,
+    screen: BadgeExample,
   },
   ButtonExample: {
-    screen: ButtonExampleScreen,
+    screen: ButtonExample,
   },
   CardExample: {
-    screen: CardExampleScreen,
+    screen: CardExample,
   },
   CheckBoxExample: {
-    screen: CheckBoxExampleScreen,
+    screen: CheckBoxExample,
   },
   DividerExample: {
-    screen: DividerExampleScreen,
+    screen: DividerExample,
   },
   HyperlinkButtonExample: {
-    screen: HyperlinkButtonExampleScreen,
+    screen: HyperlinkButtonExample,
   },
   RadioButtonExample: {
-    screen: RadioButtonExampleScreen,
+    screen: RadioButtonExample,
   },
   SubtitleExample: {
-    screen: SubtitleExampleScreen,
+    screen: SubtitleExample,
   },
   SwitchExample: {
-    screen: SwitchExampleScreen,
+    screen: SwitchExample,
   },
   TextExample: {
-    screen: TextExampleScreen,
+    screen: TextExample,
   },
   TextInputExample: {
-    screen: TextInputExampleScreen,
+    screen: TextInputExample,
   },
   TitleExample: {
-    screen: TitleExampleScreen,
+    screen: TitleExample,
   },
   ViewExample: {
-    screen: ViewExampleScreen,
+    screen: ViewExample,
   },
 };
-const stackNavigatorConfig = {
+const stackConfig = {
   initialRouteName: 'Home',
   headerMode: 'screen',
   navigationOptions: ({ navigation }) => ({
@@ -106,6 +104,7 @@ const stackNavigatorConfig = {
   }),
 };
 
-const AppNavigator = StackNavigator(routeConfigs, stackNavigatorConfig);
+const DefaultNavigator = StackNavigator(routeConfigMap, stackConfig);
+const AppNavigator = Platform.OS === 'web' ? BrowserAppContainer(DefaultNavigator) : DefaultNavigator;
 
 export default AppNavigator;

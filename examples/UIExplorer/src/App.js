@@ -3,7 +3,7 @@ import { Platform, StatusBar } from 'react-native';
 import { ThemeProvider } from '@blankapp/ui';
 import AppNavigator from './navigators/AppNavigator';
 
-class UIExplorer extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     if (Platform.OS === 'android') {
@@ -26,4 +26,4 @@ class UIExplorer extends Component {
   }
 }
 
-export default UIExplorer;
+export default App;
