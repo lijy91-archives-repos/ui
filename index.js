@@ -1,6 +1,6 @@
 import Theme from './src/Theme';
 import ThemeProvider from './src/ThemeProvider';
-import { withStyles } from './src/withStyles';
+import withStyles from './src/withStyles';
 
 import ActivityIndicator from './src/components/ActivityIndicator';
 import Badge from './src/components/Badge';

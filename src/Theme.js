@@ -23,4 +23,7 @@ class Theme {
   }
 }
 
-export default Theme;
+export {
+  Theme as default,
+  themes,
+};

@@ -3,7 +3,6 @@ import { Platform, Image } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { HyperlinkButton } from '@blankapp/ui';
 import BrowserAppContainer from './BrowserAppContainer';
-import { STATUSBAR_HEIGHT, APPBAR_HEIGHT } from '../utilities/Constants';
 import imageIcMenuBack from '../resources/images/ic_menu_back.png';
 
 import Home from '../screens/Home';
@@ -75,8 +74,6 @@ const stackConfig = {
   navigationOptions: ({ navigation }) => ({
     headerStyle: {
       backgroundColor: 'rgb(33, 33, 33)',
-      paddingTop: STATUSBAR_HEIGHT,
-      height: APPBAR_HEIGHT + STATUSBAR_HEIGHT,
     },
     headerTitleStyle: {
       color: '#ffffff',
@@ -86,8 +83,6 @@ const stackConfig = {
         style={{
           paddingLeft: 0,
           paddingRight: 0,
-          width: APPBAR_HEIGHT,
-          height: APPBAR_HEIGHT,
         }}
         onPress={() => {
           setTimeout(() => {

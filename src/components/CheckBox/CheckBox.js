@@ -1,13 +1,11 @@
 import React, { PureComponent } from 'react';
-import { StyleSheet, Image as RNImage, Text as RNText } from 'react-native';
+import { StyleSheet, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
 import withStyles from '../../withStyles';
 import Text from '../Text';
 import CheckMark from './CheckMark';
-
-import imageIcCheckmarkChecked from '../../resources/images/ic_checkmark_checked.png';
 
 const propTypes = {
   children: PropTypes.oneOfType([
@@ -59,7 +57,6 @@ class CheckBox extends PureComponent {
       onCheckedChange = () => {};
     }
 
-    const checkMarkImage = <RNImage style={{ width: '100%', height: '100%' }} source={imageIcCheckmarkChecked} />;
     return (
       <RNTouchableOpacity
         {...this.props}
@@ -67,9 +64,7 @@ class CheckBox extends PureComponent {
           onCheckedChange(!checked);
         }}
       >
-        <CheckMark>
-          {checked ? checkMarkImage : null}
-        </CheckMark>
+        <CheckMark checked />
         {children}
       </RNTouchableOpacity>
     );
