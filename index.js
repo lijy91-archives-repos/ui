@@ -9,6 +9,7 @@ import Card from './src/components/Card';
 import CheckBox from './src/components/CheckBox';
 import Divider from './src/components/Divider';
 import HyperlinkButton from './src/components/HyperlinkButton';
+import Modal from './src/components/Modal';
 import RadioButton from './src/components/RadioButton';
 import Screen from './src/components/Screen';
 import Subtitle from './src/components/Subtitle';
@@ -30,6 +31,7 @@ export {
   CheckBox,
   Divider,
   HyperlinkButton,
+  Modal,
   RadioButton,
   Screen,
   Subtitle,

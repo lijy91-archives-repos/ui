@@ -5,6 +5,7 @@ import _card from './_card';
 import _checkbox from './_checkbox';
 import _divider from './_divider';
 import _hyperlinkButton from './_hyperlinkButton';
+import _modal from './_modal';
 import _radioButton from './_radioButton';
 import _screen from './_screen';
 import _subtitle from './_subtitle';
@@ -22,6 +23,7 @@ export default {
   ..._checkbox,
   ..._divider,
   ..._hyperlinkButton,
+  ..._modal,
   ..._radioButton,
   ..._screen,
   ..._subtitle,
