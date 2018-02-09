@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, ListView } from 'react-native';
 import {
+  Divider,
   Screen,
-  View,
+  Subtitle,
   Text,
   Title,
-  Subtitle,
-  Divider,
+  View,
 } from '@blankapp/ui';
 import _ from 'lodash';
 

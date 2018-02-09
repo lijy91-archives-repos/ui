@@ -8,6 +8,7 @@ import Button from './src/components/Button';
 import Card from './src/components/Card';
 import CheckBox from './src/components/CheckBox';
 import Divider from './src/components/Divider';
+import FlatList from './src/components/FlatList';
 import HyperlinkButton from './src/components/HyperlinkButton';
 import Modal from './src/components/Modal';
 import RadioButton from './src/components/RadioButton';
@@ -30,6 +31,7 @@ export {
   Card,
   CheckBox,
   Divider,
+  FlatList,
   HyperlinkButton,
   Modal,
   RadioButton,
