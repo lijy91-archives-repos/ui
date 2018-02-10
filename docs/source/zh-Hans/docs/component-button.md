@@ -8,7 +8,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-example" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} />
+<Button text="Button" />
 ```
 
 ## 类型
@@ -18,8 +18,8 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-types-flat" scrolling="no" /></div>
 
 ```jsx
-<Button styleName={'flat-primary'} text={'Button'} />
-<Button styleName={'flat-accent'} text={'Button'} />
+<Button styleName="flat-primary" text="Button" />
+<Button styleName="flat-accent" text="Button" />
 ```
 
 ### 线框
@@ -27,8 +27,8 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-types-outline" scrolling="no" /></div>
 
 ```jsx
-<Button styleName={'outline-primary'} text={'Button'} />
-<Button styleName={'outline-accent'} text={'Button'} />
+<Button styleName="outline-primary" text="Button" />
+<Button styleName="outline-accent" text="Button" />
 ```
 
 ## 状态
@@ -38,7 +38,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-state-disabled" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} disabled />
+<Button text="Button" disabled />
 ```
 
 ### 加载中
@@ -46,7 +46,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-state-loading" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} loading />
+<Button text="Button" loading />
 ```
 
 ## 变化形式
@@ -56,11 +56,11 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-size" scrolling="no" /></div>
 
 ```jsx
-<Button size={'mini'} text={'MINI'} />
-<Button size={'small'} text={'SMALL'} />
-<Button size={'medium'} text={'MEDIUM'} />
-<Button size={'large'} text={'LARGE'} />
-<Button size={'big'} text={'BIG'} />
+<Button size="mini" text="MINI" />
+<Button size="small" text="SMALL" />
+<Button size="medium" text="MEDIUM" />
+<Button size="large" text="LARGE" />
+<Button size="big" text="BIG" />
 ```
 
 ### 圆角
@@ -68,7 +68,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-rounded" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} rounded={false} />
+<Button text="Button" rounded={false} />
 ```
 
 ### 圆形
@@ -76,7 +76,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-circular" scrolling="no" /></div>
 
 ```jsx
-<Button text={'OK'} circular />
+<Button text="OK" circular />
 ```
 
 ### 流式布局
@@ -84,7 +84,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-fluid" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} fluid />
+<Button text="Button" fluid />
 ```
 
 ## API

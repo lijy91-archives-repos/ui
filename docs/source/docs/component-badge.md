@@ -8,7 +8,7 @@ Small count controls
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/badge-example" scrolling="no" /></div>
 
 ```jsx
-<Badge text={'99+'} />
+<Badge text="99+" />
 ```
 
 ## Types
@@ -18,7 +18,7 @@ Small count controls
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/badge-types-dot" scrolling="no" /></div>
 
 ```jsx
-<Badge type={'dot'} />
+<Badge type="dot" />
 ```
 
 ### text
@@ -27,7 +27,7 @@ Small count controls
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/badge-types-text" scrolling="no" /></div>
 
 ```jsx
-<Badge type={'text'} text={'99+'} />
+<Badge type="text" text="99+" />
 ```
 
 ## API

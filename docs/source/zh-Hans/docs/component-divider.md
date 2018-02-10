@@ -18,8 +18,8 @@ title: Divider
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/divider-variations-orientation" scrolling="no" /></div>
 
 ```jsx
-<Divider orientation={'vertical'} />
-<Divider orientation={'horizontal'} />
+<Divider orientation="vertical" />
+<Divider orientation="horizontal" />
 ```
 
 ## API

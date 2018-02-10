@@ -8,7 +8,7 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-example" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} />
+<Button text="Button" />
 ```
 
 ## Types
@@ -18,8 +18,8 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-types-flat" scrolling="no" /></div>
 
 ```jsx
-<Button styleName={'flat-primary'} text={'Button'} />
-<Button styleName={'flat-accent'} text={'Button'} />
+<Button styleName="flat-primary" text="Button" />
+<Button styleName="flat-accent" text="Button" />
 ```
 
 ### Outline
@@ -27,8 +27,8 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-types-outline" scrolling="no" /></div>
 
 ```jsx
-<Button styleName={'outline-primary'} text={'Button'} />
-<Button styleName={'outline-accent'} text={'Button'} />
+<Button styleName="outline-primary" text="Button" />
+<Button styleName="outline-accent" text="Button" />
 ```
 
 ## States
@@ -38,7 +38,7 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-state-disabled" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} disabled />
+<Button text="Button" disabled />
 ```
 
 ### Loading
@@ -46,7 +46,7 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-state-loading" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} loading />
+<Button text="Button" loading />
 ```
 
 ## Variations
@@ -56,11 +56,11 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-size" scrolling="no" /></div>
 
 ```jsx
-<Button size={'mini'} text={'MINI'} />
-<Button size={'small'} text={'SMALL'} />
-<Button size={'medium'} text={'MEDIUM'} />
-<Button size={'large'} text={'LARGE'} />
-<Button size={'big'} text={'BIG'} />
+<Button size="mini" text="MINI" />
+<Button size="small" text="SMALL" />
+<Button size="medium" text="MEDIUM" />
+<Button size="large" text="LARGE" />
+<Button size="big" text="BIG" />
 ```
 
 ### Rounded
@@ -68,7 +68,7 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-rounded" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} rounded={false} />
+<Button text="Button" rounded={false} />
 ```
 
 ### Circular
@@ -76,7 +76,7 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-circular" scrolling="no" /></div>
 
 ```jsx
-<Button text={'OK'} circular />
+<Button text="OK" circular />
 ```
 
 ### Fluid
@@ -84,7 +84,7 @@ Flat and outline buttons
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/button-variations-fluid" scrolling="no" /></div>
 
 ```jsx
-<Button text={'Button'} fluid />
+<Button text="Button" fluid />
 ```
 
 ## API

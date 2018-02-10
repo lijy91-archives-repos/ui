@@ -9,8 +9,8 @@ title: RadioButton
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} checked />
-  <RadioButton text={'Option2'} />
+  <RadioButton text="Option1" checked />
+  <RadioButton text="Option2" />
 </RadioButton.Group>
 ```
 
@@ -22,8 +22,8 @@ title: RadioButton
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} value={'1'} disabled />
-  <RadioButton text={'Option2'} value={'2'} disabled />
+  <RadioButton text="Option1" value="1" disabled />
+  <RadioButton text="Option2" value="2" disabled />
 </RadioButton.Group>
 ```
 
@@ -32,8 +32,8 @@ title: RadioButton
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} value={'1'} checked />
-  <RadioButton text={'Option2'} value={'2'} />
+  <RadioButton text="Option1" value="1" checked />
+  <RadioButton text="Option2" value="2" />
 </RadioButton.Group>
 ```
 

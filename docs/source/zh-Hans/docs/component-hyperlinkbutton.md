@@ -8,7 +8,7 @@ title: HyperlinkButton
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-example" scrolling="no" /></div>
 
 ```jsx
-<HyperlinkButton text={'HyperlinkButton'} />
+<HyperlinkButton text="HyperlinkButton" />
 ```
 
 ## 状态
@@ -18,7 +18,7 @@ title: HyperlinkButton
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-state-disabled" scrolling="no" /></div>
 
 ```jsx
-<HyperlinkButton text={'HyperlinkButton'} disabled />
+<HyperlinkButton text="HyperlinkButton" disabled />
 ```
 
 ## 变化形式
@@ -28,11 +28,11 @@ title: HyperlinkButton
 <div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-variations-size" scrolling="no" /></div>
 
 ```jsx
-<HyperlinkButton text={'MINI'} size={'mini'} />
-<HyperlinkButton text={'SMALL'} size={'small'} />
-<HyperlinkButton text={'MEDIUM'} size={'medium'} />
-<HyperlinkButton text={'LARGE'} size={'large'} />
-<HyperlinkButton text={'BIG'} size={'big'} />
+<HyperlinkButton text="MINI" size="mini" />
+<HyperlinkButton text="SMALL" size="small" />
+<HyperlinkButton text="MEDIUM" size="medium" />
+<HyperlinkButton text="LARGE" size="large" />
+<HyperlinkButton text="BIG" size="big" />
 ```
 
 ## API
