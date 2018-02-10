@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, ListView } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import {
   Divider,
   Screen,
+  SectionList,
   Subtitle,
   Text,
   Title,
   View,
 } from '@blankapp/ui';
-import _ from 'lodash';
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -19,11 +19,6 @@ class HomeScreen extends Component {
   constructor(props) {
     super(props);
     this.navigation = this.props.navigation;
-
-    const ds = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2,
-      sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
-    });
 
     this.renderSectionHeader = this.renderSectionHeader.bind(this);
     this.renderItem = this.renderItem.bind(this);
@@ -68,6 +63,11 @@ class HomeScreen extends Component {
             routeName: 'DemoHyperlinkButton',
           },
           {
+            title: 'Modal',
+            description: '...',
+            routeName: 'DemoModal',
+          },
+          {
             title: 'RadioButton',
             description: 'Single selection controls',
             routeName: 'DemoRadioButton',
@@ -106,14 +106,8 @@ class HomeScreen extends Component {
       },
     ];
 
-    const dataBlob = {};
-    _.each(sectionsSource, (section) => {
-      const sectionID = section.title;
-      dataBlob[sectionID] = section.data;
-    });
-
     this.state = {
-      dataSource: ds.cloneWithRowsAndSections(dataBlob),
+      sectionsSource,
     };
   }
 
@@ -165,16 +159,11 @@ class HomeScreen extends Component {
   render() {
     return (
       <Screen>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={rowData => this.renderItem({ item: rowData })}
-          renderSectionHeader={(sectionData, sectionID) => {
-            const section = {
-              title: sectionID,
-            };
-            return this.renderSectionHeader({ section });
-          }}
-          renderSeparator={(sectionID, rowID) => <Divider key={`${sectionID}-${rowID}`} />}
+        <SectionList
+          renderItem={this.renderItem}
+          sections={this.state.sectionsSource}
+          ItemSeparatorComponent={() => <Divider />}
+          renderSectionHeader={this.renderSectionHeader}
         />
       </Screen>
     );
