@@ -6,9 +6,7 @@ import withStyles from '../../withStyles';
 const propTypes = {
   // Required Props
   renderItem: PropTypes.func.isRequired,
-  data: PropTypes.arrayOf([
-    PropTypes.any,
-  ]).isRequired,
+  data: PropTypes.arrayOf(PropTypes.any).isRequired,
   // Optional Props
   ItemSeparatorComponent: PropTypes.oneOfType([
     PropTypes.element,
@@ -51,7 +49,7 @@ class FlatList extends PureComponent {
     const listFooterView = typeof ListFooterComponent === 'object' ? ListFooterComponent : ListFooterComponent();
 
     let contentView = listEmptyView;
-    if (data) {
+    if (data && data.length > 0) {
       contentView = data.map((item, index) => {
         const info = { item, index };
         return [

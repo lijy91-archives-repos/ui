@@ -7,6 +7,7 @@ import DemoCard from '../screens/DemoCard';
 import DemoCheckBox from '../screens/DemoCheckBox';
 import DemoDivider from '../screens/DemoDivider';
 import DemoHyperlinkButton from '../screens/DemoHyperlinkButton';
+import DemoModal from '../screens/DemoModal';
 import DemoRadioButton from '../screens/DemoRadioButton';
 import DemoSubtitle from '../screens/DemoSubtitle';
 import DemoSwitch from '../screens/DemoSwitch';
@@ -88,6 +89,10 @@ const routeConfigMap = {
   DemoHyperlinkButton: {
     screen: DemoHyperlinkButton,
     path: 'demo-hyperlinkbutton',
+  },
+  DemoModal: {
+    screen: DemoModal,
+    path: 'demo-modal',
   },
   DemoRadioButton: {
     screen: DemoRadioButton,
