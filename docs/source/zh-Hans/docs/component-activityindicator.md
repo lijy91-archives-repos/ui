@@ -5,7 +5,7 @@ title: ActivityIndicator
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/activityindicator-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/activityindicator-example" scrolling="no" /></div>
 
 ```jsx
 <ActivityIndicator />

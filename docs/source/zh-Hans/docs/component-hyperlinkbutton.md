@@ -5,7 +5,7 @@ title: HyperlinkButton
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/hyperlinkbutton-example" scrolling="no" /></div>
 
 ```jsx
 <HyperlinkButton text="HyperlinkButton" />
@@ -15,7 +15,7 @@ title: HyperlinkButton
 
 ### 禁用
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-state-disabled" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/hyperlinkbutton-state-disabled" scrolling="no" /></div>
 
 ```jsx
 <HyperlinkButton text="HyperlinkButton" disabled />
@@ -25,7 +25,7 @@ title: HyperlinkButton
 
 ### 尺寸
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/hyperlinkbutton-variations-size" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/hyperlinkbutton-variations-size" scrolling="no" /></div>
 
 ```jsx
 <HyperlinkButton text="MINI" size="mini" />

@@ -5,7 +5,7 @@ title: Badge
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/badge-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/badge-example" scrolling="no" /></div>
 
 ```jsx
 <Badge text="99+" />
@@ -15,7 +15,7 @@ title: Badge
 
 ### 点
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/badge-types-dot" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/badge-types-dot" scrolling="no" /></div>
 
 ```jsx
 <Badge type="dot" />
@@ -23,7 +23,7 @@ title: Badge
 
 ### 文本
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/badge-types-text" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/badge-types-text" scrolling="no" /></div>
 
 ```jsx
 <Badge type="text" text="99+" />

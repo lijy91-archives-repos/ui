@@ -5,7 +5,7 @@ title: Card
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/card-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/card-example" scrolling="no" /></div>
 
 ```jsx
 <Card>
@@ -17,7 +17,7 @@ title: Card
 
 ### 圆角
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/card-variations-rounded" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/card-variations-rounded" scrolling="no" /></div>
 
 ```jsx
 <Card
