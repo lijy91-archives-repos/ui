@@ -5,7 +5,7 @@ Welcome to use `@blankapp/ui`, This documentation will help you get started.  If
 
 ## Introduction
 
-Highly customizable and theming components for React Native, A live demo is [here](/examples/UIExplorer/index.html).
+Highly customizable and theming components for React Native, A live demo is [here](https://uiexplorer.blankapp.org).
 
 ### Features
 

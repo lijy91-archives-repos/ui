@@ -5,7 +5,7 @@ title: 概述
 
 ## 简介
 
-高可定制和主题化的 React Native 组件库， 在[这里](/examples/UIExplorer/index.html)查看在线演示。
+高可定制和主题化的 React Native 组件库， 在[这里](https://uiexplorer.blankapp.org)查看在线演示。
 
 ### 特性
 
