@@ -20,7 +20,7 @@ title: 概述
   <img style="width: 400px; height: 795px;" src="/assets/images/nexus5_black.png" />
   <iframe
     style="position: absolute; overflow: hidden; z-index: 1000; background-color: rgb(0, 0, 0); width: 360px; height: 640px; top: 67px; left: 20px;"
-    src="/examples/UIExplorer/index.html"
+    src="https://uiexplorer.blankapp.org"
     width="300px"
     height="597px"
     frameborder="0"
