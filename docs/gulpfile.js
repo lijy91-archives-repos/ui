@@ -14,10 +14,6 @@ var gulpCheerio = require('gulp-cheerio');
 var del = require('del');
 var rename = require('rename');
 
-var dirs = {
-  public: 'public',
-};
-
 gulp.task('useref', [], function() {
   var assets = gulpUseRef.assets({
     searchPath: 'public'
@@ -36,6 +32,16 @@ gulp.task('useref', [], function() {
     }))
     .pipe(gulp.dest('public'));
 });
+
+gulp.task('copy:assets', function () {
+  return gulp.src(['assets/**/*'])
+    .pipe(gulp.dest('public/assets'))
+});
+
+gulp.task('default', [
+  'useref',
+  'copy:assets'
+]);
 
 function replaceBackSlash(str) {
   return str.replace(/\\/g, '/');

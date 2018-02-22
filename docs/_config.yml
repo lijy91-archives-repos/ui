@@ -4,7 +4,7 @@ description: "Highly customizable and theming components for React Native"
 author: JianyingLi <lijy91@foxmail.com>
 language: en
 timezone: UTC
-url: http://blankapp.org
+url: https://blankapp.org
 root: /
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
@@ -14,12 +14,6 @@ post_asset_folder: true
 per_page: 0
 
 theme: navy
-deploy:
-  type: git
-  repo: git@github.com:blankapp/blankapp.github.io.git
-  extend_dirs:
-    - /examples/
-    - /assets/
 
 highlight:
   enable: true
@@ -40,3 +34,11 @@ fb_admins:
 #     index_name:
 twitter: lijy91
 github: blankapp/ui
+
+deploy:
+- type: git
+  repo: git@github.com:blankapp/blankapp.github.io.git
+- type: rsync
+  host: blankapp.org
+  user: root
+  root: /root/sites/ui-homepage/html
