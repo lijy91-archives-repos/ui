@@ -10,7 +10,7 @@ import {
   View,
 } from '@blankapp/ui';
 
-class HomeScreen extends Component {
+class Home extends Component {
   static navigationOptions = {
     title: 'UIExplorer',
     headerLeft: null,
@@ -170,4 +170,4 @@ class HomeScreen extends Component {
   }
 }
 
-export default HomeScreen;
+export default Home;

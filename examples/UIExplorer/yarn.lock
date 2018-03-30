@@ -1481,11 +1481,7 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000802"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000802.tgz#f7dca342da1c12cf84ff2c80432e24c7e1cc36d9"
 
-caniuse-lite@^1.0.30000792:
-  version "1.0.30000792"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000792.tgz#d0cea981f8118f3961471afbb43c9a1e5bbf0332"
-
-caniuse-lite@^1.0.30000805:
+caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805:
   version "1.0.30000805"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000805.tgz#83a5f21ead01486e67bccca6fae5dca7cde496de"
 
@@ -4612,13 +4608,13 @@ jest-validate@^22.2.2:
     leven "^2.1.0"
     pretty-format "^22.1.0"
 
-jest-worker@22.1.0, jest-worker@^22.1.0:
+jest-worker@22.1.0:
   version "22.1.0"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-22.1.0.tgz#0987832fe58fbdc205357f4c19b992446368cafb"
   dependencies:
     merge-stream "^1.0.1"
 
-jest-worker@^22.2.2:
+jest-worker@^22.1.0, jest-worker@^22.2.2:
   version "22.2.2"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-22.2.2.tgz#c1f5dc39976884b81f68ec50cb8532b2cbab3390"
   dependencies:

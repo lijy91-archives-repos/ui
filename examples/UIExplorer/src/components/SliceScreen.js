@@ -8,7 +8,7 @@ class SliceScreen extends PureComponent {
         {...this.props}
         style={{
           backgroundColor: '#eee',
-          minHeight: 140,
+          flex: 1,
           alignItems: 'center',
           justifyContent: 'center',
           flexDirection: 'row',

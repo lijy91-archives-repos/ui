@@ -17,7 +17,7 @@ const getAction = (router, path, params) => {
     params: {
       path,
     },
-    routeName: 'NotFound',
+    routeName: 'SliceNoDemo',
   });
 };
 
