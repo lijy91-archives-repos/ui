@@ -6,6 +6,7 @@ module.exports = {
     "browser": true,
   },
   "rules": {
+    "prefer-const": 0,
     "class-methods-use-this": 0,
     // `.jsx` extension cannot be used with React Native
     // https://github.com/airbnb/javascript/issues/982

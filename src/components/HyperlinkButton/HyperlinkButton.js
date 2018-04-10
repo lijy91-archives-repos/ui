@@ -26,9 +26,10 @@ const mapStyleToProps = [
 class HyperlinkButton extends PureComponent {
   render() {
     let {
+      children,
       text,
       textStyle,
-      children,
+      ...restProps
     } = this.props;
 
     if (typeof children === 'string') {
@@ -45,7 +46,7 @@ class HyperlinkButton extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
       >
         {children}
       </RNTouchableOpacity>

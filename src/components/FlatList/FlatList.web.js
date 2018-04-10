@@ -41,6 +41,7 @@ class FlatList extends PureComponent {
       ListEmptyComponent,
       ListHeaderComponent,
       ListFooterComponent,
+      ...restProps
     } = this.props;
 
     const itemSeparatorView = typeof ItemSeparatorComponent === 'object' ? ItemSeparatorComponent : ItemSeparatorComponent();
@@ -60,7 +61,7 @@ class FlatList extends PureComponent {
     }
     return (
       <RNScrollView
-        {...this.props}
+        {...restProps}
       >
         {listHeaderView}
         {contentView}

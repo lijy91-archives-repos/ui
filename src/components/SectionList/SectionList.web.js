@@ -53,6 +53,7 @@ class SectionList extends PureComponent {
       renderSectionHeader,
       renderSectionFooter,
       SectionSeparatorComponent,
+      ...restProps
     } = this.props;
 
     const itemSeparatorView = typeof ItemSeparatorComponent === 'object' ? ItemSeparatorComponent : ItemSeparatorComponent();
@@ -84,7 +85,7 @@ class SectionList extends PureComponent {
     }
     return (
       <RNScrollView
-        {...this.props}
+        {...restProps}
       >
         {listHeaderView}
         {contentView}

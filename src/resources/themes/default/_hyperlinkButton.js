@@ -2,9 +2,7 @@ import {
   transparent,
   textPrimary,
 } from './colors';
-import {
-  fontSizeButton,
-} from './dimens';
+import { fontSizeButton } from './dimens';
 
 export default {
   HyperlinkButton: {

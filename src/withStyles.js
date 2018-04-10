@@ -2,7 +2,8 @@ import React, { PureComponent } from 'react';
 import { StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import hoistNonReactStatic from 'hoist-non-react-statics';
-import _ from 'lodash';
+import deepMerge from './utilities/deepMerge';
+import pickBy from './utilities/pickBy';
 
 const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) => {
   class StyledComponent extends PureComponent {
@@ -68,23 +69,31 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
           'boolean',
         ];
 
-        const styledProps = _.pickBy(props, value => _.includes(styledTypes, typeof value));
-        const selectors = _.union(
-          [componentName],
-          _.map(styledProps, (value, key) => `${componentName}[${key}=${value}]`),
-        );
+        // 生成样式选择器
+        const selectors = [
+          componentName,
+          ...Object
+            .keys(props)
+            .filter(key => styledTypes.includes(typeof props[key]))
+            .map(key => `${componentName}[${key}=${props[key]}]`),
+        ];
 
-        const pickedThemeStyle = _.pickBy(themeStyle, (value, key) => _.includes(selectors, key));
-        const pickedParentStyle = _.pickBy(parentStyle, (value, key) => _.includes(selectors, key));
+        const pickedThemeStyle = pickBy(themeStyle, (value, key) => selectors.includes(key));
+        const pickedParentStyle = pickBy(parentStyle, (value, key) => selectors.includes(key));
 
-        const mergedStyle = _.merge(
+        // 将样式按顺序合并：主题样式，父组件样式，行内样式
+        const mergedStyle = deepMerge(
           {},
-          ..._.values(pickedThemeStyle),
-          ..._.values(pickedParentStyle),
+          ...Object.values(pickedThemeStyle),
+          ...Object.values(pickedParentStyle),
           style,
         );
 
-        const componentStyle = _.omit(_.omitBy(mergedStyle, _.isObject), mapStyleToProps);
+        const componentStyle = pickBy(
+          mergedStyle,
+          (value, key) => !(typeof value === 'object' || mapStyleToProps.includes(key)),
+        );
+
         return {
           styleSheets: mergedStyle, // 原始样式表
           componentStyle,
@@ -92,10 +101,11 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
       }
 
       resolveAddedProps(resolvedStyle) {
-        let addedProps = _.pick(resolvedStyle.styleSheets, mapStyleToProps);
-        if (!addedProps) {
-          addedProps = {};
-        }
+        const styleSheets = resolvedStyle.styleSheets || {};
+        const addedProps = pickBy(
+          styleSheets,
+          (value, key) => mapStyleToProps.includes(key),
+        );
         return addedProps;
       }
 

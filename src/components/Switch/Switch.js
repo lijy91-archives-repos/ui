@@ -24,6 +24,7 @@ class Switch extends PureComponent {
   render() {
     let {
       onCheckedChange,
+      ...restProps
     } = this.props;
     const { checked } = this.props;
 
@@ -33,7 +34,7 @@ class Switch extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
         onPress={() => {
           onCheckedChange(!checked);
         }}

@@ -37,9 +37,10 @@ class CheckBox extends PureComponent {
       children,
       text,
       textStyle,
+      checked,
       onCheckedChange,
+      ...restProps
     } = this.props;
-    const { checked } = this.props;
 
     if (typeof children === 'string') {
       text = children;
@@ -59,7 +60,7 @@ class CheckBox extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
         onPress={() => {
           onCheckedChange(!checked);
         }}

@@ -24,7 +24,7 @@ const defaultProps = {
   disabled: false,
   loading: false,
   size: 'medium',
-  rounded: true,
+  rounded: false,
   circular: false,
   fluid: false,
 };
@@ -35,12 +35,11 @@ const mapStyleToProps = [
 class Button extends PureComponent {
   render() {
     let {
+      children,
       text,
       textStyle,
-      children,
-    } = this.props;
-    const {
       loading,
+      ...restProps
     } = this.props;
 
     if (typeof children === 'string') {
@@ -67,7 +66,7 @@ class Button extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
       >
         {activityIndicator}
         {children}

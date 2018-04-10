@@ -26,11 +26,12 @@ class CheckMark extends PureComponent {
   render() {
     const {
       checkedImage,
+      ...restProps
     } = this.props;
 
     return (
       <RNView
-        {...this.props}
+        {...restProps}
       >
         <RNImage
           style={{ width: '100%', height: '100%' }}
