@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from '@blankapp/ui';
+import { Button, View } from '@blankapp/ui';
 import SliceScreen from '../../components/SliceScreen';
 
 class ButtonTypesOutline extends Component {
@@ -9,10 +9,19 @@ class ButtonTypesOutline extends Component {
   };
 
   render() {
+    const buttonPanelStyle = {
+      flexWrap: 'wrap',
+      flexDirection: 'row',
+      Button: {
+        marginRight: 4,
+      },
+    };
     return (
       <SliceScreen>
-        <Button styleName="outline-primary" text="Button" />
-        <Button styleName="outline-accent" text="Button" />
+        <View style={buttonPanelStyle}>
+          <Button styleName="outline-primary" text="Button" />
+          <Button styleName="outline-accent" text="Button" />
+        </View>
       </SliceScreen>
     );
   }

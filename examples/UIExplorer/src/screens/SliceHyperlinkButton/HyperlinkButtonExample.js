@@ -11,7 +11,7 @@ class HyperlinkButtonExample extends Component {
   render() {
     return (
       <SliceScreen>
-        <HyperlinkButton text="yperlinkButton" />
+        <HyperlinkButton text="HyperlinkButton" />
       </SliceScreen>
     );
   }

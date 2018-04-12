@@ -3,7 +3,10 @@
   "version": "1.0.5",
   "description": "Highly customizable and theming components for React Native",
   "main": "index.js",
-  "repository": "git@github.com:blankapp/ui.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:blankapp/ui.git"
+  },
   "keywords": [
     "react-native",
     "ios",
@@ -48,7 +51,6 @@
     "react-native": "*"
   },
   "jest": {
-    "notify": true,
     "preset": "react-native",
     "setupFiles": [
       "<rootDir>/jest-setup.js"

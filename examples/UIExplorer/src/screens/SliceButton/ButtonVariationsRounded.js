@@ -11,7 +11,7 @@ class ButtonVariationsRounded extends Component {
   render() {
     return (
       <SliceScreen>
-        <Button text="Button" rounded={false} />
+        <Button text="Button" rounded />
       </SliceScreen>
     );
   }

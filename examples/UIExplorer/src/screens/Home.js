@@ -164,6 +164,7 @@ class Home extends Component {
           sections={this.state.sectionsSource}
           ItemSeparatorComponent={() => <Divider />}
           renderSectionHeader={this.renderSectionHeader}
+          keyExtractor={item => `${item.routeName}`}
         />
       </Screen>
     );
