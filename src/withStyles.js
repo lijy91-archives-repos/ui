@@ -5,7 +5,7 @@ import hoistNonReactStatic from 'hoist-non-react-statics';
 import deepMerge from './utilities/deepMerge';
 import pickBy from './utilities/pickBy';
 
-const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) => {
+const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) => {
   class StyledComponent extends PureComponent {
       static propTypes = {
         ...WrappedComponent.propTypes,
@@ -91,7 +91,7 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
 
         const componentStyle = pickBy(
           mergedStyle,
-          (value, key) => !(typeof value === 'object' || mapStyleToProps.includes(key)),
+          (value, key) => !(typeof value === 'object' || mapPropToStyles.includes(key)),
         );
 
         return {
@@ -104,7 +104,7 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
         const styleSheets = resolvedStyle.styleSheets || {};
         const addedProps = pickBy(
           styleSheets,
-          (value, key) => mapStyleToProps.includes(key),
+          (value, key) => mapPropToStyles.includes(key) && !this.props[key],
         );
         return addedProps;
       }

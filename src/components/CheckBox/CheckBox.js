@@ -27,7 +27,7 @@ const defaultProps = {
   checked: false,
   onCheckedChange: undefined,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -77,4 +77,4 @@ CheckBox.defaultProps = defaultProps;
 
 CheckBox.CheckMark = CheckMark;
 
-export default withStyles('CheckBox', mapStyleToProps)(CheckBox);
+export default withStyles('CheckBox', mapPropToStyles)(CheckBox);

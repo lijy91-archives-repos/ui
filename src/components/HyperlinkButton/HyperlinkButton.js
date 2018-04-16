@@ -19,7 +19,7 @@ const defaultProps = {
   disabled: false,
   size: 'medium',
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -57,4 +57,4 @@ class HyperlinkButton extends PureComponent {
 HyperlinkButton.propTypes = propTypes;
 HyperlinkButton.defaultProps = defaultProps;
 
-export default withStyles('HyperlinkButton', mapStyleToProps)(HyperlinkButton);
+export default withStyles('HyperlinkButton', mapPropToStyles)(HyperlinkButton);

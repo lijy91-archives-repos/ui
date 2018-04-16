@@ -16,7 +16,7 @@ const defaultProps = {
   checked: false,
   onCheckedChange: undefined,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -52,4 +52,4 @@ Switch.defaultProps = defaultProps;
 Switch.Background = Background;
 Switch.Knob = Knob;
 
-export default withStyles('Switch', mapStyleToProps)(Switch);
+export default withStyles('Switch', mapPropToStyles)(Switch);

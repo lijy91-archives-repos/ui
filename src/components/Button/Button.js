@@ -3,7 +3,6 @@ import { StyleSheet, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
-import withStyles from '../../withStyles';
 import ActivityIndicator from '../ActivityIndicator';
 import Text from '../Text';
 
@@ -28,7 +27,7 @@ const defaultProps = {
   circular: false,
   fluid: false,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -77,5 +76,6 @@ class Button extends PureComponent {
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
+Button.mapPropToStyles = mapPropToStyles;
 
-export default withStyles('Button', mapStyleToProps)(Button);
+export default Button;

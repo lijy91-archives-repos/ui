@@ -32,7 +32,7 @@ const contextTypes = {
   checkedValue: PropTypes.string,
   onChange: PropTypes.func,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -107,4 +107,4 @@ RadioButton.Group = Group;
 RadioButton.OuterCircle = OuterCircle;
 RadioButton.InnerCircle = InnerCircle;
 
-export default withStyles('RadioButton', mapStyleToProps)(RadioButton);
+export default withStyles('RadioButton', mapPropToStyles)(RadioButton);
