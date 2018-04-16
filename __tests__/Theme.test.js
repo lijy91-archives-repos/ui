@@ -7,8 +7,13 @@ describe('Theme', () => {
         color: '#000000',
       },
     };
+    const defaultThemePro = {
+      AppBar: {
+        height: 42,
+      },
+    };
     Theme.registerDefaultTheme(defaultTheme);
-    expect(themes).toMatchObject({ default: defaultTheme });
+    expect(themes).toMatchObject({ default: { ...defaultTheme, ...defaultThemePro } });
   });
   it('register theme', () => {
     const lightTheme = {
