@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import { StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import deepMerge from './utilities/deepMerge';
@@ -56,12 +55,6 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
         const { themeStyle, parentStyle } = context;
         let { style } = props;
 
-        if (typeof style === 'number') {
-          style = StyleSheet.flatten(style);
-        } else if (!style) {
-          style = {};
-        }
-
         // 以下为目前支持的属性选择器类型（其他类型默认忽略）
         const styledTypes = [
           'string',
@@ -86,13 +79,13 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
           {},
           ...Object.values(pickedThemeStyle),
           ...Object.values(pickedParentStyle),
-          style,
         );
-
-        const componentStyle = pickBy(
+        const pickedStyle = pickBy(
           mergedStyle,
           (value, key) => !(typeof value === 'object' || mapPropToStyles.includes(key)),
         );
+
+        const componentStyle = [pickedStyle, style];
 
         return {
           styleSheets: mergedStyle, // 原始样式表
