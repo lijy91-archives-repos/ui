@@ -12,15 +12,15 @@ class ButtonTypesFlat extends Component {
     const buttonPanelStyle = {
       flexWrap: 'wrap',
       flexDirection: 'row',
-      Button: {
-        marginRight: 4,
-      },
+    };
+    const buttonMarginStyle = {
+      marginRight: 4,
     };
     return (
       <SliceScreen>
         <View style={buttonPanelStyle}>
-          <Button styleName="flat-primary" text="Button" />
-          <Button styleName="flat-accent" text="Button" />
+          <Button style={buttonMarginStyle} styleName="flat-primary" text="Button" />
+          <Button style={buttonMarginStyle} styleName="flat-accent" text="Button" />
         </View>
       </SliceScreen>
     );

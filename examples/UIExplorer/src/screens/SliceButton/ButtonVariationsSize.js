@@ -12,18 +12,18 @@ class ButtonVariationsSize extends Component {
     const buttonPanelStyle = {
       flexWrap: 'wrap',
       flexDirection: 'row',
-      Button: {
-        marginRight: 4,
-      },
+    };
+    const buttonMarginStyle = {
+      marginRight: 4,
     };
     return (
       <SliceScreen>
         <View style={buttonPanelStyle}>
-          <Button size="mini" text="MINI" />
-          <Button size="small" text="SMALL" />
-          <Button size="medium" text="MEDIUM" />
-          <Button size="large" text="LARGE" />
-          <Button size="big" text="BIG" />
+          <Button style={buttonMarginStyle} size="mini" text="MINI" />
+          <Button style={buttonMarginStyle} size="small" text="SMALL" />
+          <Button style={buttonMarginStyle} size="medium" text="MEDIUM" />
+          <Button style={buttonMarginStyle} size="large" text="LARGE" />
+          <Button style={buttonMarginStyle} size="big" text="BIG" />
         </View>
       </SliceScreen>
     );

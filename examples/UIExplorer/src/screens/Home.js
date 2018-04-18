@@ -25,7 +25,7 @@ class Home extends Component {
 
     const sectionsSource = [
       {
-        title: 'Components',
+        title: 'Basic components',
         data: [
           {
             title: 'ActivityIndicator',
@@ -64,7 +64,7 @@ class Home extends Component {
           },
           {
             title: 'Modal',
-            description: '...',
+            description: 'Coming soon',
             routeName: 'DemoModal',
           },
           {
@@ -101,6 +101,46 @@ class Home extends Component {
             title: 'View',
             description: 'A special view that can contain other views',
             routeName: 'DemoView',
+          },
+        ],
+      },
+      {
+        title: 'Advanced components',
+        data: [
+          {
+            title: 'AppBar',
+            description: 'Coming soon',
+            routeName: 'DemoAppBar',
+          },
+          {
+            title: 'Icon',
+            description: 'Coming soon',
+            routeName: 'DemoIcon',
+          },
+          {
+            title: 'IconButton',
+            description: 'Coming soon',
+            routeName: 'DemoIconButton',
+          },
+          {
+            title: 'TabBar',
+            description: 'Coming soon',
+            routeName: 'DemoTabBar',
+          },
+          {
+            title: 'ViewPager',
+            description: 'Coming soon',
+            routeName: 'DemoViewPager',
+          },
+        ],
+      },
+      {
+        title: 'Experimental components',
+        data: [
+          {
+            title: 'ListItem',
+            description: 'Coming soon',
+            routeName: 'DemoListItem',
           },
         ],
       },
@@ -147,6 +187,7 @@ class Home extends Component {
             paddingBottom: 10,
             paddingLeft: 15,
             paddingRight: 15,
+            minHeight: 64,
           }}
         >
           <Title>{item.title}</Title>

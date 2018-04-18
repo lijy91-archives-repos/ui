@@ -22,9 +22,9 @@ class DemoButton extends Component {
     const buttonPanelStyle = {
       flexWrap: 'wrap',
       flexDirection: 'row',
-      Button: {
-        marginRight: 4,
-      },
+    };
+    const buttonMarginStyle = {
+      marginRight: 4,
     };
     return (
       <View>
@@ -34,15 +34,15 @@ class DemoButton extends Component {
           <View
             style={buttonPanelStyle}
           >
-            <Button styleName="flat-primary" text="Button" />
-            <Button styleName="flat-accent" text="Button" />
+            <Button style={buttonMarginStyle} styleName="flat-primary" text="Button" />
+            <Button style={buttonMarginStyle} styleName="flat-accent" text="Button" />
           </View>
           <Subtitle>Outline</Subtitle>
           <View
             style={buttonPanelStyle}
           >
-            <Button styleName="outline-primary" text="Button" />
-            <Button styleName="outline-accent" text="Button" />
+            <Button style={buttonMarginStyle} styleName="outline-primary" text="Button" />
+            <Button style={buttonMarginStyle} styleName="outline-accent" text="Button" />
           </View>
         </View>
         <Title>States</Title>
@@ -66,11 +66,11 @@ class DemoButton extends Component {
           <View
             style={buttonPanelStyle}
           >
-            <Button size="mini" text="MINI" />
-            <Button size="small" text="SMALL" />
-            <Button size="medium" text="MEDIUM" />
-            <Button size="large" text="LARGE" />
-            <Button size="big" text="BIG" />
+            <Button style={buttonMarginStyle} size="mini" text="MINI" />
+            <Button style={buttonMarginStyle} size="small" text="SMALL" />
+            <Button style={buttonMarginStyle} size="medium" text="MEDIUM" />
+            <Button style={buttonMarginStyle} size="large" text="LARGE" />
+            <Button style={buttonMarginStyle} size="big" text="BIG" />
           </View>
           <Subtitle>Rounded</Subtitle>
           <View

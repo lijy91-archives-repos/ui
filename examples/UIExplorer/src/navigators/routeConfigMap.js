@@ -1,20 +1,26 @@
 import Home from '../screens/Home';
 import ListOfSlices from '../screens/ListOfSlices';
 import DemoActivityIndicator from '../screens/DemoActivityIndicator';
+import DemoAppBar from '../screens/DemoAppBar';
 import DemoBadge from '../screens/DemoBadge';
 import DemoButton from '../screens/DemoButton';
 import DemoCard from '../screens/DemoCard';
 import DemoCheckBox from '../screens/DemoCheckBox';
 import DemoDivider from '../screens/DemoDivider';
 import DemoHyperlinkButton from '../screens/DemoHyperlinkButton';
+import DemoIcon from '../screens/DemoIcon';
+import DemoIconButton from '../screens/DemoIconButton';
+import DemoListItem from '../screens/DemoListItem';
 import DemoModal from '../screens/DemoModal';
 import DemoRadioButton from '../screens/DemoRadioButton';
 import DemoSubtitle from '../screens/DemoSubtitle';
 import DemoSwitch from '../screens/DemoSwitch';
+import DemoTabBar from '../screens/DemoTabBar';
 import DemoText from '../screens/DemoText';
 import DemoTextInput from '../screens/DemoTextInput';
 import DemoTitle from '../screens/DemoTitle';
 import DemoView from '../screens/DemoView';
+import DemoViewPager from '../screens/DemoViewPager';
 
 import SliceNoDemo from '../screens/SliceNoDemo';
 import sliceActivityIndicatorRouteConfigMap from '../screens/SliceActivityIndicator/routeConfigMap';
@@ -66,6 +72,10 @@ const routeConfigMap = {
     screen: DemoActivityIndicator,
     path: 'demo-activityindicator',
   },
+  DemoAppBar: {
+    screen: DemoAppBar,
+    path: 'demo-appbar',
+  },
   DemoBadge: {
     screen: DemoBadge,
     path: 'demo-badge',
@@ -90,6 +100,18 @@ const routeConfigMap = {
     screen: DemoHyperlinkButton,
     path: 'demo-hyperlinkbutton',
   },
+  DemoIcon: {
+    screen: DemoIcon,
+    path: 'demo-icon',
+  },
+  DemoIconButton: {
+    screen: DemoIconButton,
+    path: 'demo-iconbutton',
+  },
+  DemoListItem: {
+    screen: DemoListItem,
+    path: 'demo-iconbutton',
+  },
   DemoModal: {
     screen: DemoModal,
     path: 'demo-modal',
@@ -106,6 +128,10 @@ const routeConfigMap = {
     screen: DemoSwitch,
     path: 'demo-switch',
   },
+  DemoTabBar: {
+    screen: DemoTabBar,
+    path: 'demo-tabbar',
+  },
   DemoText: {
     screen: DemoText,
     path: 'demo-text',
@@ -121,6 +147,10 @@ const routeConfigMap = {
   DemoView: {
     screen: DemoView,
     path: 'demo-view',
+  },
+  DemoViewPager: {
+    screen: DemoViewPager,
+    path: 'demo-viewpager',
   },
   ...sliceRouteConfigMap,
 };

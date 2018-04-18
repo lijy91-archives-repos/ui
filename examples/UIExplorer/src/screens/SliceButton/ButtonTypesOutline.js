@@ -12,15 +12,15 @@ class ButtonTypesOutline extends Component {
     const buttonPanelStyle = {
       flexWrap: 'wrap',
       flexDirection: 'row',
-      Button: {
-        marginRight: 4,
-      },
+    };
+    const buttonMarginStyle = {
+      marginRight: 4,
     };
     return (
       <SliceScreen>
         <View style={buttonPanelStyle}>
-          <Button styleName="outline-primary" text="Button" />
-          <Button styleName="outline-accent" text="Button" />
+          <Button style={buttonMarginStyle} styleName="outline-primary" text="Button" />
+          <Button style={buttonMarginStyle} styleName="outline-accent" text="Button" />
         </View>
       </SliceScreen>
     );
