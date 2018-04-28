@@ -68,7 +68,7 @@ title: Button
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/button-variations-rounded" scrolling="no" /></div>
 
 ```jsx
-<Button text="Button" rounded={false} />
+<Button text="Button" rounded />
 ```
 
 ### 圆形

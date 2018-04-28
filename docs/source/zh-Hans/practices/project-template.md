@@ -15,13 +15,11 @@ title: 项目模板
 
 ### 依赖
 
-- [@blankapp/ui](https://github.com/blankapp/ui)
-- [lodash](https://github.com/lodash/lodash)
-- [mobx](https://github.com/mobxjs/mobx)
-- [mobx-react](https://github.com/mobxjs/mobx-react)
 - [react](https://github.com/facebook/react)
 - [react-native](https://github.com/facebook/react-native)
 - [react-navigation](https://github.com/react-community/react-navigation)
+- [@blankapp/ui](https://github.com/blankapp/ui)
+- [@blankapp/ui-pro](https://github.com/blankapp/ui-pro)
 
 ## 快速开始
 
@@ -59,29 +57,26 @@ $ react-native run-ios
 
 ## 项目结构
 
-| 名称 | 描述 |
-|---|---|
-| `App.js` | 主应用组件 |
-| `app.json` | - |
-| `index.js` | 应用入口文件 |
-| `package.json` | 构建脚本配置和依赖 |
-| `src/components` | 公共 UI 组件 |
-| `src/models` | - |
-| `src/modules` | JS 模块或原生模块 |
-| `src/navigators` | 导航配置 |
-| `src/resources` | 资源目录（语言包、图片、主题等） |
-| `src/screens` | 页面目录 |
-| `src/screens/Home` | 首页示例模板 |
-| `src/screens/Initialize` | 初始化页示例模板 |
-| `src/services/API` | API 示例模板 |
-| `src/stores` | - |
-| `src/utilities` | 工具类目录 |
+| 名称                       | 描述               |
+|--------------------------|------------------|
+| `App.js`                 | 主应用组件            |
+| `app.json`               | -                |
+| `index.js`               | 应用入口文件           |
+| `package.json`           | 构建脚本配置和依赖        |
+| `src/components`         | 公共 UI 组件         |
+| `src/models`             | -                |
+| `src/modules`            | JS 模块或原生模块       |
+| `src/navigators`         | 导航配置             |
+| `src/resources`          | 资源目录（语言包、图片、主题等） |
+| `src/screens`            | 页面目录             |
+| `src/screens/Home`       | 首页示例模板           |
+| `src/screens/Initialize` | 初始化页示例模板         |
+| `src/services/API`       | API 示例模板         |
+| `src/utilities`          | 工具类目录            |
 
 ### 示例
 ```
 .
-├── __tests__
-│   └── index.js
 ├── App.js                              # 主应用组件
 ├── app.json
 ├── index.js
@@ -89,8 +84,6 @@ $ react-native run-ios
 ├── package.json
 ├── src
 │   ├── components                      # 公共 UI 组件
-│   │   └── ...
-│   ├── models
 │   │   └── ...
 │   ├── navigators                      # 导航配置
 │   │   └── AppNavigator.js
@@ -103,9 +96,6 @@ $ react-native run-ios
 │   │   └── Initialize                  # 初始化页示例模板
 │   ├── services
 │   │   └── API                         # API 示例模板
-│   ├── stores
-│   │   ├── HomeScreenStore.js
-│   │   └── InitializeScreenStore.js
 │   └── utilities                       # 工具类目录
 │       ├── Constants.js
 │       └── Lang.js

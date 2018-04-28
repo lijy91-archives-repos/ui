@@ -7,7 +7,7 @@ import { fontSizeBody } from './dimens';
 
 export default {
   TextInput: {
-    height: 36,
+    height: 42,
     paddingTop: 0,
     paddingRight: 10,
     paddingBottom: 0,

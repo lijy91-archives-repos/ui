@@ -19,7 +19,7 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     styleguides: 风格指南
-    components: 基础组件
+    basic-components: 基础组件
     activityindicator: ActivityIndicator
     badge: Badge
     button: Button
@@ -37,6 +37,14 @@ sidebar:
     textinput: TextInput
     title: Title
     view: View
+    advanced-components: 高级组件
+    appbar: AppBar
+    icon: Icon
+    iconbutton: IconButton
+    tabbar: TabBar
+    viewpager: ViewPager
+    experimental-components: 实验组件
+    listitem: ListItem
     customization: 自定义
     themes: 主题
     miscellaneous: 其他

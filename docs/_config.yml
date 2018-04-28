@@ -36,8 +36,6 @@ twitter: lijy91
 github: blankapp/ui
 
 deploy:
-- type: git
-  repo: git@github.com:blankapp/blankapp.github.io.git
 - type: rsync
   host: blankapp.org
   user: root

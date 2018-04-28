@@ -2,7 +2,7 @@ docs:
   getting_started:
     overview: index.html
     styleguides: styleguides.html
-  components:
+  basic-components:
     activityindicator: component-activityindicator.html
     badge: component-badge.html
     button: component-button.html
@@ -18,6 +18,14 @@ docs:
     textinput: component-textinput.html
     title: component-title.html
     view: component-view.html
+  advanced-components:
+    appbar: advanced-component-appbar.html
+    icon: advanced-component-icon.html
+    iconbutton: advanced-component-iconbutton.html
+    tabbar: advanced-component-tabbar.html
+    viewpager: advanced-component-viewpager.html
+  experimental-components:
+    listitem: experimental-component-listitem.html
   customization:
     themes: themes.html
   miscellaneous:
