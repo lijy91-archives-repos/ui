@@ -65,9 +65,13 @@ class SectionList extends PureComponent {
 
     if (sections && sections.length > 0) {
       contentView = sections.map((section) => {
-        const sectionContentView = (section.data || []).map((item, index) => {
+        const sectionData = (section.data || []);
+        const sectionContentView = sectionData.map((item, index) => {
           const info = { item, index, section };
-          const itemView = [renderItem(info), itemSeparatorView];
+          const itemView = [
+            renderItem(info),
+            index < (sectionData.length - 1) ? itemSeparatorView : null,
+          ];
           return itemView;
         });
         const sectionSeparatorView = typeof SectionSeparatorComponent === 'object' ? SectionSeparatorComponent : SectionSeparatorComponent();
