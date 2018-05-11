@@ -425,20 +425,15 @@
   version "1.0.0"
   dependencies:
     "@blankapp/ui" "^1.0.5"
+    react-native-safe-area-view "^0.7.0"
+    react-native-tab-view "^0.0.77"
     react-native-vector-icons "^4.6.0"
     react-navigation "^1.5.11"
 
-"@blankapp/ui@^1.0.5":
+"@blankapp/ui@^1.0.5", "@blankapp/ui@file:../..":
   version "1.0.5"
   dependencies:
     hoist-non-react-statics "^2.5.0"
-    lodash "^4.17.5"
-
-"@blankapp/ui@file:../../../ui":
-  version "1.0.5"
-  dependencies:
-    hoist-non-react-statics "^2.5.0"
-    lodash "^4.17.5"
 
 abab@^1.0.4:
   version "1.0.4"

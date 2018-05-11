@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import deepMerge from './utilities/deepMerge';
@@ -85,7 +86,7 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
           (value, key) => !(typeof value === 'object' || mapPropToStyles.includes(key)),
         );
 
-        const componentStyle = [pickedStyle, style];
+        const componentStyle = Object.assign({}, pickedStyle, StyleSheet.flatten(style));
 
         return {
           styleSheets: mergedStyle, // 原始样式表
