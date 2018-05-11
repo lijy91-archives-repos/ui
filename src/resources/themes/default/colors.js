@@ -9,6 +9,9 @@ export const yellow = '#FFFF00';
 
 export const themePrimary = '#333333';
 export const themeAccent = '#64dd17';
+export const themeSecondary = '#000000';
+export const themePositive = '#000000';
+export const themeNegative = '#000000';
 
 export const backgroundDark = '#FFFFFF';
 export const backgroundLight = '#FFFFFF';
