@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Theme from './Theme';
 
 const propTypes = {
-  children: PropTypes.arrayOf(PropTypes.any).isRequired,
+  children: PropTypes.node.isRequired,
   theme: PropTypes.string,
 };
 const defaultProps = {
