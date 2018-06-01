@@ -65,7 +65,7 @@ class CheckBox extends PureComponent {
           onCheckedChange(!checked);
         }}
       >
-        <CheckMark checked />
+        <CheckMark checked={checked} />
         {children}
       </RNTouchableOpacity>
     );
