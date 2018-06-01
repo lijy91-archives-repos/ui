@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { View as RNView } from 'react-native';
 import PropTypes from 'prop-types';
-import withStyles from '../../withStyles';
 
 const rootElement = document.getElementById('root');
 
@@ -78,4 +77,4 @@ class Modal extends Component {
 Modal.propTypes = propTypes;
 Modal.defaultProps = defaultProps;
 
-export default withStyles('Modal')(Modal);
+export default Modal;
