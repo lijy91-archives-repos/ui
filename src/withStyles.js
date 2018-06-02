@@ -86,7 +86,9 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
           (value, key) => !(typeof value === 'object' || mapPropToStyles.includes(key)),
         );
 
-        const componentStyle = Object.assign({}, pickedStyle, StyleSheet.flatten(style));
+        const nonNullStyle = Array.isArray(style) ? style.filter(i => i) : style;
+        const flattenedStyle = StyleSheet.flatten(nonNullStyle);
+        const componentStyle = Object.assign({}, pickedStyle, flattenedStyle);
 
         return {
           styleSheets: mergedStyle, // 原始样式表
