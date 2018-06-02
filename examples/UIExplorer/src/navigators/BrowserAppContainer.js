@@ -1,23 +1,19 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import {
-  NavigationActions,
-  addNavigationHelpers,
-} from 'react-navigation';
+import { NavigationActions, StackActions } from 'react-navigation';
 
-const addListener = () => {};
 const getAction = (router, path, params) => {
   const action = router.getActionForPathAndParams(path, params);
   if (action) {
     return action;
   }
-  return NavigationActions.navigate({
-    params: {
-      path,
-    },
-    routeName: 'SliceNoDemo',
+  return StackActions.reset({
+    index: 0,
+    actions: [NavigationActions.navigate({ routeName: 'Initialize' })],
   });
 };
+
+const addListener = () => {};
 
 export default (NavigationAwareView) => {
   const initialAction = getAction(
@@ -45,11 +41,11 @@ export default (NavigationAwareView) => {
       };
     }
     componentDidMount() {
-      const navigation = addNavigationHelpers({
+      const navigation = {
         state: this.state.routes[this.state.index],
         dispatch: this.dispatch,
         addListener,
-      });
+      };
       const screenOptions = NavigationAwareView.router.getScreenOptions(navigation);
       document.title = screenOptions.title;
       window.onpopstate = (e) => {
@@ -71,11 +67,11 @@ export default (NavigationAwareView) => {
       if (window.location.pathname !== uri) {
         window.history.pushState({}, state.title, uri);
       }
-      const navigation = addNavigationHelpers({
+      const navigation = {
         state: state.routes[state.index],
         dispatch: this.dispatch,
         addListener,
-      });
+      };
       const screenOptions = NavigationAwareView.router.getScreenOptions(navigation);
       document.title = screenOptions.title;
     }
@@ -105,26 +101,6 @@ export default (NavigationAwareView) => {
         this.state,
       );
 
-      /* eslint-disable no-console */
-      if (!state) {
-        console.log('Dispatched action did not change state: ', {
-          action,
-        });
-      } else if (console.group) {
-        console.group('Navigation Dispatch: ');
-        console.log('Action: ', action);
-        console.log('New State: ', state);
-        console.log('Last State: ', this.state);
-        console.groupEnd();
-      } else {
-        console.log('Navigation Dispatch: ', {
-          action,
-          newState: state,
-          lastState: this.state,
-        });
-      }
-      /* eslint-enable no-console */
-
       if (!state) {
         return true;
       }
@@ -138,11 +114,11 @@ export default (NavigationAwareView) => {
     render() {
       return (
         <NavigationAwareView
-          navigation={addNavigationHelpers({
+          navigation={{
             state: this.state,
             dispatch: this.dispatch,
             addListener,
-          })}
+          }}
         />
       );
     }

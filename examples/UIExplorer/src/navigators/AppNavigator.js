@@ -6,6 +6,7 @@ import routeConfigMap from './routeConfigMap';
 import stackConfig from './stackConfig';
 
 const DefaultNavigator = StackNavigator(routeConfigMap, stackConfig);
-const AppNavigator = Platform.OS === 'web' ? BrowserAppContainer(DefaultNavigator) : DefaultNavigator;
+const AppNavigator = Platform.OS === 'web' ?
+  BrowserAppContainer(DefaultNavigator) : DefaultNavigator;
 
 export default AppNavigator;

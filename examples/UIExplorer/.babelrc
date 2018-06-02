@@ -4,12 +4,6 @@
   ],
   "plugins": [
     [
-      "transform-define",
-      {
-        "__DEV__": true
-      }
-    ],
-    [
       "transform-runtime",
       {
         "helpers": false,
