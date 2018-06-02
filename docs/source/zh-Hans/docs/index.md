@@ -5,7 +5,7 @@ title: 概述
 
 ## 简介
 
-高可定制和主题化的 React Native 组件库， 在[这里](/examples/UIExplorer/index.html)查看在线演示。
+高可定制和主题化的 React Native 组件库， 在[这里](https://uiexplorer.blankapp.org)查看在线演示。
 
 ### 特性
 
@@ -20,7 +20,7 @@ title: 概述
   <img style="width: 400px; height: 795px;" src="/assets/images/nexus5_black.png" />
   <iframe
     style="position: absolute; overflow: hidden; z-index: 1000; background-color: rgb(0, 0, 0); width: 360px; height: 640px; top: 67px; left: 20px;"
-    src="/examples/UIExplorer/index.html"
+    src="https://uiexplorer.blankapp.org"
     width="300px"
     height="597px"
     frameborder="0"

@@ -19,7 +19,7 @@ sidebar:
     getting_started: Getting Started
     overview: Overview
     styleguides: Styleguides
-    components: Components
+    basic-components: Basic components
     activityindicator: ActivityIndicator
     badge: Badge
     button: Button
@@ -35,6 +35,14 @@ sidebar:
     textinput: TextInput
     title: Title
     view: View
+    advanced-components: Advanced components
+    appbar: AppBar
+    icon: Icon
+    iconbutton: IconButton
+    tabbar: TabBar
+    viewpager: ViewPager
+    experimental-components: Experimental components
+    listitem: ListItem
     customization: Customization
     themes: Themes
     miscellaneous: Miscellaneous

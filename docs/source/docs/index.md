@@ -5,7 +5,7 @@ Welcome to use `@blankapp/ui`, This documentation will help you get started.  If
 
 ## Introduction
 
-Highly customizable and theming components for React Native, A live demo is [here](/examples/UIExplorer/index.html).
+Highly customizable and theming components for React Native, A live demo is [here](https://uiexplorer.blankapp.org).
 
 ### Features
 
@@ -20,7 +20,7 @@ Highly customizable and theming components for React Native, A live demo is [her
   <img style="width: 400px; height: 795px;" src="/assets/images/nexus5_black.png" />
   <iframe
     style="position: absolute; overflow: hidden; z-index: 1000; background-color: rgb(0, 0, 0); width: 360px; height: 640px; top: 67px; left: 20px;"
-    src="/examples/UIExplorer/index.html"
+    src="https://uiexplorer.blankapp.org"
     width="300px"
     height="597px"
     frameborder="0"

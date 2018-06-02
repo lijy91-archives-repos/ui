@@ -3,9 +3,9 @@
     "react-native"
   ],
   "plugins": [
-    "transform-decorators-legacy",
     [
-      "transform-runtime", {
+      "transform-runtime",
+      {
         "helpers": false,
         "polyfill": false,
         "regenerator": true,

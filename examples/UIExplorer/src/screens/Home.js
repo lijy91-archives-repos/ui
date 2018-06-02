@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, ListView } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import {
+  Divider,
   Screen,
-  View,
+  SectionList,
+  Subtitle,
   Text,
   Title,
-  Subtitle,
-  Divider,
+  View,
 } from '@blankapp/ui';
-import _ from 'lodash';
 
-class HomeScreen extends Component {
+class Home extends Component {
   static navigationOptions = {
     title: 'UIExplorer',
     headerLeft: null,
@@ -20,115 +20,134 @@ class HomeScreen extends Component {
     super(props);
     this.navigation = this.props.navigation;
 
-    const ds = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2,
-      sectionHeaderHasChanged: (s1, s2) => s1 !== s2,
-    });
-
     this.renderSectionHeader = this.renderSectionHeader.bind(this);
     this.renderItem = this.renderItem.bind(this);
 
     const sectionsSource = [
       {
-        title: 'Components',
+        title: 'Basic components',
         data: [
           {
             title: 'ActivityIndicator',
             description: 'Indicate that something is ongoing',
-            routeName: 'ActivityIndicatorExample',
+            routeName: 'DemoActivityIndicator',
           },
           {
             title: 'Badge',
             description: 'Small count controls',
-            routeName: 'BadgeExample',
+            routeName: 'DemoBadge',
           },
           {
             title: 'Button',
             description: 'Flat and outline buttons',
-            routeName: 'ButtonExample',
+            routeName: 'DemoButton',
           },
           {
             title: 'Card',
             description: 'Various card layout styles',
-            routeName: 'CardExample',
+            routeName: 'DemoCard',
           },
           {
             title: 'CheckBox',
             description: 'Multi-selection controls',
-            routeName: 'CheckBoxExample',
+            routeName: 'DemoCheckBox',
           },
           {
             title: 'Divider',
             description: 'Used to separate distinct content sections',
-            routeName: 'DividerExample',
+            routeName: 'DemoDivider',
           },
           {
             title: 'HyperlinkButton',
             description: 'Like hyperlink buttons',
-            routeName: 'HyperlinkButtonExample',
+            routeName: 'DemoHyperlinkButton',
+          },
+          {
+            title: 'Modal',
+            description: 'Coming soon',
+            routeName: 'DemoModal',
           },
           {
             title: 'RadioButton',
             description: 'Single selection controls',
-            routeName: 'RadioButtonExample',
+            routeName: 'DemoRadioButton',
           },
           {
             title: 'Subtitle',
             description: 'Subtitle text display controls',
-            routeName: 'SubtitleExample',
+            routeName: 'DemoSubtitle',
           },
           {
             title: 'Switch',
             description: 'On off switches',
-            routeName: 'SwitchExample',
+            routeName: 'DemoSwitch',
           },
           {
             title: 'Text',
             description: 'Single and multi-line text display controls',
-            routeName: 'TextExample',
+            routeName: 'DemoText',
           },
           {
             title: 'TextInput',
             description: 'Single and multi-line text edit controls',
-            routeName: 'TextInputExample',
+            routeName: 'DemoTextInput',
           },
           {
             title: 'Title',
             description: 'Title text display controls',
-            routeName: 'TitleExample',
+            routeName: 'DemoTitle',
           },
           {
             title: 'View',
             description: 'A special view that can contain other views',
-            routeName: 'ViewExample',
+            routeName: 'DemoView',
           },
         ],
       },
       {
-        title: 'Simple screens',
+        title: 'Advanced components',
         data: [
           {
-            title: 'Register',
-            description: 'Come soon',
-            routeName: 'simple1',
+            title: 'AppBar',
+            description: 'Coming soon',
+            routeName: 'DemoAppBar',
           },
           {
-            title: 'Login',
-            description: 'Come soon',
-            routeName: 'simple2',
+            title: 'Icon',
+            description: 'Coming soon',
+            routeName: 'DemoIcon',
+          },
+          {
+            title: 'IconButton',
+            description: 'Coming soon',
+            routeName: 'DemoIconButton',
+          },
+          {
+            title: 'TabBar',
+            description: 'Coming soon',
+            routeName: 'DemoTabBar',
+          },
+          {
+            title: 'ViewPager',
+            description: 'Coming soon',
+            routeName: 'DemoViewPager',
+          },
+        ],
+      },
+      {
+        title: 'Experimental components',
+        data: [
+          {
+            title: 'ListItem',
+            description: 'Coming soon',
+            routeName: 'DemoListItem',
           },
         ],
       },
     ];
 
-    const dataBlob = {};
-    _.each(sectionsSource, (section) => {
-      const sectionID = section.title;
-      dataBlob[sectionID] = section.data;
-    });
-
     this.state = {
-      dataSource: ds.cloneWithRowsAndSections(dataBlob),
+      sectionsSource,
     };
   }
 
@@ -168,6 +187,7 @@ class HomeScreen extends Component {
             paddingBottom: 10,
             paddingLeft: 15,
             paddingRight: 15,
+            minHeight: 64,
           }}
         >
           <Title>{item.title}</Title>
@@ -180,20 +200,16 @@ class HomeScreen extends Component {
   render() {
     return (
       <Screen>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={rowData => this.renderItem({ item: rowData })}
-          renderSectionHeader={(sectionData, sectionID) => {
-            const section = {
-              title: sectionID,
-            };
-            return this.renderSectionHeader({ section });
-          }}
-          renderSeparator={(sectionID, rowID) => <Divider key={`${sectionID}-${rowID}`} />}
+        <SectionList
+          renderItem={this.renderItem}
+          sections={this.state.sectionsSource}
+          ItemSeparatorComponent={() => <Divider />}
+          renderSectionHeader={this.renderSectionHeader}
+          keyExtractor={item => `${item.routeName}`}
         />
       </Screen>
     );
   }
 }
 
-export default HomeScreen;
+export default Home;

@@ -22,11 +22,10 @@ const defaultProps = {
 class Badge extends PureComponent {
   render() {
     let {
-      text,
       children,
-    } = this.props;
-    const {
       type,
+      text,
+      ...restProps
     } = this.props;
 
     if (typeof children === 'string') {
@@ -44,7 +43,7 @@ class Badge extends PureComponent {
 
     return (
       <RNView
-        {...this.props}
+        {...restProps}
       >
         {children}
       </RNView>

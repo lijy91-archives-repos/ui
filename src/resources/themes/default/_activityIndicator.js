@@ -1,6 +1,4 @@
-import {
-  textPrimary,
-} from './colors';
+import { textPrimary } from './colors';
 
 export default {
   ActivityIndicator: {

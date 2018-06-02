@@ -118,9 +118,6 @@ $ brew install tree
 $ tree -L 1
 .
 ├── react-native-template-ui-based
-├── todo-api-client
-├── todo-client
-├── todo-server
 ├── ui
 └── ui-experimental
 

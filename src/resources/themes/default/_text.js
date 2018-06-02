@@ -2,9 +2,7 @@ import {
   transparent,
   textSecondary,
 } from './colors';
-import {
-  fontSizeBody,
-} from './dimens';
+import { fontSizeBody } from './dimens';
 
 export default {
   Text: {

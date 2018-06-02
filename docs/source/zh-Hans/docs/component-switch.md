@@ -5,7 +5,7 @@ title: Switch
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/switch-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/switch-example" scrolling="no" /></div>
 
 ```jsx
 <Switch />
@@ -15,7 +15,7 @@ title: Switch
 
 ### 禁用
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/switch-state-disabled" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/switch-state-disabled" scrolling="no" /></div>
 
 ```jsx
 <Switch disabled />
@@ -24,7 +24,7 @@ title: Switch
 
 ### 选中
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/switch-state-checked" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/switch-state-checked" scrolling="no" /></div>
 
 ```jsx
 <Switch checked />

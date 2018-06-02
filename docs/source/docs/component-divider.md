@@ -5,7 +5,7 @@ Used to separate distinct content sections
 
 ## Examples
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/divider-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/divider-example" scrolling="no" /></div>
 
 ```jsx
 <Divider />
@@ -15,11 +15,11 @@ Used to separate distinct content sections
 
 ### Orientation
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/divider-variations-orientation" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/divider-variations-orientation" scrolling="no" /></div>
 
 ```jsx
-<Divider orientation={'vertical'} />
-<Divider orientation={'horizontal'} />
+<Divider orientation="vertical" />
+<Divider orientation="horizontal" />
 ```
 
 ## API

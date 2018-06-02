@@ -3,7 +3,7 @@ import { TextInput as RNTextInput } from 'react-native';
 
 import withStyles from '../../withStyles';
 
-const mapStyleToProps = [
+const mapPropToStyles = [
   'placeholderTextColor',
   'selectionColor',
 ];
@@ -19,4 +19,4 @@ class TextInput extends PureComponent {
   }
 }
 
-export default withStyles('TextInput', mapStyleToProps)(TextInput);
+export default withStyles('TextInput', mapPropToStyles)(TextInput);

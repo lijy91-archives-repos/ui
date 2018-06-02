@@ -2,9 +2,7 @@ import {
   white,
   red,
 } from './colors';
-import {
-  fontSizeBody,
-} from './dimens';
+import { fontSizeBody } from './dimens';
 
 export default {
   Badge: {

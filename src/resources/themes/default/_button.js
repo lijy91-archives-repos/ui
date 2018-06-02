@@ -4,9 +4,7 @@ import {
   themePrimary,
   themeAccent,
 } from './colors';
-import {
-  fontSizeButton,
-} from './dimens';
+import { fontSizeButton } from './dimens';
 
 export default {
   Button: {
@@ -14,9 +12,6 @@ export default {
     backgroundColor: themePrimary,
     paddingLeft: 8,
     paddingRight: 8,
-    paddingTop: 0,
-    paddingBottom: 0,
-    marginRight: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',

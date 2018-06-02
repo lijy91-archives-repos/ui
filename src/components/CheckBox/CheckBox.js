@@ -27,7 +27,7 @@ const defaultProps = {
   checked: false,
   onCheckedChange: undefined,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -37,9 +37,10 @@ class CheckBox extends PureComponent {
       children,
       text,
       textStyle,
+      checked,
       onCheckedChange,
+      ...restProps
     } = this.props;
-    const { checked } = this.props;
 
     if (typeof children === 'string') {
       text = children;
@@ -59,12 +60,12 @@ class CheckBox extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
         onPress={() => {
           onCheckedChange(!checked);
         }}
       >
-        <CheckMark checked />
+        <CheckMark checked={checked} />
         {children}
       </RNTouchableOpacity>
     );
@@ -76,4 +77,4 @@ CheckBox.defaultProps = defaultProps;
 
 CheckBox.CheckMark = CheckMark;
 
-export default withStyles('CheckBox', mapStyleToProps)(CheckBox);
+export default withStyles('CheckBox', mapPropToStyles)(CheckBox);

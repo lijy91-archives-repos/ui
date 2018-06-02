@@ -2,9 +2,10 @@ import React, { PureComponent } from 'react';
 import { StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import hoistNonReactStatic from 'hoist-non-react-statics';
-import _ from 'lodash';
+import deepMerge from './utilities/deepMerge';
+import pickBy from './utilities/pickBy';
 
-const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) => {
+const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) => {
   class StyledComponent extends PureComponent {
       static propTypes = {
         ...WrappedComponent.propTypes,
@@ -55,12 +56,6 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
         const { themeStyle, parentStyle } = context;
         let { style } = props;
 
-        if (typeof style === 'number') {
-          style = StyleSheet.flatten(style);
-        } else if (!style) {
-          style = {};
-        }
-
         // 以下为目前支持的属性选择器类型（其他类型默认忽略）
         const styledTypes = [
           'string',
@@ -68,23 +63,33 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
           'boolean',
         ];
 
-        const styledProps = _.pickBy(props, value => _.includes(styledTypes, typeof value));
-        const selectors = _.union(
-          [componentName],
-          _.map(styledProps, (value, key) => `${componentName}[${key}=${value}]`),
-        );
+        // 生成样式选择器
+        const selectors = [
+          componentName,
+          ...Object
+            .keys(props)
+            .filter(key => styledTypes.includes(typeof props[key]))
+            .map(key => `${componentName}[${key}=${props[key]}]`),
+        ];
 
-        const pickedThemeStyle = _.pickBy(themeStyle, (value, key) => _.includes(selectors, key));
-        const pickedParentStyle = _.pickBy(parentStyle, (value, key) => _.includes(selectors, key));
+        const pickedThemeStyle = pickBy(themeStyle, (value, key) => selectors.includes(key));
+        const pickedParentStyle = pickBy(parentStyle, (value, key) => selectors.includes(key));
 
-        const mergedStyle = _.merge(
+        // 将样式按顺序合并：主题样式，父组件样式，行内样式
+        const mergedStyle = deepMerge(
           {},
-          ..._.values(pickedThemeStyle),
-          ..._.values(pickedParentStyle),
-          style,
+          ...Object.values(pickedThemeStyle),
+          ...Object.values(pickedParentStyle),
+        );
+        const pickedStyle = pickBy(
+          mergedStyle,
+          (value, key) => !(typeof value === 'object' || mapPropToStyles.includes(key)),
         );
 
-        const componentStyle = _.omit(_.omitBy(mergedStyle, _.isObject), mapStyleToProps);
+        const nonNullStyle = Array.isArray(style) ? style.filter(i => i) : style;
+        const flattenedStyle = StyleSheet.flatten(nonNullStyle);
+        const componentStyle = Object.assign({}, pickedStyle, flattenedStyle);
+
         return {
           styleSheets: mergedStyle, // 原始样式表
           componentStyle,
@@ -92,10 +97,11 @@ const withStyles = (componentName, mapStyleToProps = []) => (WrappedComponent) =
       }
 
       resolveAddedProps(resolvedStyle) {
-        let addedProps = _.pick(resolvedStyle.styleSheets, mapStyleToProps);
-        if (!addedProps) {
-          addedProps = {};
-        }
+        const styleSheets = resolvedStyle.styleSheets || {};
+        const addedProps = pickBy(
+          styleSheets,
+          (value, key) => mapPropToStyles.includes(key) && !this.props[key],
+        );
         return addedProps;
       }
 

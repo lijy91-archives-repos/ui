@@ -1,6 +1,4 @@
-import {
-  backgroundLight,
-} from './colors';
+import { backgroundLight } from './colors';
 
 export default {
   Screen: {

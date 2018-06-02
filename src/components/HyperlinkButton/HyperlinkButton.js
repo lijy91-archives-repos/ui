@@ -19,16 +19,17 @@ const defaultProps = {
   disabled: false,
   size: 'medium',
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
 class HyperlinkButton extends PureComponent {
   render() {
     let {
+      children,
       text,
       textStyle,
-      children,
+      ...restProps
     } = this.props;
 
     if (typeof children === 'string') {
@@ -45,7 +46,7 @@ class HyperlinkButton extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
       >
         {children}
       </RNTouchableOpacity>
@@ -56,4 +57,4 @@ class HyperlinkButton extends PureComponent {
 HyperlinkButton.propTypes = propTypes;
 HyperlinkButton.defaultProps = defaultProps;
 
-export default withStyles('HyperlinkButton', mapStyleToProps)(HyperlinkButton);
+export default withStyles('HyperlinkButton', mapPropToStyles)(HyperlinkButton);

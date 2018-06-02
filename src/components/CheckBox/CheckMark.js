@@ -25,22 +25,25 @@ const defaultProps = {
 class CheckMark extends PureComponent {
   render() {
     const {
+      checked,
       checkedImage,
+      ...restProps
     } = this.props;
 
     return (
       <RNView
-        {...this.props}
+        {...restProps}
       >
-        <RNImage
-          style={{ width: '100%', height: '100%' }}
-          source={{ uri: checkedImage }}
-        />
+        { checked && (
+          <RNImage
+            style={{ width: '100%', height: '100%' }}
+            source={{ uri: checkedImage }}
+          />
+        )}
       </RNView>
     );
   }
 }
-
 
 CheckMark.propTypes = propTypes;
 CheckMark.defaultProps = defaultProps;

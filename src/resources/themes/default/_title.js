@@ -1,9 +1,5 @@
-import {
-  textPrimary,
-} from './colors';
-import {
-  fontSizeTitle,
-} from './dimens';
+import { textPrimary } from './colors';
+import { fontSizeTitle } from './dimens';
 
 export default {
   Title: {

@@ -2,9 +2,7 @@ import {
   transparent,
   textSecondary,
 } from './colors';
-import {
-  fontSizeSubheading,
-} from './dimens';
+import { fontSizeSubheading } from './dimens';
 
 export default {
   Subtitle: {

@@ -16,7 +16,7 @@ const defaultProps = {
   checked: false,
   onCheckedChange: undefined,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
@@ -24,6 +24,7 @@ class Switch extends PureComponent {
   render() {
     let {
       onCheckedChange,
+      ...restProps
     } = this.props;
     const { checked } = this.props;
 
@@ -33,7 +34,7 @@ class Switch extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
         onPress={() => {
           onCheckedChange(!checked);
         }}
@@ -51,4 +52,4 @@ Switch.defaultProps = defaultProps;
 Switch.Background = Background;
 Switch.Knob = Knob;
 
-export default withStyles('Switch', mapStyleToProps)(Switch);
+export default withStyles('Switch', mapPropToStyles)(Switch);

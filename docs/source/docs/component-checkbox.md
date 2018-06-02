@@ -5,28 +5,28 @@ Multi-selection controls
 
 ## Examples
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/checkbox-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/checkbox-example" scrolling="no" /></div>
 
 ```jsx
-<CheckBox text={'CheckBox'} />
+<CheckBox text="CheckBox" />
 ```
 
 ## States
 
 ### Disabled
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/checkbox-state-disabled" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/checkbox-state-disabled" scrolling="no" /></div>
 
 ```jsx
-<CheckBox text={'CheckBox'} disabled />
+<CheckBox text="CheckBox" disabled />
 ```
 
 ### Checked
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/checkbox-state-checked" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/checkbox-state-checked" scrolling="no" /></div>
 
 ```jsx
-<CheckBox text={'CheckBox'} checked />
+<CheckBox text="CheckBox" checked />
 ```
 
 ## API

@@ -5,7 +5,7 @@ title: View
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/view-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/view-example" scrolling="no" /></div>
 
 ```jsx
 <View>

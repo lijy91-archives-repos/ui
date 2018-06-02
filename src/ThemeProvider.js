@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Theme from './Theme';
 
 const propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   theme: PropTypes.string,
 };
 const defaultProps = {
@@ -23,7 +23,7 @@ class ThemeProvider extends PureComponent {
   }
 
   render() {
-    return Children.only(this.props.children);
+    return Children.toArray(this.props.children);
   }
 }
 

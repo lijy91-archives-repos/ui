@@ -10,17 +10,22 @@ const defaultProps = {
 
 class RNTouchableOpacity extends PureComponent {
   componentWillReceiveProps(nextProps) {
-    const { opacity } = nextProps.style;
-    if (opacity) {
-      this.touchableOpacityRef.setNativeProps({ style: { opacity } });
+    const prevStyle = this.props.style;
+    const nextStyle = nextProps.style;
+
+    const prevOpacity = prevStyle.opacity || 1;
+    const nextOpacity = nextStyle.opacity || 1;
+
+    if (nextOpacity !== prevOpacity) {
+      this.touchableOpacityRef.setNativeProps({ style: { opacity: nextOpacity } });
     }
   }
 
   render() {
-    const { children } = this.props;
+    const { children, ...restProps } = this.props;
     return (
       <TouchableOpacity
-        {...this.props}
+        {...restProps}
         ref={(ref) => {
           this.touchableOpacityRef = ref;
         }}

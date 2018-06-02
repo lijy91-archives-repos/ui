@@ -3,7 +3,6 @@ import { StyleSheet, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
 
-import withStyles from '../../withStyles';
 import ActivityIndicator from '../ActivityIndicator';
 import Text from '../Text';
 
@@ -24,23 +23,22 @@ const defaultProps = {
   disabled: false,
   loading: false,
   size: 'medium',
-  rounded: true,
+  rounded: false,
   circular: false,
   fluid: false,
 };
-const mapStyleToProps = [
+const mapPropToStyles = [
   'activeOpacity',
 ];
 
 class Button extends PureComponent {
   render() {
     let {
+      children,
       text,
       textStyle,
-      children,
-    } = this.props;
-    const {
       loading,
+      ...restProps
     } = this.props;
 
     if (typeof children === 'string') {
@@ -67,7 +65,7 @@ class Button extends PureComponent {
 
     return (
       <RNTouchableOpacity
-        {...this.props}
+        {...restProps}
       >
         {activityIndicator}
         {children}
@@ -78,5 +76,6 @@ class Button extends PureComponent {
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
+Button.mapPropToStyles = mapPropToStyles;
 
-export default withStyles('Button', mapStyleToProps)(Button);
+export default Button;

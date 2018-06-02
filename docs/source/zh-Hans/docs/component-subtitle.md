@@ -5,7 +5,7 @@ title: Subtitle
 
 ## 示例
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/subtitle-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/subtitle-example" scrolling="no" /></div>
 
 ```jsx
 <Subtitle>Subtitle</Subtitle>

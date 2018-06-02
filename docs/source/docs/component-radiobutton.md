@@ -5,12 +5,12 @@ Single selection controls
 
 ## Examples
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/radiobutton-example" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/radiobutton-example" scrolling="no" /></div>
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} checked />
-  <RadioButton text={'Option2'} />
+  <RadioButton text="Option1" checked />
+  <RadioButton text="Option2" />
 </RadioButton.Group>
 ```
 
@@ -18,23 +18,23 @@ Single selection controls
 
 ### Disabled
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/radiobutton-state-disabled" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/radiobutton-state-disabled" scrolling="no" /></div>
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} value={'1'} disabled />
-  <RadioButton text={'Option2'} value={'2'} disabled />
+  <RadioButton text="Option1" value="1" disabled />
+  <RadioButton text="Option2" value="2" disabled />
 </RadioButton.Group>
 ```
 
 ### Checked
 
-<div><iframe style="width: 100%; margin: 0;" src="http://ui-demos.blankapp.org/radiobutton-state-checked" scrolling="no" /></div>
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/radiobutton-state-checked" scrolling="no" /></div>
 
 ```jsx
 <RadioButton.Group>
-  <RadioButton text={'Option1'} value={'1'} checked />
-  <RadioButton text={'Option2'} value={'2'} />
+  <RadioButton text="Option1" value="1" checked />
+  <RadioButton text="Option2" value="2" />
 </RadioButton.Group>
 ```
 
