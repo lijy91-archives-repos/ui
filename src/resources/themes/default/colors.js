@@ -1,17 +1,12 @@
 export const transparent = 'rgba(0, 0, 0, 0)';
 export const white = '#FFFFFF';
 export const black = '#000000';
-export const gray = '#808080';
-export const blue = '#0000FF';
-export const green = '#008000';
-export const red = '#FF0000';
-export const yellow = '#FFFF00';
 
-export const themePrimary = '#333333';
-export const themeAccent = '#64dd17';
-export const themeSecondary = '#000000';
-export const themePositive = '#000000';
-export const themeNegative = '#000000';
+export const themePrimary = '#222222';
+export const themeSecondary = '#6c757d';
+export const themePositive = '#32b643';
+export const themeNeutral = '#ffb700';
+export const themeNegative = '#e85600';
 
 export const backgroundDark = '#FFFFFF';
 export const backgroundLight = '#FFFFFF';

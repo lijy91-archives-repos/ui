@@ -25,6 +25,7 @@ class DemoButton extends Component {
     };
     const buttonMarginStyle = {
       marginRight: 4,
+      marginBottom: 4,
     };
     return (
       <View>
@@ -35,14 +36,20 @@ class DemoButton extends Component {
             style={buttonPanelStyle}
           >
             <Button style={buttonMarginStyle} styleName="flat-primary" text="Button" />
-            <Button style={buttonMarginStyle} styleName="flat-accent" text="Button" />
+            <Button style={buttonMarginStyle} styleName="flat-secondary" text="Button" />
+            <Button style={buttonMarginStyle} styleName="flat-positive" text="Button" />
+            <Button style={buttonMarginStyle} styleName="flat-neutral" text="Button" />
+            <Button style={buttonMarginStyle} styleName="flat-negative" text="Button" />
           </View>
           <Subtitle>Outline</Subtitle>
           <View
             style={buttonPanelStyle}
           >
             <Button style={buttonMarginStyle} styleName="outline-primary" text="Button" />
-            <Button style={buttonMarginStyle} styleName="outline-accent" text="Button" />
+            <Button style={buttonMarginStyle} styleName="outline-secondary" text="Button" />
+            <Button style={buttonMarginStyle} styleName="outline-positive" text="Button" />
+            <Button style={buttonMarginStyle} styleName="outline-neutral" text="Button" />
+            <Button style={buttonMarginStyle} styleName="outline-negative" text="Button" />
           </View>
         </View>
         <Title>States</Title>
@@ -71,18 +78,6 @@ class DemoButton extends Component {
             <Button style={buttonMarginStyle} size="medium" text="MEDIUM" />
             <Button style={buttonMarginStyle} size="large" text="LARGE" />
             <Button style={buttonMarginStyle} size="big" text="BIG" />
-          </View>
-          <Subtitle>Rounded</Subtitle>
-          <View
-            style={buttonPanelStyle}
-          >
-            <Button text="Button" rounded />
-          </View>
-          <Subtitle>Circular</Subtitle>
-          <View
-            style={buttonPanelStyle}
-          >
-            <Button text="OK" circular />
           </View>
           <Subtitle>Fluid</Subtitle>
           <View

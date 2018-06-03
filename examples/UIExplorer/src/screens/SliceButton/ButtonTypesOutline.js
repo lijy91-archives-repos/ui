@@ -15,12 +15,16 @@ class ButtonTypesOutline extends Component {
     };
     const buttonMarginStyle = {
       marginRight: 4,
+      marginBottom: 4,
     };
     return (
       <SliceScreen>
         <View style={buttonPanelStyle}>
           <Button style={buttonMarginStyle} styleName="outline-primary" text="Button" />
-          <Button style={buttonMarginStyle} styleName="outline-accent" text="Button" />
+          <Button style={buttonMarginStyle} styleName="outline-secondary" text="Button" />
+          <Button style={buttonMarginStyle} styleName="outline-positive" text="Button" />
+          <Button style={buttonMarginStyle} styleName="outline-neutral" text="Button" />
+          <Button style={buttonMarginStyle} styleName="outline-negative" text="Button" />
         </View>
       </SliceScreen>
     );

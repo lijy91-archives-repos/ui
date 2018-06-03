@@ -1,12 +1,12 @@
 import {
   white,
-  red,
+  themeNegative,
 } from './colors';
 import { fontSizeBody } from './dimens';
 
 export default {
   Badge: {
-    backgroundColor: red,
+    backgroundColor: themeNegative,
     alignSelf: 'flex-start',
     justifyContent: 'center',
     alignItems: 'center',

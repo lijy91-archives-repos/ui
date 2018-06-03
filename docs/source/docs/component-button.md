@@ -19,7 +19,10 @@ Flat and outline buttons
 
 ```jsx
 <Button styleName="flat-primary" text="Button" />
-<Button styleName="flat-accent" text="Button" />
+<Button styleName="flat-secondary" text="Button" />
+<Button styleName="flat-positive" text="Button" />
+<Button styleName="flat-neutral" text="Button" />
+<Button styleName="flat-negative" text="Button" />
 ```
 
 ### Outline
@@ -28,7 +31,10 @@ Flat and outline buttons
 
 ```jsx
 <Button styleName="outline-primary" text="Button" />
-<Button styleName="outline-accent" text="Button" />
+<Button styleName="outline-secondary" text="Button" />
+<Button styleName="outline-positive" text="Button" />
+<Button styleName="outline-neutral" text="Button" />
+<Button styleName="outline-negative" text="Button" />
 ```
 
 ## States
@@ -63,22 +69,6 @@ Flat and outline buttons
 <Button size="big" text="BIG" />
 ```
 
-### Rounded
-
-<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/button-variations-rounded" scrolling="no" /></div>
-
-```jsx
-<Button text="Button" rounded />
-```
-
-### Circular
-
-<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/button-variations-circular" scrolling="no" /></div>
-
-```jsx
-<Button text="OK" circular />
-```
-
 ### Fluid
 
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/button-variations-fluid" scrolling="no" /></div>
@@ -99,8 +89,6 @@ Name | Description | Type | Optional value | Default
 `disabled` | - | bool | - | `false`
 `loading` | - | bool | - | `false`
 `size` | - | enum | `mini`, `small`, `medium`, `large`, `big` | `medium`
-`rounded` | - | bool | - | `false`
-`circular` | - | bool | - | `false`
 `fluid` | - | bool | - | `false`
 
 ### Events

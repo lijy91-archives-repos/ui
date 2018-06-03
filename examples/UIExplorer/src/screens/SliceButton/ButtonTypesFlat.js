@@ -15,12 +15,16 @@ class ButtonTypesFlat extends Component {
     };
     const buttonMarginStyle = {
       marginRight: 4,
+      marginBottom: 4,
     };
     return (
       <SliceScreen>
         <View style={buttonPanelStyle}>
           <Button style={buttonMarginStyle} styleName="flat-primary" text="Button" />
-          <Button style={buttonMarginStyle} styleName="flat-accent" text="Button" />
+          <Button style={buttonMarginStyle} styleName="flat-secondary" text="Button" />
+          <Button style={buttonMarginStyle} styleName="flat-positive" text="Button" />
+          <Button style={buttonMarginStyle} styleName="flat-neutral" text="Button" />
+          <Button style={buttonMarginStyle} styleName="flat-negative" text="Button" />
         </View>
       </SliceScreen>
     );

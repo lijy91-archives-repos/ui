@@ -19,7 +19,7 @@ class CheckBoxExample extends Component {
     return (
       <SliceScreen>
         <CheckBox
-          text="heckBox"
+          text="CheckBox"
           checked={this.state.checkBox}
           onCheckedChange={checked => this.setState({ checkBox: checked })}
         />

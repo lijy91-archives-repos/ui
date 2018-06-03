@@ -2,16 +2,20 @@ import {
   transparent,
   white,
   themePrimary,
-  themeAccent,
+  themeSecondary,
+  themePositive,
+  themeNeutral,
+  themeNegative,
 } from './colors';
 import { fontSizeButton } from './dimens';
 
 export default {
   Button: {
+    borderWidth: 1,
     activeOpacity: 0.8,
     backgroundColor: themePrimary,
-    paddingLeft: 8,
-    paddingRight: 8,
+    paddingLeft: 6,
+    paddingRight: 6,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -28,19 +32,41 @@ export default {
     },
   },
   'Button[styleName=flat-primary]': {
+    borderColor: themePrimary,
     backgroundColor: themePrimary,
     ActivityIndicator: {
       color: white,
     },
   },
-  'Button[styleName=flat-accent]': {
-    backgroundColor: themeAccent,
+  'Button[styleName=flat-secondary]': {
+    borderColor: themeSecondary,
+    backgroundColor: themeSecondary,
+    ActivityIndicator: {
+      color: white,
+    },
+  },
+  'Button[styleName=flat-positive]': {
+    borderColor: themePositive,
+    backgroundColor: themePositive,
+    ActivityIndicator: {
+      color: white,
+    },
+  },
+  'Button[styleName=flat-neutral]': {
+    borderColor: themeNeutral,
+    backgroundColor: themeNeutral,
+    ActivityIndicator: {
+      color: white,
+    },
+  },
+  'Button[styleName=flat-negative]': {
+    borderColor: themeNegative,
+    backgroundColor: themeNegative,
     ActivityIndicator: {
       color: white,
     },
   },
   'Button[styleName=outline-primary]': {
-    borderWidth: 1,
     borderColor: themePrimary,
     backgroundColor: transparent,
     ActivityIndicator: {
@@ -50,15 +76,44 @@ export default {
       color: themePrimary,
     },
   },
-  'Button[styleName=outline-accent]': {
-    borderWidth: 1,
-    borderColor: themeAccent,
+  'Button[styleName=outline-secondary]': {
+    borderColor: themeSecondary,
     backgroundColor: transparent,
     ActivityIndicator: {
-      color: themeAccent,
+      color: themeSecondary,
     },
     Text: {
-      color: themeAccent,
+      color: themeSecondary,
+    },
+  },
+  'Button[styleName=outline-positive]': {
+    borderColor: themePositive,
+    backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themePositive,
+    },
+    Text: {
+      color: themePositive,
+    },
+  },
+  'Button[styleName=outline-neutral]': {
+    borderColor: themeNeutral,
+    backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themeNeutral,
+    },
+    Text: {
+      color: themeNeutral,
+    },
+  },
+  'Button[styleName=outline-negative]': {
+    borderColor: themeNegative,
+    backgroundColor: transparent,
+    ActivityIndicator: {
+      color: themeNegative,
+    },
+    Text: {
+      color: themeNegative,
     },
   },
   'Button[disabled=true]': {
@@ -102,22 +157,9 @@ export default {
       fontSize: fontSizeButton + 4,
     },
   },
-  'Button[rounded=true]': {
-    borderRadius: 2,
-  },
-  'Button[rounded=false]': {
-    borderRadius: 0,
-  },
-  'Button[circular=true]': {
-    borderRadius: 54,
-    paddingLeft: 4,
-    paddingRight: 4,
-    Text: {
-      margin: 0,
-    },
-  },
   'Button[fluid=true]': {
     flex: 1,
+    marginLeft: 0,
     marginRight: 0,
   },
 };

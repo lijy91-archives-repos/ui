@@ -4,8 +4,6 @@ import ButtonTypesOutline from './ButtonTypesOutline';
 import ButtonStateDisabled from './ButtonStateDisabled';
 import ButtonStateLoading from './ButtonStateLoading';
 import ButtonVariationsSize from './ButtonVariationsSize';
-import ButtonVariationsRounded from './ButtonVariationsRounded';
-import ButtonVariationsCircular from './ButtonVariationsCircular';
 import ButtonVariationsFluid from './ButtonVariationsFluid';
 
 const routeConfigMap = {
@@ -32,14 +30,6 @@ const routeConfigMap = {
   ButtonVariationsSize: {
     screen: ButtonVariationsSize,
     path: 'slices/button-variations-size',
-  },
-  ButtonVariationsRounded: {
-    screen: ButtonVariationsRounded,
-    path: 'slices/button-variations-rounded',
-  },
-  ButtonVariationsCircular: {
-    screen: ButtonVariationsCircular,
-    path: 'slices/button-variations-circular',
   },
   ButtonVariationsFluid: {
     screen: ButtonVariationsFluid,

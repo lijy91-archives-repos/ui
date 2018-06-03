@@ -13,8 +13,6 @@ const propTypes = {
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
-  rounded: PropTypes.bool,
-  circular: PropTypes.bool,
   fluid: PropTypes.bool,
 };
 const defaultProps = {
@@ -23,8 +21,6 @@ const defaultProps = {
   disabled: false,
   loading: false,
   size: 'medium',
-  rounded: false,
-  circular: false,
   fluid: false,
 };
 const mapPropToStyles = [
@@ -58,7 +54,6 @@ class Button extends PureComponent {
       activityIndicator = (
         <ActivityIndicator
           animating
-          color="#ffffff"
         />
       );
     }

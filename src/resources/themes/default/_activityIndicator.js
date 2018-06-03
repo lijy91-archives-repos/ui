@@ -1,7 +1,8 @@
-import { textPrimary } from './colors';
+import { themePrimary } from './colors';
 
 export default {
   ActivityIndicator: {
-    color: textPrimary,
+    size: 'small',
+    color: themePrimary,
   },
 };
