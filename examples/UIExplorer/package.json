@@ -20,8 +20,8 @@
     "react-dom": "^16.4.0",
     "react-native": "^0.55.4",
     "react-native-vector-icons": "^4.6.0",
-    "react-native-web": "^0.7.3",
-    "react-navigation": "^2.0.4"
+    "react-native-web": "^0.8.3",
+    "react-navigation": "^2.2.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",

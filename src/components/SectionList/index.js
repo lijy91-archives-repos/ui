@@ -1,3 +1,3 @@
-import SectionList from './SectionList';
+import StyledSectionList from './StyledSectionList';
 
-export default SectionList;
+export default StyledSectionList;
