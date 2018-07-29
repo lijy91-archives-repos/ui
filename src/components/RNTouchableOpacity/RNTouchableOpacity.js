@@ -13,11 +13,13 @@ class RNTouchableOpacity extends PureComponent {
     const prevStyle = this.props.style;
     const nextStyle = nextProps.style;
 
-    const prevOpacity = prevStyle.opacity || 1;
-    const nextOpacity = nextStyle.opacity || 1;
+    if (prevStyle && nextStyle) {
+      const prevOpacity = prevStyle.opacity || 1;
+      const nextOpacity = nextStyle.opacity || 1;
 
-    if (nextOpacity !== prevOpacity) {
-      this.touchableOpacityRef.setNativeProps({ style: { opacity: nextOpacity } });
+      if (nextOpacity !== prevOpacity) {
+        this.touchableOpacityRef.setNativeProps({ style: { opacity: nextOpacity } });
+      }
     }
   }
 
