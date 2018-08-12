@@ -13,6 +13,7 @@ export default {
   Button: {
     borderWidth: 1,
     activeOpacity: 0.8,
+    borderColor: themePrimary,
     backgroundColor: themePrimary,
     paddingLeft: 6,
     paddingRight: 6,
