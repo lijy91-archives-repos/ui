@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { View as RNView } from 'react-native';
-
+import {
+  View as RNView,
+  Text as RNText,
+} from 'react-native';
 import withStyles from '../../withStyles';
 import Text from '../Text';
 
@@ -12,11 +14,13 @@ const propTypes = {
   ]),
   type: PropTypes.oneOf(['dot', 'text']),
   text: PropTypes.string,
+  textStyle: RNText.propTypes.style,
 };
 const defaultProps = {
-  children: undefined,
+  children: null,
   type: 'text',
   text: '',
+  textStyle: null,
 };
 
 class Badge extends PureComponent {
@@ -25,6 +29,7 @@ class Badge extends PureComponent {
       children,
       type,
       text,
+      textStyle,
       ...restProps
     } = this.props;
 
@@ -34,7 +39,16 @@ class Badge extends PureComponent {
     }
 
     if (!children) {
-      children = (<Text>{text}</Text>);
+      if (textStyle && typeof textStyle === 'number') {
+        textStyle = StyleSheet.flatten(textStyle);
+      }
+      children = (
+        <Text
+          style={textStyle}
+        >
+          {text}
+        </Text>
+      );
     }
 
     if (type === 'dot') {
