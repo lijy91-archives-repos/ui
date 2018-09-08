@@ -11,8 +11,8 @@ import { fontSizeButton } from './dimens';
 
 export default {
   Button: {
-    borderWidth: 1,
     activeOpacity: 0.8,
+    borderWidth: 1,
     borderColor: themePrimary,
     backgroundColor: themePrimary,
     paddingLeft: 6,
@@ -159,7 +159,7 @@ export default {
     },
   },
   'Button[fluid=true]': {
-    flex: 1,
+    width: '100%',
     marginLeft: 0,
     marginRight: 0,
   },
