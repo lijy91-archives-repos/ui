@@ -51,7 +51,12 @@ class CheckBox extends PureComponent {
       if (textStyle && typeof textStyle === 'number') {
         textStyle = StyleSheet.flatten(textStyle);
       }
-      children = (<Text>{text}</Text>);
+      children = (
+        <Text
+          style={textStyle}
+        >
+          {text}
+        </Text>);
     }
 
     if (!onCheckedChange) {
