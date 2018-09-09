@@ -4,12 +4,16 @@ docs:
     styleguides: styleguides.html
   basic-components:
     activityindicator: component-activityindicator.html
+    avatar: component-avatar.html
     badge: component-badge.html
     button: component-button.html
     card: component-card.html
     checkBox: component-checkbox.html
     divider: component-divider.html
     hyperlinkbutton: component-hyperlinkbutton.html
+    image: component-image.html
+    listitem: component-listitem.html
+    modal: component-modal.html
     radiobutton: component-radiobutton.html
     screen: component-screen.html
     subtitle: component-subtitle.html
@@ -20,12 +24,11 @@ docs:
     view: component-view.html
   advanced-components:
     appbar: advanced-component-appbar.html
+    dropdownmenu: advanced-component-dropdownmenu.html
     icon: advanced-component-icon.html
     iconbutton: advanced-component-iconbutton.html
     tabbar: advanced-component-tabbar.html
     viewpager: advanced-component-viewpager.html
-  experimental-components:
-    listitem: experimental-component-listitem.html
   customization:
     themes: themes.html
   miscellaneous:

@@ -21,16 +21,19 @@ sidebar:
     styleguides: 风格指南
     basic-components: 基础组件
     activityindicator: ActivityIndicator
+    avatar: Avatar
     badge: Badge
     button: Button
     card: Card
     checkBox: CheckBox
     divider: Divider
-    flatlist: FlatList
+    form: Form
     hyperlinkbutton: HyperlinkButton
+    image: Image
+    listitem: ListItem
+    modal: Modal
     radiobutton: RadioButton
     screen: Screen
-    sectionlist: SectionList
     subtitle: Subtitle
     switch: Switch
     text: Text
@@ -39,12 +42,11 @@ sidebar:
     view: View
     advanced-components: 高级组件
     appbar: AppBar
+    dropdownmenu: DropdownMenu
     icon: Icon
     iconbutton: IconButton
     tabbar: TabBar
     viewpager: ViewPager
-    experimental-components: 实验组件
-    listitem: ListItem
     customization: 自定义
     themes: 主题
     miscellaneous: 其他

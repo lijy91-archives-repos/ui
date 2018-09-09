@@ -1,18 +1,16 @@
 ---
-title: Screen
+title: Image
 ---
 Coming soon
 
-## Examples
+## 示例
 
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/no-demo" scrolling="no" /></div>
 
 ```jsx
-<Screen>
-  ...
-</Screen>
+<Image />
 ```
 
 ## API
 
-Based on https://facebook.github.io/react-native/docs/view.html
+Based on https://facebook.github.io/react-native/docs/image.html

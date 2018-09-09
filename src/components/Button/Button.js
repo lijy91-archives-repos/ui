@@ -46,7 +46,10 @@ class Button extends PureComponent {
       if (textStyle && typeof textStyle === 'number') {
         textStyle = StyleSheet.flatten(textStyle);
       }
-      children = (<Text style={textStyle} >{text}</Text>);
+      children = (
+        <Text style={textStyle}>
+          {text}
+        </Text>);
     }
 
     let activityIndicator;

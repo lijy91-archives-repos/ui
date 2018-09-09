@@ -21,12 +21,17 @@ sidebar:
     styleguides: Styleguides
     basic-components: Basic components
     activityindicator: ActivityIndicator
+    avatar: Avatar
     badge: Badge
     button: Button
     card: Card
     checkBox: CheckBox
     divider: Divider
+    form: Form
     hyperlinkbutton: HyperlinkButton
+    image: Image
+    listitem: ListItem
+    modal: Modal
     radiobutton: RadioButton
     screen: Screen
     subtitle: Subtitle
@@ -37,12 +42,11 @@ sidebar:
     view: View
     advanced-components: Advanced components
     appbar: AppBar
+    dropdownmenu: DropdownMenu
     icon: Icon
     iconbutton: IconButton
     tabbar: TabBar
     viewpager: ViewPager
-    experimental-components: Experimental components
-    listitem: ListItem
     customization: Customization
     themes: Themes
     miscellaneous: Miscellaneous

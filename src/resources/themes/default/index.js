@@ -1,4 +1,5 @@
 import _activityIndicator from './_activityIndicator';
+import _avatar from './_avatar';
 import _badge from './_badge';
 import _button from './_button';
 import _card from './_card';
@@ -19,6 +20,7 @@ import _view from './_view';
 
 export default {
   ..._activityIndicator,
+  ..._avatar,
   ..._badge,
   ..._button,
   ..._card,
