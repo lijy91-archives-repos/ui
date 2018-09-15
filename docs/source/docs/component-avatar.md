@@ -1,7 +1,7 @@
 ---
 title: Avatar
 ---
-Coming soon
+Avatar controls
 
 ## Examples
 

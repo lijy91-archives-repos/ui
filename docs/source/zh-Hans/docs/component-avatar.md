@@ -1,7 +1,7 @@
 ---
 title: Avatar
 ---
-Coming soon
+头像控件
 
 ## 示例
 

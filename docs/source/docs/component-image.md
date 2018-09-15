@@ -1,7 +1,7 @@
 ---
 title: Image
 ---
-Coming soon
+Image controls
 
 ## Examples
 

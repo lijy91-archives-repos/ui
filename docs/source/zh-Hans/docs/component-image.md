@@ -1,7 +1,7 @@
 ---
 title: Image
 ---
-Coming soon
+图片控件
 
 ## 示例
 
