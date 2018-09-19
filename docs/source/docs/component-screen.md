@@ -15,4 +15,10 @@ Coming soon
 
 ## API
 
+### Props
+
+Name | Description | Type | Optional value | Default
+--- | --- | --- | --- | ---
+`barStyle` | - | string | - | 'dark-content'
+
 Based on https://facebook.github.io/react-native/docs/view.html
