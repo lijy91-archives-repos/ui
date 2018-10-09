@@ -33,6 +33,7 @@ class Button extends PureComponent {
       children,
       text,
       textStyle,
+      disabled,
       loading,
       ...restProps
     } = this.props;
@@ -63,6 +64,7 @@ class Button extends PureComponent {
 
     return (
       <RNTouchableOpacity
+        disabled={disabled || loading}
         {...restProps}
       >
         {activityIndicator}
