@@ -1,9 +1,9 @@
 ---
 title: Icon
 ---
-图标控件
+Icon controls
 
-## 示例
+## Examples
 
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/icon-example" scrolling="no" /></div>
 
@@ -11,9 +11,9 @@ title: Icon
 <Icon name="thumb-up" />
 ```
 
-## 变化形式
+## Variations
 
-### 尺寸
+### Size
 
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/icon-variations-size" scrolling="no" /></div>
 
@@ -24,7 +24,7 @@ title: Icon
 <Icon name="thumb-up" size={84} />
 ```
 
-### 颜色
+### Color
 
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/icon-variations-color" scrolling="no" /></div>
 
@@ -37,11 +37,11 @@ title: Icon
 
 ## API
 
-### 属性
+### Props
 
-名称 | 描述 | 类型 | 可选值 | 默认值
+Name | Description | Type | Optional value | Default
 --- | --- | --- | --- | ---
-`size` | 图标的大小 | number | - | -
-`color` | 图标的颜色 | string | - | -
+`size` | Icon size | number | - | -
+`color` | Icon color | string | - | -
 
-基于：https://github.com/oblador/react-native-vector-icons/
+Based on https://github.com/oblador/react-native-vector-icons/
