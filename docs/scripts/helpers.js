@@ -7,7 +7,7 @@ var _ = require('lodash');
 var cheerio = require('cheerio');
 var lunr = require('lunr');
 
-var localizedPath = ['docs', 'api'];
+var localizedPath = ['docs', 'plugins', 'practices'];
 
 function startsWith(str, start) {
   return str.substring(0, start.length) === start;
@@ -136,7 +136,7 @@ hexo.extend.helper.register('lunr_index', function(data) {
 hexo.extend.helper.register('canonical_path_for_nav', function() {
   var path = this.page.canonical_path;
 
-  if (startsWith(path, 'docs/') || startsWith(path, 'api/')) {
+  if (startsWith(path, 'docs/') || startsWith(path, 'plugins/') || startsWith(path, 'practices/')) {
     return path;
   }
   return '';
@@ -152,7 +152,12 @@ hexo.extend.helper.register('disqus_lang', function() {
   var lang = this.page.lang;
   var data = this.site.data.languages[lang];
 
-  return data.disqus_lang || lang;
+  var disqusLang = data.disqus_lang || lang;
+
+  if (disqusLang === 'zh-Hans') {
+    disqusLang = 'zh';
+  }
+  return disqusLang;
 });
 
 hexo.extend.helper.register('hexo_version', function() {

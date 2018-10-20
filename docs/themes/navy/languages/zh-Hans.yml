@@ -1,5 +1,6 @@
 menu:
   docs: 文档
+  plugins: 插件
   practices: 实践
   news: 新闻
 
@@ -52,6 +53,11 @@ sidebar:
     miscellaneous: 其他
     troubleshooting: 问题解答
     contributing: 贡献
+  plugins:
+    basic-plugin: 基础插件
+    i18n: I18N
+    advanced-plugin: 高级插件
+    progresshud: ProgressHUD
   practices:
     design: 设计
     marking-and-slicing: 标注及切片

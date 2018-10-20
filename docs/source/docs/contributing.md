@@ -80,4 +80,4 @@ The `@blankapp/ui` documentation is open source and you can find the source code
 
 ## Reporting Issues
 
-When you encounter some problems when using, you can find the solutions in [Troubleshooting](troubleshooting.html) or ask me on [GitHub](https://github.com/hexojs/hexo/issues) or [Gitter](https://gitter.im/blankapp/ui). If you can't find the answer, please report it on GitHub.
+When you encounter some problems when using, you can find the solutions in [Troubleshooting](troubleshooting.html) or ask me on [GitHub](https://github.com/hexojs/hexo/issues) or [Telegram](https://t.me/blankapporg). If you can't find the answer, please report it on GitHub.

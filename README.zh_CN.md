@@ -30,7 +30,7 @@ Table of Contents
       * [安装](#安装)
       * [运行程序](#运行程序)
   * [探讨](#探讨)
-  * [License](#license)
+  * [许可证](#许可证)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
@@ -129,7 +129,7 @@ $ react-native run-ios
 
 ![](http://blankapp.org/assets/images/wechat_qrcode.png)
 
-## License
+## 许可证
 
 ```
 MIT License

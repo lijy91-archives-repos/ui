@@ -21,4 +21,4 @@ Coming soon
 --- | --- | --- | --- | ---
 `barStyle` | 显示的状态栏样式 | string | - | 'dark-content'
 
-Based on https://facebook.github.io/react-native/docs/view.html
+基于：https://facebook.github.io/react-native/docs/view.html

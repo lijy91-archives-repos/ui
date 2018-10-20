@@ -1,5 +1,5 @@
 ---
-title: 实践
+title: 插件
 ---
 
 Coming soon

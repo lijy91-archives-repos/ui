@@ -2,4 +2,4 @@
 title: Troubleshooting
 ---
 
-Coming soon
+See chinese version: [/zh-Hans/docs/troubleshooting.html](/zh-Hans/docs/troubleshooting.html)

@@ -13,4 +13,4 @@ title: TextInput
 
 ## API
 
-Based on https://facebook.github.io/react-native/docs/textinput.html
+基于：https://facebook.github.io/react-native/docs/textinput.html

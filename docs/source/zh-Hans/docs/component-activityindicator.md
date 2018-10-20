@@ -13,4 +13,4 @@ title: ActivityIndicator
 
 ## API
 
-Based on https://facebook.github.io/react-native/docs/activityindicator.html
+基于：https://facebook.github.io/react-native/docs/activityindicator.html

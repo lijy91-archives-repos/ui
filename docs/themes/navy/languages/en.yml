@@ -1,5 +1,6 @@
 menu:
   docs: Docs
+  plugins: Plugins
   practices: Practices
   news: News
 
@@ -52,6 +53,11 @@ sidebar:
     miscellaneous: Miscellaneous
     troubleshooting: Troubleshooting
     contributing: Contributing
+  plugins:
+    basic-plugin: Basic Plugins
+    i18n: I18N
+    advanced-plugin: Advanced Plugins
+    progresshud: ProgressHUD
   practices:
     design: Design
     marking-and-slicing: Marking and slicing

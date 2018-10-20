@@ -13,4 +13,4 @@ title: Image
 
 ## API
 
-Based on https://facebook.github.io/react-native/docs/image.html
+基于：https://facebook.github.io/react-native/docs/image.html

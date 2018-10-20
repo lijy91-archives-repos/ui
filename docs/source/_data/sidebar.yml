@@ -10,6 +10,7 @@ docs:
     card: component-card.html
     checkBox: component-checkbox.html
     divider: component-divider.html
+    form: component-form.html
     hyperlinkbutton: component-hyperlinkbutton.html
     image: component-image.html
     listitem: component-listitem.html
@@ -34,6 +35,11 @@ docs:
   miscellaneous:
     troubleshooting: troubleshooting.html
     contributing: contributing.html
+plugins:
+  basic-plugin:
+    i18n: i18n.html
+  advanced-plugin:
+    progresshud: progresshud.html
 practices:
   design:
     marking-and-slicing: marking-and-slicing.html

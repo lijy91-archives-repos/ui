@@ -80,4 +80,4 @@ title: 贡献
 
 ## 反馈问题
 
-当您在使用时遇到问题，您可以尝试在 [问题解答](troubleshooting.html) 中寻找解答，或是在 [GitHub](https://github.com/blankapp/ui/issues) 或 [Gitter](https://gitter.im/blankapp/ui) 上提问。如果你没有找答案，请在 Github 报告它。
+当您在使用时遇到问题，您可以尝试在 [问题解答](troubleshooting.html) 中寻找解答，或是在 [GitHub](https://github.com/blankapp/ui/issues) 或 [Telegram](https://t.me/blankapporg) 上提问。如果你没有找答案，请在 Github 报告它。

@@ -46,22 +46,31 @@ $ react-native init HelloWorld
 $ cd HelloWorld
 ```
 
-安装 `@blankapp/ui` 并链接到您的项目中：
+安装 `@blankapp/ui` 到您的项目中：
 
 ```bash
 $ yarn add @blankapp/ui
 ```
 
-现在，只需将以下内容复制到 React Native 项目的index.ios.js文件：
+如果你需要使用高级组件，安装 `@blankapp/ui-pro` 并链接到您的项目中：
+```
+$ yarn add @blankapp/ui-pro
+```
+
+现在，只需将以下内容复制到 React Native 项目的 `index.js` 文件：
 
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import {
-  ThemeProvider,
-  Screen,
-  Text,
-} from '@blankapp/ui';
+import Theme, { ThemeProvider, Screen, Text} from '@blankapp/ui';
+import defaultTheme from '@blankapp/ui/src/resources/themes/default';
+import defaultThemePro from '@blankapp/ui-pro/src/resources/themes/default';
+
+// 注册默认主题
+Theme.registerTheme('default', [
+  defaultTheme,
+  defaultThemePro,
+]);
 
 class Examples extends Component {
   render() {

@@ -35,4 +35,4 @@ title: Avatar
 --- | --- | --- | --- | ---
 `size` | 头像的大小 | enum | `mini`, </br>`small`, </br>`medium`, </br>`large`, </br>`big` | `medium`
 
-Based on https://facebook.github.io/react-native/docs/view.html
+基于：https://facebook.github.io/react-native/docs/view.html

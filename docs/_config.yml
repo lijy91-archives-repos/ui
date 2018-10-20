@@ -35,6 +35,7 @@ fb_admins:
 #     index_name:
 twitter: lijy91
 github: blankapp/ui
+telegram: blankapporg
 
 deploy:
 - type: rsync

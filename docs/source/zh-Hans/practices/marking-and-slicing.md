@@ -9,7 +9,7 @@ title: 标注及切片
 
 ## 标注
 
-coming soon
+Coming soon
 
 ## 切片
 

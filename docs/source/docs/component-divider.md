@@ -18,8 +18,8 @@ Used to separate distinct content sections
 <div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/divider-variations-orientation" scrolling="no" /></div>
 
 ```jsx
-<Divider orientation="vertical" />
 <Divider orientation="horizontal" />
+<Divider orientation="vertical" />
 ```
 
 ## API

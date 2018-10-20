@@ -2,4 +2,4 @@
 title: Themes
 ---
 
-Coming soon
+See chinese version: [/zh-Hans/docs/themes.html](/zh-Hans/docs/themes.html)

@@ -46,10 +46,15 @@ $ react-native init HelloWorld
 $ cd HelloWorld
 ```
 
-Install @blankapp/ui and link in your project:
+Install `@blankapp/ui` to your project:
 
 ```bash
 $ yarn add @blankapp/ui
+```
+
+If you need to use advanced components, Install `@blankapp/ui-pro` and link in your project:
+```
+$ yarn add @blankapp/ui-pro
 ```
 
 Now, simply copy the following to your index.ios.js file of React Native project:
@@ -57,11 +62,15 @@ Now, simply copy the following to your index.ios.js file of React Native project
 ``` js
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import {
-  ThemeProvider,
-  Screen,
-  Text,
-} from '@blankapp/ui';
+import Theme, { ThemeProvider, Screen, Text} from '@blankapp/ui';
+import defaultTheme from '@blankapp/ui/src/resources/themes/default';
+import defaultThemePro from '@blankapp/ui-pro/src/resources/themes/default';
+
+// Register a default theme
+Theme.registerTheme('default', [
+  defaultTheme,
+  defaultThemePro,
+]);
 
 class Examples extends Component {
   render() {

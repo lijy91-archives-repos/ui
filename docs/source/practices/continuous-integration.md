@@ -1,4 +1,4 @@
 ---
 title: Continuous Integration
 ---
-coming soon
+Coming soon
