@@ -45,11 +45,5 @@ title: HyperlinkButton
 `text` | 显示的文本 | string | - | 空字符串 ('')
 `textStyle` | 文本的样式 | style | - | -
 `disabled` | 是否处于禁用状态 | bool | - | `false`
-`loading` | 是否处于加载中状态 | bool | - | `false`
 `size` | 按钮的大小 | enum | `mini`, </br>`small`, </br>`medium`, </br>`large`, </br>`big` | `medium`
-
-### 事件
-
-名称 | 描述
---- | ---
-`onPress` | -
+`onPress` | 当用户点击按钮时调用处理程序 | function | - | -

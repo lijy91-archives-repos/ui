@@ -49,9 +49,4 @@ title: RadioButton
 `value` | - | string | - | -
 `disabled` | 是否处于禁用状态 | bool | - | `false`
 `checked` | 是否处于选中状态 | bool | - | `false`
-
-### 事件
-
-名称 | 描述
---- | ---
-`onCheckedChange` | -
+`onCheckedChange` | 当选中状态变化时调用处理程序 | function | - | -

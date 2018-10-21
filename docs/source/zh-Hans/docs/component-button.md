@@ -90,9 +90,4 @@ title: Button
 `loading` | 是否处于加载中状态 | bool | - | `false`
 `size` | 按钮的大小 | enum | `mini`, </br>`small`, </br>`medium`, </br>`large`, </br>`big` | `medium`
 `fluid` | - | bool | - | `false`
-
-### 事件
-
-名称 | 描述
---- | ---
-`onPress` | -
+`onPress` | 当用户点击按钮时调用处理程序 | function | - | -

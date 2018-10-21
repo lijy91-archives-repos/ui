@@ -3,6 +3,14 @@ title: ListItem
 ---
 Coming soon
 
+## 示例
+
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/appbar-example" scrolling="no" /></div>
+
+```jsx
+<ListItem />
+```
+
 ## API
 
 ### 属性
@@ -17,9 +25,4 @@ Coming soon
 `titleStyle` | 文本的样式 | style | - | -
 `detailText` | 显示的详细文本 | string | - | 空字符串 ('')
 `detailStyle` | 详细文本的样式 | style | - | -
-
-### 事件
-
-名称 | 描述
---- | ---
-`onPress` | -
+`onPress` | 当用户点击按钮时调用处理程序 | function | - | -

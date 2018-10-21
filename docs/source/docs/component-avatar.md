@@ -35,4 +35,4 @@ Name | Description | Type | Optional value | Default
 --- | --- | --- | --- | ---
 `size` | - | enum | `mini`, `small`, `medium`, `large`, `big` | `medium`
 
-Based on https://facebook.github.io/react-native/docs/view.html
+Based on https://facebook.github.io/react-native/docs/image.html

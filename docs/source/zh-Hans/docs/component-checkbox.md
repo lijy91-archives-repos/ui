@@ -40,6 +40,7 @@ title: CheckBox
 `textStyle` | 文本的样式 | style | - | -
 `disabled` | 是否处于禁用状态 | bool | - | `false`
 `checked` | 是否处于选中状态 | bool | - | `false`
+`onCheckedChange` | 当选中状态变化时调用处理程序 | function | - | -
 
 ### 事件
 

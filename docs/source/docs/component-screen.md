@@ -1,7 +1,7 @@
 ---
 title: Screen
 ---
-Coming soon
+Screen controls
 
 ## Examples
 
