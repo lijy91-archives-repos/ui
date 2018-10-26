@@ -14,7 +14,10 @@ const propTypes = {
   children: PropTypes.element,
   text: PropTypes.string,
   textStyle: RNText.propTypes.style,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
   disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,

@@ -17,8 +17,10 @@ export default {
     marginLeft: 0,
     color: textPrimary,
     fontSize: fontSizeBody,
+    backgroundColor: '#F5F5F5',
+    // 以下样式将会复制到 Props.
     selectionColor: textPrimary,
     placeholderTextColor: textHint,
-    backgroundColor: '#F5F5F5',
+    underlineColorAndroid: 'rgba(0, 0, 0, 0)',
   },
 };

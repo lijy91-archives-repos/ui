@@ -1,6 +1,6 @@
 export default {
   Avatar: {
-    width: 54,
+    width: 42,
     height: 42,
     borderWidth: 1,
     borderRadius: 54 / 2,

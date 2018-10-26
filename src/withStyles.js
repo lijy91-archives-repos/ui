@@ -17,16 +17,22 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
 
       static contextTypes = {
         themeName: PropTypes.string,
-        themeStyle: PropTypes.object,
-        parentStyle: PropTypes.object,
+        themeStyle: PropTypes.oneOfType([PropTypes.object]),
+        parentStyle: PropTypes.oneOfType([PropTypes.object]),
       };
 
       static childContextTypes = {
-        parentStyle: PropTypes.object,
+        parentStyle: PropTypes.oneOfType([PropTypes.object]),
       };
 
       constructor(props, context) {
         super(props, context);
+
+        this.getWrappedInstance = this.getWrappedInstance.bind(this);
+        this.setWrappedInstance = this.setWrappedInstance.bind(this);
+        this.resolveStyle = this.resolveStyle.bind(this);
+        this.resolveAddedProps = this.resolveAddedProps.bind(this);
+
         const resolvedStyle = this.resolveStyle(props, context);
 
         this.state = {
@@ -37,8 +43,9 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
       }
 
       getChildContext() {
+        const { childrenStyle: parentStyle } = this.state;
         return {
-          parentStyle: this.state.childrenStyle,
+          parentStyle,
         };
       }
 
@@ -50,6 +57,14 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
           childrenStyle: resolvedStyle.styleSheets,
           addedProps: this.resolveAddedProps(resolvedStyle),
         });
+      }
+
+      getWrappedInstance() {
+        return this.wrappedInstance;
+      }
+
+      setWrappedInstance(ref) {
+        this.wrappedInstance = ref;
       }
 
       resolveStyle(props, context) {
@@ -107,11 +122,13 @@ const withStyles = (componentName, mapPropToStyles = []) => (WrappedComponent) =
 
       render() {
         const { addedProps, style } = this.state;
+
         return (
           <WrappedComponent
             {...this.props}
             {...addedProps}
             style={style}
+            ref={this.setWrappedInstance}
           />
         );
       }
