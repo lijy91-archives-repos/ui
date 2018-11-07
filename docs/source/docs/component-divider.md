@@ -22,6 +22,15 @@ Used to separate distinct content sections
 <Divider orientation="vertical" />
 ```
 
+### Label
+
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/divider-variations-label" scrolling="no" /></div>
+
+```jsx
+<Divider orientation="horizontal" label="OR" />
+<Divider orientation="vertical" label="OR"/>
+```
+
 ## API
 
 ### Props
@@ -29,3 +38,5 @@ Used to separate distinct content sections
 Name | Description | Type | Optional value | Default
 --- | --- | --- | --- | ---
 `orientation` | - | enum | `vertical`, `horizontal` | `horizontal`
+`label` | -| string | - | Empty string ('')
+`labelStyle` | - | style | - | -

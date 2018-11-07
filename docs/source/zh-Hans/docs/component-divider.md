@@ -22,6 +22,15 @@ title: Divider
 <Divider orientation="vertical" />
 ```
 
+### 标签
+
+<div><iframe style="width: 100%; margin: 0;" src="https://uiexplorer.blankapp.org/slices/divider-variations-label" scrolling="no" /></div>
+
+```jsx
+<Divider orientation="horizontal" label="OR" />
+<Divider orientation="vertical" label="OR"/>
+```
+
 ## API
 
 ### 属性
@@ -29,3 +38,5 @@ title: Divider
 名称 | 描述 | 类型 | 可选值 | 默认值
 --- | --- | --- | --- | ---
 `orientation` | 分隔线显示方向 | enum | `vertical`, </br>`horizontal` | `horizontal`
+`label` | 显示的标签 | string | - | -
+`labelStyle` | 标签的样式 | style | - | -
