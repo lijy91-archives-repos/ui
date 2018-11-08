@@ -14,6 +14,7 @@ const propTypes = {
   loading: PropTypes.bool,
   size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'big']),
   fluid: PropTypes.bool,
+  circular: PropTypes.bool,
 };
 const defaultProps = {
   text: '',
@@ -22,6 +23,7 @@ const defaultProps = {
   loading: false,
   size: 'medium',
   fluid: false,
+  circular: false,
 };
 const mapPropToStyles = [
   'activeOpacity',

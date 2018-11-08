@@ -163,4 +163,14 @@ export default {
     marginLeft: 0,
     marginRight: 0,
   },
+  'Button[circular=true]': {
+    borderRadius: 54 / 2,
+    marginLeft: 0,
+    marginRight: 0,
+    paddingLeft: 2,
+    paddingRight: 2,
+    Text: {
+      margin: 2,
+    },
+  },
 };
