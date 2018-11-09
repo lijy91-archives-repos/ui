@@ -22,7 +22,7 @@ const defaultProps = {
   checkedImage: checkedImageBase64String,
 };
 
-class CheckMark extends PureComponent {
+class CheckBoxCheckMark extends PureComponent {
   render() {
     const {
       checked,
@@ -45,7 +45,7 @@ class CheckMark extends PureComponent {
   }
 }
 
-CheckMark.propTypes = propTypes;
-CheckMark.defaultProps = defaultProps;
+CheckBoxCheckMark.propTypes = propTypes;
+CheckBoxCheckMark.defaultProps = defaultProps;
 
-export default withStyles('CheckMark')(CheckMark);
+export default withStyles('CheckBoxCheckMark')(CheckBoxCheckMark);

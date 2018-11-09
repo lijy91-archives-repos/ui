@@ -58,8 +58,7 @@
       "^.+\\.js$": "<rootDir>/jest-transform.js"
     },
     "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/examples/"
+      "<rootDir>/node_modules/"
     ]
   }
 }

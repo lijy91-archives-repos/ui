@@ -9,16 +9,6 @@ export default {
     flexDirection: 'row',
     activeOpacity: 0.8,
     alignItems: 'center',
-    CheckMark: {
-      margin: 4,
-      width: 18,
-      height: 18,
-      borderRadius: 2,
-      borderWidth: 2,
-      borderColor: textPrimary,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
     Text: {
       color: textPrimary,
     },
@@ -27,15 +17,25 @@ export default {
     opacity: 0.4,
   },
   'CheckBox[checked=true]': {
-    CheckMark: {
+    CheckBoxCheckMark: {
       borderWidth: 0,
       backgroundColor: textPrimary,
     },
   },
   'CheckBox[checked=false]': {
-    CheckMark: {
+    CheckBoxCheckMark: {
       borderColor: textSecondary,
       backgroundColor: transparent,
     },
+  },
+  CheckBoxCheckMark: {
+    margin: 4,
+    width: 18,
+    height: 18,
+    borderRadius: 2,
+    borderWidth: 2,
+    borderColor: textPrimary,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 };

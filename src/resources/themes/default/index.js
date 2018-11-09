@@ -1,3 +1,4 @@
+// 请按名称排序放置
 import _activityIndicator from './_activityIndicator';
 import _avatar from './_avatar';
 import _badge from './_badge';
@@ -6,6 +7,7 @@ import _card from './_card';
 import _checkbox from './_checkbox';
 import _divider from './_divider';
 import _form from './_form';
+import _grid from './_grid';
 import _hyperlinkButton from './_hyperlinkButton';
 import _image from './_image';
 import _modal from './_modal';
@@ -27,6 +29,7 @@ export default {
   ..._checkbox,
   ..._divider,
   ..._form,
+  ..._grid,
   ..._hyperlinkButton,
   ..._image,
   ..._modal,

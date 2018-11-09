@@ -2,10 +2,11 @@ import React, { PureComponent } from 'react';
 import { StyleSheet, Text as RNText } from 'react-native';
 import PropTypes from 'prop-types';
 import RNTouchableOpacity from '../RNTouchableOpacity';
-
 import withStyles from '../../withStyles';
 import Text from '../Text';
-import CheckMark from './CheckMark';
+import CheckBoxCheckMark from './CheckBoxCheckMark';
+
+const { propTypes: RNTextProps } = RNText;
 
 const propTypes = {
   children: PropTypes.oneOfType([
@@ -14,7 +15,7 @@ const propTypes = {
     PropTypes.element,
   ]),
   text: PropTypes.string,
-  textStyle: RNText.propTypes.style,
+  textStyle: RNTextProps.style,
   disabled: PropTypes.bool,
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
@@ -70,7 +71,7 @@ class CheckBox extends PureComponent {
           onCheckedChange(!checked);
         }}
       >
-        <CheckMark checked={checked} />
+        <CheckBoxCheckMark checked={checked} />
         {children}
       </RNTouchableOpacity>
     );
@@ -80,6 +81,6 @@ class CheckBox extends PureComponent {
 CheckBox.propTypes = propTypes;
 CheckBox.defaultProps = defaultProps;
 
-CheckBox.CheckMark = CheckMark;
+CheckBox.CheckMark = CheckBoxCheckMark;
 
 export default withStyles('CheckBox', mapPropToStyles)(CheckBox);
