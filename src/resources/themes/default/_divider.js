@@ -15,7 +15,7 @@ export default {
     DividerLine: {
       flex: 1,
       minWidth: 1,
-      minHeight: 20,
+      minHeight: 16,
       width: 1,
     },
   },
@@ -27,7 +27,7 @@ export default {
     },
     DividerLine: {
       flex: 1,
-      minWidth: 20,
+      minWidth: 16,
       minHeight: 1,
       height: 1,
     },
@@ -37,6 +37,6 @@ export default {
     fontSize: fontSizeCaption,
   },
   DividerLine: {
-    backgroundColor: '#dddddd',
+    backgroundColor: '#E5E5E5',
   },
 };
