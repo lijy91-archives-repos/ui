@@ -29,6 +29,7 @@ sidebar:
     checkBox: CheckBox
     divider: Divider
     form: Form
+    grid: Grid
     hyperlinkbutton: HyperlinkButton
     image: Image
     listitem: ListItem

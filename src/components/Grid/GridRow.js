@@ -9,7 +9,7 @@ const propTypes = {
 };
 const defaultProps = {
   children: null,
-  columns: 4,
+  columns: undefined,
 };
 const childContextTypes = {
   columns: PropTypes.number,

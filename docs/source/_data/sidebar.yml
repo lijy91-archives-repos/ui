@@ -11,6 +11,7 @@ docs:
     checkBox: component-checkbox.html
     divider: component-divider.html
     form: component-form.html
+    grid: component-grid.html
     hyperlinkbutton: component-hyperlinkbutton.html
     image: component-image.html
     listitem: component-listitem.html
