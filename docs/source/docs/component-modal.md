@@ -1,7 +1,7 @@
 ---
 title: Modal
 ---
-Coming soon
+Modal controls
 
 ## Examples
 

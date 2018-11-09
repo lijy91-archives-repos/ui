@@ -1,7 +1,7 @@
 ---
 title: Modal
 ---
-Coming soon
+模态控件
 
 ## 示例
 
