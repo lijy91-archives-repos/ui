@@ -77,7 +77,7 @@ Install `@blankapp/ui` to your project:
 $ yarn add @blankapp/ui
 ```
 
-Now, simply copy the following to your index.ios.js file of React Native project:
+Now, simply copy the following to your `index.js` file of React Native project:
 
 ``` js
 import React, { Component } from 'react';
@@ -133,7 +133,7 @@ If you have any suggestions or questions about this project, you can discuss it 
 ```
 MIT License
 
-Copyright (c) 2017 JianyingLi <lijy91@foxmail.com>
+Copyright (c) 2018 JianyingLi <lijy91@foxmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
