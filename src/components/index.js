@@ -11,6 +11,7 @@ export { default as Grid } from './Grid';
 export { default as HyperlinkButton } from './HyperlinkButton';
 export { default as Image } from './Image';
 export { default as ListItem } from './ListItem';
+export { default as ListSection } from './ListSection';
 export { default as Modal } from './Modal';
 export { default as RadioButton } from './RadioButton';
 export { default as Screen } from './Screen';

@@ -11,6 +11,7 @@ import _grid from './_grid';
 import _hyperlinkButton from './_hyperlinkButton';
 import _image from './_image';
 import _listItem from './_listItem';
+import _listSection from './_listSection';
 import _modal from './_modal';
 import _radioButton from './_radioButton';
 import _screen from './_screen';
@@ -34,6 +35,7 @@ export default {
   ..._hyperlinkButton,
   ..._image,
   ..._listItem,
+  ..._listSection,
   ..._modal,
   ..._radioButton,
   ..._screen,
