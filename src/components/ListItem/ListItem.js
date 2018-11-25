@@ -7,11 +7,18 @@ import {
 import PropTypes from 'prop-types';
 import withStyles from '../../withStyles';
 import RNTouchableOpacity from '../RNTouchableOpacity';
+import Image from '../Image';
 import ListItemImage from './ListItemImage';
 import ListItemContentView from './ListItemContentView';
 import ListItemTitle from './ListItemTitle';
 import ListItemDetailText from './ListItemDetailText';
 import ListItemDivider from './ListItemDivider';
+
+const disclosureIndicatorImageBase64String = `data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAa0lEQVR4Ae3RAQaAQBhE4cACEHvQ
+RQBpAehwQdjb1I/AEEIa7XsMAB8z0N+bY9UFU2LHtckHY4BKsaagr1EZFKgXULsbagQFqhfUdody
+A1Wny1Z3DBgw2Q3TwIB5UHLAaMUDIygHjLYIhugEZkaqyaxtmsIAAAAASUVORK5CYII=
+`.replace(/\n/g, '');
 
 const { propTypes: RNImageProps } = RNImage;
 const { propTypes: RNTextProps } = RNText;
@@ -63,6 +70,7 @@ class ListItem extends PureComponent {
     this.renderListItemImage = this.renderListItemImage.bind(this);
     this.renderListItemTitle = this.renderListItemTitle.bind(this);
     this.renderListItemDetailText = this.renderListItemDetailText.bind(this);
+    this.renderListItemAccessoryView = this.renderListItemAccessoryView.bind(this);
   }
 
   renderListItemImage() {
@@ -137,34 +145,39 @@ class ListItem extends PureComponent {
     );
   }
 
+  renderListItemAccessoryView() {
+    let {
+      renderAccessoryView,
+      accessoryType,
+    } = this.props;
+    if (renderAccessoryView) {
+      return renderAccessoryView();
+    }
+
+    switch (accessoryType) {
+      case accessoryTypes.DisclosureIndicator:
+        return (
+          <Image
+            source={{ uri: disclosureIndicatorImageBase64String }}
+            style={{ width: 6, height: 12, marginLeft: 6 }}
+          />
+        );
+      default:
+        return null;
+    }
+  }
+
   render() {
     /* eslint-disable prefer-const */
     let {
-      accessoryView,
-      accessoryType,
-      cellStyle,
       onPress,
       ...restProps
     } = this.props;
 
-    if (accessoryType) {
-      switch (accessoryType) {
-        case 'disclosureIndicator':
-          // accessoryView = (
-          //   <Image
-          //     source={imgCommonNext}
-          //     style={{ width: 6, height: 12, marginLeft: 6 }}
-          //   />
-          // );
-          break;
-        default:
-          break;
-      }
-    }
-
     const imageView = this.renderListItemImage();
     const titleView = this.renderListItemTitle();
     const detailTextView = this.renderListItemDetailText();
+    const accessoryView = this.renderListItemAccessoryView();
 
     const Container = onPress ? RNTouchableOpacity : RNView;
 
@@ -174,9 +187,7 @@ class ListItem extends PureComponent {
         onPress={onPress}
       >
         {imageView}
-        <ListItemContentView
-          cellStyle={cellStyle}
-        >
+        <ListItemContentView>
           {titleView}
           {detailTextView}
         </ListItemContentView>
