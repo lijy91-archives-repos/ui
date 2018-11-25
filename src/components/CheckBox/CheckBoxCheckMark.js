@@ -16,17 +16,20 @@ G1WshwAAAABJRU5ErkJggg==
 
 const propTypes = {
   checked: PropTypes.bool.isRequired,
-  checkedImage: PropTypes.string,
+  checkedImageSource: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.object,
+  ]),
 };
 const defaultProps = {
-  checkedImage: checkedImageBase64String,
+  checkedImageSource: { uri: checkedImageBase64String },
 };
 
 class CheckBoxCheckMark extends PureComponent {
   render() {
     const {
       checked,
-      checkedImage,
+      checkedImageSource,
       ...restProps
     } = this.props;
 
@@ -37,7 +40,7 @@ class CheckBoxCheckMark extends PureComponent {
         { checked && (
           <RNImage
             style={{ width: '100%', height: '100%' }}
-            source={{ uri: checkedImage }}
+            source={checkedImageSource}
           />
         )}
       </RNView>
