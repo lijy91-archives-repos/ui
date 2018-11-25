@@ -11,7 +11,7 @@ import { fontSizeButton } from './dimens';
 
 export default {
   Button: {
-    activeOpacity: 0.8,
+    activeOpacity: 0.9,
     borderWidth: 1,
     borderColor: themePrimary,
     backgroundColor: themePrimary,
@@ -21,21 +21,33 @@ export default {
     justifyContent: 'center',
     alignItems: 'center',
     ActivityIndicator: {
-      marginLeft: 5,
+      marginRight: 3,
       color: white,
+    },
+    Icon: {
+      padding: 0,
+      size: 18,
+      minWidth: 18,
+      minHeight: 18,
+      color: white,
+      textAlign: 'center',
+      marginRight: 3,
     },
     Text: {
       alignItems: 'stretch',
       fontSize: fontSizeButton,
       fontWeight: '500',
       color: white,
-      margin: 5,
+      margin: 2,
     },
   },
   'Button[styleName=flat-primary]': {
     borderColor: themePrimary,
     backgroundColor: themePrimary,
     ActivityIndicator: {
+      color: white,
+    },
+    Icon: {
       color: white,
     },
   },
@@ -45,11 +57,17 @@ export default {
     ActivityIndicator: {
       color: white,
     },
+    Icon: {
+      color: white,
+    },
   },
   'Button[styleName=flat-positive]': {
     borderColor: themePositive,
     backgroundColor: themePositive,
     ActivityIndicator: {
+      color: white,
+    },
+    Icon: {
       color: white,
     },
   },
@@ -59,6 +77,9 @@ export default {
     ActivityIndicator: {
       color: white,
     },
+    Icon: {
+      color: white,
+    },
   },
   'Button[styleName=flat-negative]': {
     borderColor: themeNegative,
@@ -66,11 +87,17 @@ export default {
     ActivityIndicator: {
       color: white,
     },
+    Icon: {
+      color: white,
+    },
   },
   'Button[styleName=outline-primary]': {
     borderColor: themePrimary,
     backgroundColor: transparent,
     ActivityIndicator: {
+      color: themePrimary,
+    },
+    Icon: {
       color: themePrimary,
     },
     Text: {
@@ -83,6 +110,9 @@ export default {
     ActivityIndicator: {
       color: themeSecondary,
     },
+    Icon: {
+      color: themeSecondary,
+    },
     Text: {
       color: themeSecondary,
     },
@@ -91,6 +121,9 @@ export default {
     borderColor: themePositive,
     backgroundColor: transparent,
     ActivityIndicator: {
+      color: themePositive,
+    },
+    Icon: {
       color: themePositive,
     },
     Text: {
@@ -103,6 +136,9 @@ export default {
     ActivityIndicator: {
       color: themeNeutral,
     },
+    Icon: {
+      color: themeNeutral,
+    },
     Text: {
       color: themeNeutral,
     },
@@ -111,6 +147,9 @@ export default {
     borderColor: themeNegative,
     backgroundColor: transparent,
     ActivityIndicator: {
+      color: themeNegative,
+    },
+    Icon: {
       color: themeNegative,
     },
     Text: {
@@ -124,17 +163,22 @@ export default {
     opacity: 0.4,
   },
   'Button[size=mini]': {
-    minWidth: 30,
-    height: 30,
+    minWidth: 42 - 16,
+    height: 42 - 16,
     Text: {
-      fontSize: fontSizeButton - 4,
+      fontSize: fontSizeButton - 2,
     },
   },
   'Button[size=small]': {
-    minWidth: 36,
-    height: 36,
+    minWidth: 42 - 8,
+    height: 42 - 8,
+    Icon: {
+      size: 16,
+      minWidth: 16,
+      minHeight: 16,
+    },
     Text: {
-      fontSize: fontSizeButton - 2,
+      fontSize: fontSizeButton - 1,
     },
   },
   'Button[size=medium]': {
@@ -145,17 +189,17 @@ export default {
     },
   },
   'Button[size=large]': {
-    minWidth: 48,
-    height: 48,
+    minWidth: 42 + 8,
+    height: 42 + 8,
     Text: {
-      fontSize: fontSizeButton + 2,
+      fontSize: fontSizeButton + 1,
     },
   },
   'Button[size=big]': {
-    minWidth: 54,
-    height: 54,
+    minWidth: 42 + 16,
+    height: 42 + 16,
     Text: {
-      fontSize: fontSizeButton + 4,
+      fontSize: fontSizeButton + 2,
     },
   },
   'Button[fluid=true]': {
