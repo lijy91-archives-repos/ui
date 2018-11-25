@@ -9,6 +9,7 @@ import withStyles from '../../withStyles';
 import DividerLabel from './DividerLabel';
 import DividerLine from './DividerLine';
 
+const { propTypes: RNViewProps } = RNText;
 const { propTypes: RNTextProps } = RNText;
 
 const propTypes = {
@@ -18,12 +19,14 @@ const propTypes = {
     PropTypes.element,
   ]),
   orientation: PropTypes.oneOf(['vertical', 'horizontal']),
+  lineStyle: RNViewProps.style,
   label: PropTypes.string,
   labelStyle: RNTextProps.style,
 };
 const defaultProps = {
   children: null,
   orientation: 'horizontal',
+  lineStyle: null,
   label: null,
   labelStyle: null,
 };
@@ -32,6 +35,7 @@ class Divider extends PureComponent {
   render() {
     let {
       children,
+      lineStyle,
       label,
       labelStyle,
       ...restProps
@@ -43,7 +47,7 @@ class Divider extends PureComponent {
     }
 
     if (!children && label) {
-      if (labelStyle && typeof textStyle === 'number') {
+      if (labelStyle && typeof labelStyle === 'number') {
         labelStyle = StyleSheet.flatten(labelStyle);
       }
       children = (
@@ -55,13 +59,17 @@ class Divider extends PureComponent {
       );
     }
 
+    if (lineStyle && typeof lineStyle === 'number') {
+      lineStyle = StyleSheet.flatten(lineStyle);
+    }
+
     return (
       <RNView
         {...restProps}
       >
-        <DividerLine />
+        <DividerLine style={lineStyle} />
         {children}
-        {children && <DividerLine />}
+        {children && <DividerLine style={lineStyle} />}
       </RNView>
     );
   }

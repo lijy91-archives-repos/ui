@@ -3,11 +3,11 @@ import { fontSizeCaption } from './dimens';
 
 export default {
   Divider: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   'Divider[orientation=vertical]': {
+    height: '100%',
     DividerLabel: {
       marginTop: 8,
       marginBottom: 8,
@@ -20,6 +20,7 @@ export default {
     },
   },
   'Divider[orientation=horizontal]': {
+    width: '100%',
     flexDirection: 'row',
     DividerLabel: {
       marginLeft: 8,
