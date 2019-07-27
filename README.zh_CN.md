@@ -17,7 +17,7 @@
 https://img.shields.io/badge/chat-on%20telegram-blue.svg
 [telegram-url]: https://t.me/blankapporg
 
-[English](./README.zh_CN.md) | 简体中文
+[English](./README.md) | 简体中文
 
 Table of Contents
 =================

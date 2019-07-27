@@ -24,7 +24,7 @@
     "test": "node_modules/.bin/jest"
   },
   "dependencies": {
-    "hoist-non-react-statics": "^3.0.1"
+    "hoist-non-react-statics": "^3.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
